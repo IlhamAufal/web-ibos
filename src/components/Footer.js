@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer className="footer mt-auto py-6" style={{ color: 'white' }}>
+    <footer className="footer mt-auto py-3" style={{ color: 'white' }}>
       <Container>
         <div>
           <img src={logo} ></img>
