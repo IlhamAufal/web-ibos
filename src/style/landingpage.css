@@ -1,0 +1,51 @@
+.myNB{
+    height: 30 vh;
+    background: black;
+}
+
+.myButton {
+  background: white;
+  background-size: cover;
+  font-family: sans-serif;
+  text-align: center;
+  height: 50px;
+}
+
+.myBG{
+    background: white;
+    background-size: 180vh;
+    height: 80vh;
+  }
+  
+.intro {
+    height: 50vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.mySubMenu{
+    display: flex;
+    height: 5vh;
+    justify-content: center; 
+    align-items: center;
+    background:grey;
+    color: white;
+}
+
+.myFooter{
+  display: flex;
+  height: 20vh;
+  justify-content: center; 
+  align-items: center;
+  background: black;
+}
+  
