@@ -10,10 +10,10 @@ function App() {
       <div className="poppins">
         <div className="myBG">
           <NavigationBar />
-          <Intro/>
+          <Intro />
         </div>
         <div>
-            <h5 className="mySubMenu" style={{paddingTop:'10vh'}}>Updated News</h5>
+            <h5 className="mySubMenu" style={{marginTop:'20.8vh'}}><b>Updated News</b></h5>
             <Category/>
             <h5 className="myAbout" >Tentang IBOS</h5>
         </div>

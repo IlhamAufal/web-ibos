@@ -1,14 +1,23 @@
 .myNB{
-    height: 30 vh;
-    width: auto;
     background: black;
+    /* width: 207.7vh;
+    margin-left: 5.4vh; */
 }
 
 .myButton {
-  background: white;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 20px;
+  background: black;
   background-size: cover;
   height: 35px;
   width: 70px;
+}
+
+.myButton:hover {
+  background: white;
+  color: black;
 }
 
 .myBG{
@@ -33,28 +42,28 @@
     letter-spacing: 100%;
 }
 
-.mySubMenu{
-    display: flex;
-    padding-top: 10vh;
-    height: 6vh;
-    justify-content: center; 
-    align-items: center;
-    opacity: "50%";
-    background:grey;
-    color: white;
+.mySubMenu {
+  display: flex;
+  height: 8vh;
+  justify-content: center; 
+  align-items: center;
+  background: grey;
+  color: black;
+  margin-top: 75px;
 }
+
 
 .myAbout {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 35vh;
+  margin-left: 25vh;
   height: 10vh;
-  width: 150vh;
+  width: 165vh;
   background: red;
   color: white;
+  border-radius: 10px;
 }
-
 
 .myFooter{
   display: flex;
@@ -64,4 +73,10 @@
   background: black;
   color: white;
 }
-  
+
+.list-item a{
+  display: flex;
+  line-height:30px;
+  color: white;
+  text-decoration: none;
+}  

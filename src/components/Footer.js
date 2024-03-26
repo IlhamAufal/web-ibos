@@ -7,12 +7,12 @@ const Footer = () => {
     <footer className="myFooter">
       <Container>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={logo} style={{ marginLeft: '10vh', height:'100px' }} alt="Logo" />
-          <div className="nav-group col-md-4 col-sm-4">
-            <div className="link-header">
-              <span className="header-title">Support Us</span>
-            </div>
+          <img src={logo} style={{height:'100px', marginRight:'100px' }}/>
+          <div className="nav-group col-md-4 col-sm-4" style={{}}>
             <ul>
+            <div className="link-header">
+              <span className="header-title"><b>Support Us</b></span>
+            </div>
               <li className="list-item">
                 <a href="">Contact</a>
               </li>
@@ -24,9 +24,6 @@ const Footer = () => {
               </li>
               <li className="list-item">
                 <a href="">Product</a>
-              </li>
-              <li className="list-item">
-                <a href="/telkomsel-orbit">Internet Rumah</a>
               </li>
             </ul>
           </div>
