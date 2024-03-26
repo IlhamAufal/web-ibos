@@ -8,24 +8,7 @@ function Category() {
     return (
       <div className='height-100vh'>
       <Row className='d-flex justify-content-center align-items-center height-100vh'>
-        <Card style={{ width: '20rem', height:'10px'}}>
-          <Card.Img variant="center" src={risoles} alt='Hidangan Pembuka'/>
-          <div className='bg-dark'>
-            <div className='p-2 m-1 text-white'>
-          <Card.Body>
-            <Card.Title>Hidangan Pembuka</Card.Title>
-            <Card.Text>
-            Some quick example text for the second card.
-            </Card.Text>
-            <Button variant="primary">Lihat Menu</Button>
-          </Card.Body>
-          </div>
-          </div>
-        </Card>
-  
-        {/* Second Card */}
-        <Card style={{ width: '18rem', margin: '10px' }}>
-          <Card.Img variant="center" src={risoles} alt='Hidangan Pembuka'/>
+      <Card style={{ width: '18rem', margin: '10px' }}>
           <div className='bg-dark'><div className='p-2 m-1 text-white'>
           <Card.Body>
             <Card.Title>Hidangan Utama</Card.Title>
@@ -36,13 +19,12 @@ function Category() {
           </Card.Body>
           </div></div>
         </Card>
-
-        {/* Third Card */}
+  
+        {/* Second Card */}
         <Card style={{ width: '18rem', margin: '10px' }}>
-          <Card.Img variant="center" src={risoles} alt='Hidangan Pembuka'/>
           <div className='bg-dark'><div className='p-2 m-1 text-white'>
           <Card.Body>
-            <Card.Title>Hidangan Penutup</Card.Title>
+            <Card.Title>Hidangan Utama</Card.Title>
             <Card.Text>
             Some quick example text for the second card.
             </Card.Text>

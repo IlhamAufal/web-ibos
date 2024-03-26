@@ -4,7 +4,6 @@ const Intro = () => {
     return(
         <div className="intro">
             <Container className="d-flex justify-content-center align-items-center">
-              
               <Row>
                 <Col>
                   <h1 className="title">IBOS COMMUNITY</h1>

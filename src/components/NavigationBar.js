@@ -5,11 +5,11 @@ import logoDark from "../asset/logo-dark.jpg";
 const NavigationBar = () => {
   return (
     <div className="myNB">
-      <Navbar variant='dark'>
+      <Navbar variant='dark' fixed="">
         <Container>
           <NavbarBrand><img src={logoDark} width="50%" height="50%"/></NavbarBrand>
           <Nav>
-            <NavLink>Home</NavLink>
+            <NavLink className="">Home</NavLink>
             <NavLink>News</NavLink>
             <NavLink>Event</NavLink>
             <NavLink>Komunitas</NavLink>

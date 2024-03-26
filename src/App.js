@@ -15,7 +15,7 @@ function App() {
         <div>
             <h5 className="mySubMenu">Updated News</h5>
             <Category/>
-            <h2 className="mySubMenu">Frequently Asked Question</h2>
+            <h5 className="myAbout">Tentang IBOS</h5>
         </div>
         <div className="customSpacing"></div>
         <div className="myFooter">

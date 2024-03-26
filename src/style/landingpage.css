@@ -41,6 +41,18 @@
     color: white;
 }
 
+.myAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35vh;
+  height: 10vh;
+  width: 150vh;
+  background: red;
+  color: white;
+}
+
+
 .myFooter{
   display: flex;
   height: 20vh;
