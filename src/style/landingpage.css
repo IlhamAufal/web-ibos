@@ -1,14 +1,14 @@
 .myNB{
     height: 30 vh;
+    width: auto;
     background: black;
 }
 
 .myButton {
   background: white;
   background-size: cover;
-  font-family: sans-serif;
-  text-align: center;
-  height: 50px;
+  height: 35px;
+  width: 70px;
 }
 
 .myBG{
@@ -30,13 +30,16 @@
     line-height: 1;
     color: white;
     text-shadow: 2px 2px black;
+    letter-spacing: 100%;
 }
 
 .mySubMenu{
     display: flex;
-    height: 5vh;
+    padding-top: 10vh;
+    height: 6vh;
     justify-content: center; 
     align-items: center;
+    opacity: "50%";
     background:grey;
     color: white;
 }
@@ -55,9 +58,10 @@
 
 .myFooter{
   display: flex;
-  height: 20vh;
+  height: 35vh;
   justify-content: center; 
   align-items: center;
   background: black;
+  color: white;
 }
   

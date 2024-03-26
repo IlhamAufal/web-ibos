@@ -7,15 +7,15 @@ import Footer from "./components/Footer"
 
 function App() {
     return (
-      <div>
+      <div className="poppins">
         <div className="myBG">
           <NavigationBar />
           <Intro/>
         </div>
         <div>
-            <h5 className="mySubMenu">Updated News</h5>
+            <h5 className="mySubMenu" style={{paddingTop:'10vh'}}>Updated News</h5>
             <Category/>
-            <h5 className="myAbout">Tentang IBOS</h5>
+            <h5 className="myAbout" >Tentang IBOS</h5>
         </div>
         <div className="customSpacing"></div>
         <div className="myFooter">

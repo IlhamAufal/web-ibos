@@ -5,7 +5,7 @@ import logoDark from "../asset/logo-dark.jpg";
 const NavigationBar = () => {
   return (
     <div className="myNB">
-      <Navbar variant='dark' fixed="">
+      <Navbar variant='dark'>
         <Container>
           <NavbarBrand><img src={logoDark} width="50%" height="50%"/></NavbarBrand>
           <Nav>
@@ -14,7 +14,7 @@ const NavigationBar = () => {
             <NavLink>Event</NavLink>
             <NavLink>Komunitas</NavLink>
             <NavLink>Tentang</NavLink>
-            <button className="">Login</button>
+            <button className="myButton">Login</button>
           </Nav>
         </Container>
       </Navbar>
