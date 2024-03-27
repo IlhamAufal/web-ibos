@@ -8,7 +8,7 @@
   color: white;
   border-color: white;
   border-width: 1px;
-  border-radius: 20px;
+  border-radius: 15px;
   background: black;
   background-size: cover;
   height: 35px;
@@ -47,19 +47,18 @@
   height: 8vh;
   justify-content: center; 
   align-items: center;
-  background: grey;
+  background: rgba(128, 128, 128, 0.519);
   color: black;
   margin-top: 75px;
 }
-
 
 .myAbout {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 25vh;
-  height: 10vh;
-  width: 165vh;
+  margin-left: 19vh;
+  height: 100px;
+  width: 1240px;
   background: red;
   color: white;
   border-radius: 10px;
@@ -67,11 +66,18 @@
 
 .myFooter{
   display: flex;
-  height: 35vh;
+  height: 45vh;
   justify-content: center; 
   align-items: center;
   background: black;
   color: white;
+  font-size: 15px;
+}
+
+.myFooter-img{
+  display: flex;
+  height: 100px;
+  margin-right: 300px;
 }
 
 .list-item a{
@@ -79,4 +85,12 @@
   line-height:30px;
   color: white;
   text-decoration: none;
-}  
+}
+
+.list-item:hover a{
+  color: rgb(255, 89, 0);
+}
+
+.myNewsCard{
+  display: flex;
+}

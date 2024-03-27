@@ -4,6 +4,7 @@ import NavigationBar from "./components/NavigationBar"
 import Intro from "./components/Intro"
 import Category from "./components/Category"
 import Footer from "./components/Footer"
+import News from "./components/News"
 
 function App() {
     return (
@@ -14,8 +15,11 @@ function App() {
         </div>
         <div>
             <h5 className="mySubMenu" style={{marginTop:'20.8vh'}}><b>Updated News</b></h5>
+            <div>
+              <News></News>
+            </div>
             <Category/>
-            <h5 className="myAbout" >Tentang IBOS</h5>
+            <h5 className="myAbout"><b>Tentang IBOS</b></h5>
         </div>
         <div className="customSpacing"></div>
         <div className="myFooter">
