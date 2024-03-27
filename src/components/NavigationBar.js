@@ -8,14 +8,14 @@ const NavigationBar = () => {
       <Navbar variant='dark'>
         <Container>
           <NavbarBrand><img src={logoDark} alt="Logo" width="50%" height="50%" /></NavbarBrand>
-          <Nav className="me-auto">
+          <Nav className="me-auto" style={{ color: 'white' }}>
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#">News</Nav.Link>
             <Nav.Link href="#">Event</Nav.Link>
             <Nav.Link href="#">Komunitas</Nav.Link>
             <Nav.Link href="#">Tentang</Nav.Link>
           </Nav>
-          <button className="myButton myButtonHover">Login</button>
+          <button className="text-sm myButton myButtonHover">Login</button>
         </Container>
       </Navbar>
     </div>

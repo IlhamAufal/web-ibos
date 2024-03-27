@@ -8,7 +8,7 @@ function MyCarousel(){
   return(
     <div>
     <Carousel>
-      <Carousel.Item style={{height:'90vh', marginTop:'75px'}}>
+      <Carousel.Item style={{height:'80vh', marginTop:'75px'}}>
       <div className="relative h-screen bg-black/60">
         <img
           className="d-block w-100 "
@@ -20,7 +20,7 @@ function MyCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item style={{height:'90vh', marginTop:'75px'}}>
+      <Carousel.Item style={{height:'80vh', marginTop:'75px'}}>
         <img
           className="d-block w-100"
           src={news2}
@@ -31,7 +31,7 @@ function MyCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item style={{height:'90vh', marginTop:'75px'}}>
+      <Carousel.Item style={{height:'80vh', marginTop:'75px'}}>
         <img
           className="d-block w-100"
           src={news3}

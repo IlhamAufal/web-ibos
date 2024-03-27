@@ -17,9 +17,9 @@ function App() {
         <MyCarousel />
       </div>
       <div>
-        <h5 className="mySubMenu" style={{ marginTop: '20.8vh' }}><b>Updated News</b></h5>
+        <h5 className="mySubMenu" style={{ marginTop: '10.8vh' }}><b>Updated News</b></h5>
         <News />
-        <Category />
+        {/* <Category /> */}
         <h5 className="myAbout"><b>Tentang IBOS</b></h5>
       </div>
       <div className="customSpacing"></div>
