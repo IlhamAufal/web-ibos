@@ -13,7 +13,29 @@ const Footer = () => {
       <Container>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img src={logo} className='myFooter-img'/>
-          <Container>
+          <Container style={{paddingRight:'100px'}}>
+            <div className="nav-group col-md-4 col-sm-4">
+              <ul>
+                <div className="link-header" style={{ whiteSpace: 'nowrap' }}>
+                  <span className="header-title"><b>Support Us</b></span>
+                </div>
+                <li className="list-item" style={{ paddingTop: '5px' }}>
+                  <a href="">Contact</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Faq</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Location</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Product</a>
+                </li>
+              </ul>
+            </div>
+          </Container>
+
+          <Container >
             <div className="nav-group col-md-4 col-sm-4">
               <ul>
                 <div className="link-header" style={{ whiteSpace: 'nowrap' }}>
@@ -36,45 +58,23 @@ const Footer = () => {
           </Container>
 
           <Container>
-            <div className="nav-group col-md-4 col-sm-4">
-              <ul>
-                <div className="link-header" style={{ whiteSpace: 'nowrap' }}>
-                  <span className="header-title"><b>Support Us</b></span>
-                </div>
-                <li className="list-item" style={{ paddingTop: '5px' }}>
-                  <a href="">Contact</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Faq</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Location</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Product</a>
-                </li>
-              </ul>
-            </div>
-          </Container>
-
-          <Container>
-            <div className="nav-group col-md-4 col-sm-4" style={{paddingTop:'45px'}}>
+            <div className="nav-group col-md-4 col-sm-4" style={{paddingTop:'15px'}}>
               <ul>
                 <div className="link-header" style={{ whiteSpace: 'nowrap' }}>
                   <span className="header-title"><b>Follow Us</b></span>
                 </div>
-                <li className="list-item" style={{ paddingTop: '5px', display: 'flex', alignItems: 'center' }}>
-                  <img src={iconFB} alt="Icon" style={{ marginRight: '5px', height:'38px', width:'38px'}} />
+                <li className="list-item" style={{paddingTop: '5px', display: 'flex', alignItems: 'center'}}>
+                  <img src={iconFB} alt="Icon" style={{ marginRight: '5px', height:'28px'}} />
                   <a href="#">IbosTelkom</a>
                 </li>
                 <li className="list-item" style={{ paddingTop: '5px', display: 'flex', alignItems: 'center' }}>
-                  <img src={iconX} alt="Icon" style={{ marginRight: '5px', height:'38px', width:'38px'}} />
+                  <img src={iconX} alt="Icon" style={{ marginRight: '5px', height:'28px'}} />
                   <a href="#">@IbosTelkom</a>
                 </li><li className="list-item" style={{ paddingTop: '5px', display: 'flex', alignItems: 'center' }}>
-                  <img src={iconIG} alt="Icon" style={{ marginRight: '5px', height:'38px', width:'38px'}} />
+                  <img src={iconIG} alt="Icon" style={{ marginRight: '5px', height:'28px'}} />
                   <a href="#">IbosTelkom</a>
                 </li><li className="list-item" style={{ paddingTop: '5px', display: 'flex', alignItems: 'center' }}>
-                  <img src={iconYT} alt="Icon" style={{ marginRight: '5px', height:'38px', width:'38px'}} />
+                  <img src={iconYT} alt="Icon" style={{ marginRight: '5px', height:'28px'}} />
                   <a href="#">IbosTelkom</a>
                 </li>
               </ul>
