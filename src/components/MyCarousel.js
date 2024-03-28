@@ -13,9 +13,11 @@ function MyCarousel(){
         <img
           className="d-block w-100 "
           src={news1}
-        /></div>
+        />
+        <div className="overlay" style={{ position: 'absolute',top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)' }}></div>
+        </div>
         <Carousel.Caption style={{marginBottom:'50px'}}>
-          <h3 className="text-left" >First slide label</h3>
+          <h3 className="text-left"><b><span style={{ color: 'red'}}>First</span> slide label</b></h3>
           <p className="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -25,8 +27,9 @@ function MyCarousel(){
           className="d-block w-100"
           src={news2}
         />
+        <div className="overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)' }}></div>
         <Carousel.Caption style={{marginBottom:'50px'}}>
-          <h3 className="text-left">First slide label</h3>
+        <h3 className="text-left"><b><span style={{ color: 'red'}}>First</span> slide label</b></h3>
           <p className="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -36,12 +39,12 @@ function MyCarousel(){
           className="d-block w-100"
           src={news3}
         />
+        <div className="overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)' }}></div>
         <Carousel.Caption style={{marginBottom:'50px'}}>
-          <h3 className="text-left">First slide label</h3>
+        <h3 className="text-left"><b><span style={{ color: 'red'}}>First</span> slide label</b></h3>
           <p className="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      
     </Carousel>
     </div>
   )

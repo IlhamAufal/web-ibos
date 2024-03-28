@@ -7,6 +7,7 @@ import MyCarousel from './components/MyCarousel';
 import Category from './components/Category';
 import Footer from './components/Footer';
 import News from './components/News';
+import About from './components/About';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <News />
         {/* <Category /> */}
         <h5 className="myAbout"><b>Tentang IBOS</b></h5>
+        <About/>
       </div>
       <div className="customSpacing"></div>
       <div className="myFooter">
