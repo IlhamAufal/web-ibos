@@ -8,22 +8,22 @@
   color: white;
   border-color: white;
   border-width: 1px;
-  border-radius: 15px;
+  border-radius: 20px;
   background: black;
   background-size: cover;
-  height: 35px;
-  width: 70px;
+  padding: 10px;
 }
 
 .myButton:hover {
   background: white;
+  border-color: black;
   color: black;
 }
 
 .myBG{
     background: white;
     background-size: 180vh;
-    height: 80vh;
+    max-height: 1000vh;
   }
   
 .intro {
