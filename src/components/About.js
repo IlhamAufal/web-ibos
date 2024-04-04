@@ -5,34 +5,36 @@ import logoo from '../asset/IBOS profile poster.png';
 import logo1 from '../asset/logo1.png';
 import logo2 from '../asset/logo2.png';
 import logo3 from '../asset/logo3.png';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 
 function About() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginRight: '20px', marginTop: '10px', marginBottom: '25px' }}>
-        <Card style={{ width: '610px', marginRight: '5px' }}>
-          <Card.Body>
-            <Card.Title><b>Card Title</b></Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+      <div style={{ display: 'flex', justifyContent: 'center',marginTop: '10px', marginBottom: '25px' }}>
+      
+      <Card style={{ width: '610px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.418)'}}>
+        <Card.Body>
+          <Card.Title><b>Card Title</b></Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    
+      <Card style={{ width: '610px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.418)'}}>
+        <Card.Body>
+          <Card.Title><b>Card Title</b></Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
-        <Card style={{ width: '610px', marginLeft: '15px' }}>
-          <Card.Body>
-            <Card.Title><b>Card Title</b></Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
+</div>
 
-      <div className='myAbout-director' style={{ marginTop: '10px', marginBottom: '20px', display: 'flex' }}>
+      <div className='myAbout-director' style={{ marginTop: '10px', marginBottom: '20px', marginLeft: 'auto', marginRight: 'auto', display: 'flex' }}>
         <div className="image-container" style={{ width: '200px', height: '200px', overflow: 'hidden', borderRadius: '50%', marginLeft: '90px', marginTop: '40px', position: 'relative' }}>
           <img src={logoo} className="image" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
           <div style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: '2', background: 'black', borderRadius: '5px', padding: '5px 20px' }}>
@@ -81,6 +83,9 @@ function About() {
       </Card.Body>
     </Card>
   </div>
+  {/* Logo IBOS */}
+
+  {/* Pilar IBOS */}
   <div className='mySubMenu1'>
     <h5 style={{ marginTop: '6px' }}>Pengertian Pilar IBOS</h5>
   </div>
@@ -94,8 +99,9 @@ function About() {
     </Card.Body>
   </Card>
 </div>
+    {/* Pilar IBOS */}
 
-
+    {/* Peraturan IBOS */}
   <div className='mySubMenu1' style={{justifyContent:'center'}}><h5 style={{marginTop:'6px'}}>Peraturan IBOS</h5></div>
 </div>
   );

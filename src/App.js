@@ -1,34 +1,19 @@
 import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
 import './style/landingpage.css';
-import NavigationBar from './components/NavigationBar';
-import Intro from './components/Intro';
-import MyCarousel from './components/MyCarousel';
-import Category from './components/Category';
-import Footer from './components/Footer';
-import News from './components/News';
-import About from './components/About';
+import LandingPage from './pages/landingpage.js';
+import NewsPage from './pages/newsPage.js';
+
 
 function App() {
   return (
-    <div className="poppins">
-      <div className="myBG">
-        <NavigationBar />
-        {/* <Intro /> */}
-        <MyCarousel />
-      </div>
-      <div>
-        <h5 className="mySubMenu" style={{ marginTop: '10.8vh' }}><b>Updated News</b></h5>
-        <News />
-        {/* <Category /> */}
-        <h5 className="myAbout"><b>Tentang IBOS</b></h5>
-        <About/>
-      </div>
-      <div className="customSpacing"></div>
-      <div className="myFooter">
-        <Footer />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/news' element={<NewsPage />} />
+      </Routes>
+    </Router>
   );
 }
 
