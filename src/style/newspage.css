@@ -73,19 +73,18 @@
   
   .tulisArtikel {
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-width: 1px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid red;
     border-radius: 20px;
     background: red;
-    background-size: cover;
-    height: auto;
-    width: 200px;
+    display: block;
+    margin: auto;
+    text-align: center;
   }
-  
   .tulisArtikel:hover {
     background: white;
     border-color: red;
-    border-width: 2px;
     color: red;
   }
+  

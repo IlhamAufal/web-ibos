@@ -4,7 +4,6 @@ import '../style/landingpage.css';
 import '../style/newspage.css';
 import newsimg from '../asset/percobaanNews.svg';
 import pfp from '../asset/pfp.svg';
-import { useNavigate } from "react-router-dom";
 
 const RealNews = () => {
     const place = 'JAKARTA - ';
@@ -50,14 +49,11 @@ const RealNews = () => {
       </div>
     </Container>
   </div>
-  <div style={{ width: 'calc(20% - 10px)' , height:'100vh', marginRight:'20px'}}>
-  </div>
+
 </div>
 
   </div>
-  <div className="tulisArtikel" style={{margin:'auto'}}>
-  <button onClick={useNavigate} style={{ display: 'block', margin: 'auto', textAlign: 'center' }}>Tulis Artikel</button>
-  </div>
+  
 </div>
 
   );
