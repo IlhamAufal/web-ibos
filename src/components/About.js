@@ -10,8 +10,10 @@ import { Container, Row, Col} from 'react-bootstrap';
 function About() {
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center',marginTop: '10px', marginBottom: '25px' }}>
-      
+      <div style={{ display: 'flex', marginTop: '25px', marginBottom: '25px', justifyContent:'center'}}>
+      <div>
+        <h3 style={{color:'red', marginTop:'50px', marginRight:'300px'}}>Definisi IBOS</h3>
+      </div>
       <Card style={{ width: '610px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.418)'}}>
         <Card.Body>
           <Card.Title><b>Card Title</b></Card.Title>
@@ -21,8 +23,10 @@ function About() {
           </Card.Text>
         </Card.Body>
       </Card>
-    
-      <Card style={{ width: '610px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.418)'}}>
+      </div>
+      <div style={{ display: 'flex', marginTop: '25px', marginBottom: '25px', justifyContent:'center'}}>
+        <div>
+      <Card style={{ width: '610px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.418)', marginRight:'140px'}}>
         <Card.Body>
           <Card.Title><b>Card Title</b></Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -31,8 +35,9 @@ function About() {
           </Card.Text>
         </Card.Body>
       </Card>
-
-</div>
+      </div>
+        <h3 className='subAbout font-bold'>Definisi IBOS</h3>
+      </div>
 
       <div className='myAbout-director' style={{ marginTop: '10px', marginBottom: '20px', marginLeft: 'auto', marginRight: 'auto', display: 'flex' }}>
         <div className="image-container" style={{ width: '200px', height: '200px', overflow: 'hidden', borderRadius: '50%', marginLeft: '90px', marginTop: '40px', position: 'relative' }}>

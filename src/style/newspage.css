@@ -13,16 +13,18 @@
     margin-right: 20px;
   }
   
-  .redBox {
+  .redBox {    
+    margin: auto;
     margin-top: 50px;
     padding-bottom: 70px;
+    padding-left: 100%;
     width: 1122px;
     display: flex;
     height: 8vh;
     background: red;
     border-radius: 0 0 40px 0;
-    z-index: 1;
   }
+
 
   .line {
     margin-top: 75px;
@@ -35,13 +37,11 @@
   }
 
   .redCircle {
-    margin-left: auto;
+    position:absolute;
     width: 150px;
     height: 150px;
-    display: absolute;
     background: red;
     border-radius: 50%;
-    z-index: 2;
   }
 
   .relatedNews {
@@ -72,19 +72,32 @@
   }
   
   .tulisArtikel {
-    color: white;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 25px;
     padding: 10px;
-    width: 100px;
-    border: 2px solid red;
-    border-radius: 20px;
-    background: red;
-    display: block;
-    margin: auto;
-    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    z-index: 3;
   }
   .tulisArtikel:hover {
     background: white;
     border-color: red;
     color: red;
+    font-weight: bold;
+  }
+  
+  .redBoxDown {
+    margin: auto;
+    padding-top: 100px;
+    width: 1500px;
+    display: flex;
+    height: 8vh;
+    background: red;
+    border-radius: 40px 40px 0 0;
+    z-index: 2;
   }
   

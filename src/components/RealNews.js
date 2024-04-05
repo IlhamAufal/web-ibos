@@ -4,6 +4,9 @@ import '../style/landingpage.css';
 import '../style/newspage.css';
 import newsimg from '../asset/percobaanNews.svg';
 import pfp from '../asset/pfp.svg';
+import iconX from '../asset/icon-twitter.png';
+import iconFB from '../asset/icon-facebook.png';
+import iconIG from '../asset/icon-instagram.png';
 
 const RealNews = () => {
     const place = 'JAKARTA - ';
@@ -43,15 +46,27 @@ const RealNews = () => {
           <img src={pfp} style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover' }} />
         </div>
         <div style={{ marginLeft: '20px' }}>
-          <h6><b>{Author}</b></h6>
+          <h5><b>{Author}</b></h5>
           <p>{AuthorPosition}</p>
         </div>
+        <div style={{ marginLeft: 'auto', marginBottom: '10px' }}>
+  <h5>Share:</h5>
+  <div className="d-flex">
+  <a href="/">
+    <img src={iconFB} style={{ borderRadius: '50%', height:'auto', width:'80%' }}/>
+  </a>
+  <a href="#">
+    <img src={iconIG} style={{ borderRadius: '50%', height:'auto', width:'80%' }}/>
+  </a>
+  <a href="#">
+    <img src={iconX} style={{ borderRadius: '50%', height:'auto', width:'80%' }}/>
+  </a></div>
+</div>
+
       </div>
     </Container>
   </div>
-
 </div>
-
   </div>
   
 </div>

@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 const NewsPage = () => {
   return (
     <div className="landing-container">
+      {/* <div className='redCircle' style={{marginLeft:'95%', marginTop:'10px'}}></div>
+      <div className='redCircle' style={{marginLeft:'88%', opacity:'70%'}}></div> */}
       <div className="row no-gutters">
         <div className="col">
           <RealNews/>
@@ -16,8 +18,14 @@ const NewsPage = () => {
         <div className="col">
           <RelatedNews/>
         </div>
-        <button onClick={useNavigate} className='tulisArtikel'>Tulis Artikel</button>
       </div>
+      <div style={{justifyContent:'center'}}>
+        <div>
+          <h5>Share</h5>
+        </div>
+        <button className='tulisArtikel' onClick={useNavigate} >Tulis Artikel</button>
+        <div className='redBoxDown'></div>
+        </div>
     </div>
   );
 }

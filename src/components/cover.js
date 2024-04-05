@@ -1,7 +1,7 @@
 // import { Container } from "react-bootstrap";
 // import poster from '../asset/IBOS profile poster.png';
 
-// const Intro = () => {
+// const cover = () => {
 //   return (
 //     <div className="intro position-relative" style={{marginTop: '20vh'}} >
 //       <img 
@@ -16,4 +16,4 @@
 //   );
 // };
 
-// export default Intro;
+// export default cover;
