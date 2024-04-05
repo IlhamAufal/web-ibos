@@ -1,6 +1,6 @@
-.myNB{
-    background: black;
-    /* width: 207.7vh;
+.myNB {
+  background: black;
+  /* width: 207.7vh;
     margin-left: 5.4vh; */
 }
 
@@ -21,32 +21,32 @@
   color: black;
 }
 
-.myBG{
-    background: white;
-    background-size: 180vh;
-    max-height: 1000vh;
-  }
-  
-.intro {
-    height: 50vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
+.myBG {
+  background: white;
+  background-size: 180vh;
+  max-height: 1000vh;
+}
 
-.title{
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: white;
-    text-shadow: 2px 2px black;
-    letter-spacing: 100%;
+.intro {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-shadow: 2px 2px black;
+  letter-spacing: 100%;
 }
 
 .mySubMenu {
   display: flex;
   height: 8vh;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background: rgba(128, 128, 128, 0.519);
   color: black;
@@ -56,7 +56,7 @@
   display: flex;
   height: 6vh;
   width: 600px;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background: black;
   color: white;
@@ -90,30 +90,30 @@
   border-radius: 10px;
 }
 
-.myFooter{
+.myFooter {
   display: flex;
   height: 45vh;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background: black;
   color: white;
   font-size: 15px;
 }
 
-.myFooter-img{
+.myFooter-img {
   display: flex;
   height: 100px;
   margin-right: 300px;
 }
 
-.list-item a{
+.list-item a {
   display: flex;
-  line-height:30px;
+  line-height: 30px;
   color: white;
   text-decoration: none;
 }
 
-.list-item:hover a{
+.list-item:hover a {
   color: rgb(255, 89, 0);
 }
 
@@ -126,13 +126,12 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.418);
   margin-top: 25px;
-  width: 600px;
-  height: 180px;
+  max-width: 500px;
+  max-height: 150px;
   font-size: 20px;
   transition: transform 0.3s ease;
   z-index: 2;
 }
-
 .myNews:hover {
   transform: translate(13px, 13px);
 }
@@ -142,24 +141,24 @@
   flex-direction: column;
   background-color: red;
   border-radius: 8px;
-  width: 600px;
-  height: 180px;
+  width: 500px;
+  height: 150px;
   z-index: 1;
 }
 
-.pilar{
+.pilar {
   display: flex;
   width: 1240px;
   height: 50vh;
   margin-left: 19vh;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background: rgb(151, 151, 151);
   color: black;
   font-size: 15px;
 }
 
-.subAbout{
+.subAbout {
   color: red;
   /* text-align: left;
   justify-items: left; */

@@ -4,9 +4,9 @@
 // const cover = () => {
 //   return (
 //     <div className="intro position-relative" style={{marginTop: '20vh'}} >
-//       <img 
-//         src={poster} 
-//         className="img-fluid position-absolute" 
+//       <img
+//         src={poster}
+//         className="img-fluid position-absolute"
 //         style={{ height: '180%', width: '95%' }}
 //       />
 //       <Container className="position-absolute text-overlay" style={{ textAlign: "center"}}>

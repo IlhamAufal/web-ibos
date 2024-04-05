@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from "react";
+import { Container } from "react-bootstrap";
 
 const uploadImage = () => {
   const displaySelectedImage = (event, elementId) => {
@@ -19,24 +19,27 @@ const uploadImage = () => {
 
   return (
     <div>
-        <Container style={{marginBottom:'50px'}}>
-      <div className="mb-4 d-flex justify-content-center" style={{border:'dashed grey 4px', width: '500px', margin:'auto'}}>
-        <img
-          id="selectedImage"
-          src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg"
-        />
-      </div>
-      <div className="d-flex justify-content-center">
-        <label htmlFor="customFile1" className="btn btn-rounded bg-black">
-          <span className="form-label text-white m-1">Pilih Gambar</span>
-          <input
-            type="file"
-            className="form-control d-none"
-            id="customFile1"
-            onChange={(event) => displaySelectedImage(event, 'selectedImage')}
+      <Container style={{ marginBottom: "20px" }}>
+        <div
+          className="mb-4 d-flex justify-content-center"
+          style={{ border: "dashed grey 4px", width: "500px", margin: "auto" }}
+        >
+          <img
+            id="selectedImage"
+            src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg"
           />
-        </label>
-      </div>
+        </div>
+        <div className="d-flex justify-content-center">
+          <label htmlFor="customFile1">
+            <span className=" myButton">Pilih Gambar</span>
+            <input
+              type="file"
+              className="form-control d-none"
+              id="customFile1"
+              onChange={(event) => displaySelectedImage(event, "selectedImage")}
+            />
+          </label>
+        </div>
       </Container>
     </div>
   );
