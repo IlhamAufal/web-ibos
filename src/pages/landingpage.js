@@ -1,9 +1,7 @@
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
 import MyCarousel from "../components/MyCarousel";
 import BoxNews from "../components/BoxNews";
 import About from "../components/About";
-import Footer from "../components/Footer";
 import "../style/landingpage.css";
 
 const Landing = () => {

@@ -5,12 +5,13 @@ import "../style/landingpage.css";
 
 const BannerIbadah = () => {
   return (
-    <div className="intro position-relative" style={{ marginTop: "20vh" }}>
-      <div
-        className="relative h-screen"
-        style={{ marginTop: "75px", height: "603px", width: "1440px" }}
-      >
-        <img className="d-block w-auto h-80" src={banner} />
+    <div className="intro position-relative">
+      <div className="relative h-screen">
+        <img
+          className="d-block w-auto h-80"
+          src={banner}
+          style={{ marginTop: "75px", height: "780px", width: "1400px" }}
+        />
       </div>
     </div>
   );

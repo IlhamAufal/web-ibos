@@ -72,7 +72,21 @@ const InputNewsDetail = () => {
             />
           </div>
         </div>
-        <div className="form-group font-bold" style={{ marginBottom: "30px" }}>
+        <div className="form-group font-bold" style={{ marginBottom: "50px" }}>
+          <label for="exampleFormControlSelect1">3. Kategori Berita</label>
+          <caption className="text-muted d-flex">
+            Pilih salah satu dari 4 Kategori
+          </caption>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Iman</option>
+            <option>Budaya</option>
+            <option>Olahraga</option>
+            <option>Sosial</option>
+          </select>
+        </div>
+
+        {/* Ini kalo mau pake checkbox */}
+        {/* <div className="form-group font-bold" style={{ marginBottom: "30px" }}>
           <label>3. Kategori Berita</label>
           <div>
             <Container className="d-flex">
@@ -94,7 +108,7 @@ const InputNewsDetail = () => {
               </label>
             </Container>
           </div>
-        </div>
+        </div> */}
         <div className="form-group font-bold">
           <label>4. Ceklist</label>
           <div className="d-flex">
