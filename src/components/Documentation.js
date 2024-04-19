@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import PopUp from "./PopUp";
 import "../style/landingpage.css";
 
 const Documentation = () => {

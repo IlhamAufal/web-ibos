@@ -15,16 +15,15 @@ function Category() {
     <Container className="container-category mb-4">
       <Row>
         <Col xs={3}>
-          <a href="#" className="flex" onClick={() => navigate("/news")}>
+          <a href="/ibadah" className="flex">
             <div className="masked-image-overlay">
               <div className="centered-text">IBADAH</div>{" "}
             </div>
           </a>
-
           <img className="masked-image" src={imgIbadah} />
         </Col>
         <Col xs={3}>
-          <a href="#" className="flex" onClick={() => navigate("/news")}>
+          <a href="#" className="flex" onClick={() => navigate("/budaya")}>
             <div className="masked-image-overlay">
               <div className="centered-text">BUDAYA</div>{" "}
             </div>
@@ -33,7 +32,7 @@ function Category() {
           <img className="masked-image" src={imgBudaya} />
         </Col>
         <Col xs={3}>
-          <a href="#" className="flex" onClick={() => navigate("/news")}>
+          <a href="#" className="flex" onClick={() => navigate("/olahraga")}>
             <div className="masked-image-overlay">
               <div className="centered-text">OLAHRAGA</div>{" "}
             </div>
@@ -42,7 +41,7 @@ function Category() {
           <img className="masked-image" src={imgOlahraga} />
         </Col>
         <Col xs={3}>
-          <a href="#" className="flex" onClick={() => navigate("/news")}>
+          <a href="#" className="flex" onClick={() => navigate("/sosial")}>
             <div className="masked-image-overlay">
               <div className="centered-text">SOSIAL</div>{" "}
             </div>

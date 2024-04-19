@@ -166,13 +166,6 @@
   margin-top: 50px; */
 }
 
-.container-category {
-  width: 200px; /* Atur ukuran container */
-  height: 200px;
-  overflow: hidden; /* Sembunyikan bagian gambar yang berlebihan */
-  position: relative; /* Tetapkan posisi relatif untuk elemen anak */
-}
-
 .masked-image {
   width: 100%;
   height: 200px;
