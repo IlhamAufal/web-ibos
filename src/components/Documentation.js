@@ -19,7 +19,6 @@ const Documentation = () => {
         maxWidth: "1400px",
       }}
     ></div>
-
   );
 };
 

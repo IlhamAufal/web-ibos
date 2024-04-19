@@ -6,6 +6,8 @@ import logo1 from "../asset/logo1.png";
 import logo2 from "../asset/logo2.png";
 import logo3 from "../asset/logo3.png";
 import { Container, Row, Col } from "react-bootstrap";
+import Category from "./Category";
+("");
 
 function About() {
   return (
@@ -221,33 +223,15 @@ function About() {
           </Card>
         </div>
         {/* Logo IBOS */}
-
-        {/* Pilar IBOS */}
-        <div
-          className="mySubMenu1"
-          style={{ marginTop: "60px", marginBottom: "30px" }}
-        >
-          <h5 style={{ margin: "auto" }}>Pengertian Pilar IBOS</h5>
-        </div>
-        <Card style={{ height: "500px", width: "1200px", marginLeft: "19vh" }}>
-          <Card.Img variant="top" style={{ width: "1200px" }} />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
       </div>
-      {/* Pilar IBOS */}
-
-      {/* Peraturan IBOS */}
       <div
-        className="mySubMenu1"
-        style={{ marginTop: "60px", marginBottom: "30px" }}
+        className="font-bold"
+        style={{ textAlign: "center", fontSize: "24px", paddingBlock: "60px" }}
       >
-        <h5 style={{ margin: "auto" }}>Peraturan IBOS</h5>
+        {" "}
+        Kategori
       </div>
+      <Category />
     </div>
   );
 }

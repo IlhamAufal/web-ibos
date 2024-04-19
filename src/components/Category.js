@@ -1,25 +1,58 @@
-// import React from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-// import Row from 'react-bootstrap/Row';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import imgIbadah from "../asset/bannerIbadah.svg";
+import imgOlahraga from "../asset/bannerOlahraga.svg";
+import imgSosial from "../asset/bannerSosial.svg";
+import imgBudaya from "../asset/bannerBudaya.svg";
 
-// function Category() {
-//     return (
-//       <div className='height-100vh'>
-//       <Row className='d-flex justify-content-center align-items-center height-100vh'>
-//       <Card style={{ width: '18rem', margin: '10px' }}>
-//           <div className='bg-dark'><div className='p-2 m-1 text-white'>
-//           <Card.Body>
-//             <Card.Title>Hidangan Utama</Card.Title>
-//             <Card.Text>
-//             Some quick example text for the second card.
-//             </Card.Text>
-//             <Button variant="primary">Lihat Menu</Button>
-//           </Card.Body>
-//           </div></div>
-//         </Card>
-//       </Row></div>
-//     );
-//   }
+function Category() {
+  const navigate = useNavigate();
+  return (
+    <Container className="container-category mb-4">
+      <Row>
+        <Col xs={3}>
+          <a href="#" className="flex" onClick={() => navigate("/news")}>
+            <div className="masked-image-overlay">
+              <div className="centered-text">IBADAH</div>{" "}
+            </div>
+          </a>
 
-// export default Category;
+          <img className="masked-image" src={imgIbadah} />
+        </Col>
+        <Col xs={3}>
+          <a href="#" className="flex" onClick={() => navigate("/news")}>
+            <div className="masked-image-overlay">
+              <div className="centered-text">BUDAYA</div>{" "}
+            </div>
+          </a>
+
+          <img className="masked-image" src={imgBudaya} />
+        </Col>
+        <Col xs={3}>
+          <a href="#" className="flex" onClick={() => navigate("/news")}>
+            <div className="masked-image-overlay">
+              <div className="centered-text">OLAHRAGA</div>{" "}
+            </div>
+          </a>
+
+          <img className="masked-image" src={imgOlahraga} />
+        </Col>
+        <Col xs={3}>
+          <a href="#" className="flex" onClick={() => navigate("/news")}>
+            <div className="masked-image-overlay">
+              <div className="centered-text">SOSIAL</div>{" "}
+            </div>
+          </a>
+
+          <img className="masked-image" src={imgSosial} />
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default Category;

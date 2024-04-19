@@ -165,3 +165,42 @@
   /* margin-right: 300px;
   margin-top: 50px; */
 }
+
+.container-category {
+  width: 200px; /* Atur ukuran container */
+  height: 200px;
+  overflow: hidden; /* Sembunyikan bagian gambar yang berlebihan */
+  position: relative; /* Tetapkan posisi relatif untuk elemen anak */
+}
+
+.masked-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Objek gambar ditampilkan dengan proporsi yang benar */
+  z-index: 2; /* Atur z-index agar gambar berada di atas overlay */
+}
+
+.masked-image-overlay {
+  position: absolute;
+  width: 23.2%;
+  height: 200px;
+  color: white;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.masked-image-overlay:hover {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.centered-text {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30%;
+  opacity: 0; /* Atur opacity menjadi 0 secara default */
+  transition: opacity 0.3s ease; /* Tambahkan transisi pada opacity */
+}
+
+.masked-image-overlay:hover .centered-text {
+  opacity: 1; /* Atur opacity menjadi 1 saat dihover */
+}

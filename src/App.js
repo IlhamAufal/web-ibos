@@ -4,18 +4,16 @@ import "./App.css";
 import "./style/landingpage.css";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
-import About from "./components/About";
-// import Cursor from './components/Cursor';
 import LandingPage from "./pages/landingpage";
 import NewsPage from "./pages/newsPage";
-import UploadNews from "./pages/uploadNews.js";
-import IbadahPage from "./pages/ibadahpage";
-// import NotFoundPage from './pages/NotFoundPage';
+import UploadNews from "./pages/uploadNews";
+import IbadahPage from "./pages/IbadahPage";
+import OlahragaPage from "./pages/OlahragaPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
     <div className="poppins">
-      {/* <Cursor/> */}
       <div>
         <NavigationBar />
       </div>
@@ -25,7 +23,8 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/uploadnews" element={<UploadNews />} />
           <Route path="/ibadah" element={<IbadahPage />} />
-          {/* <Route path='*' element={<NotFoundPage />} /> */}
+          <Route path="/olahraga" element={<OlahragaPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
       <div className="myFooter">
