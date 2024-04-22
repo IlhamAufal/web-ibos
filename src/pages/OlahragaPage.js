@@ -7,7 +7,7 @@ const IbadahPage = () => {
   return (
     <div>
       <BannerOlahraga />
-      <CabangOlahraga/>
+      <CabangOlahraga />
       {/* <Documentation /> */}
     </div>
   );

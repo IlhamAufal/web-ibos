@@ -166,13 +166,19 @@ function About() {
           >
             <Card.Img variant="top" src={logo1} />
             <Card.Body style={{ background: "red", color: "white" }}>
-              <Card.Title style={{marginBottom:'10px'}}>
+              <Card.Title style={{ marginBottom: "10px" }}>
                 <b>Para Insan Telkomsel</b>
               </Card.Title>
-              <Card.Text style={{ fontSize: "13px", paddingBottom: "20px", textAlign:'justify'}}>
-                Melambangkan makna kesatuan, kegembiraan, kesehatan, dan saling peduli
-                terhadap sesama yang sejalan dengan semangat Living AKHLAK thru
-                Telkomsel DigiLife ACTION
+              <Card.Text
+                style={{
+                  fontSize: "13px",
+                  paddingBottom: "20px",
+                  textAlign: "justify",
+                }}
+              >
+                Melambangkan makna kesatuan, kegembiraan, kesehatan, dan saling
+                peduli terhadap sesama yang sejalan dengan semangat Living
+                AKHLAK thru Telkomsel DigiLife ACTION
               </Card.Text>
             </Card.Body>
           </Card>
@@ -188,14 +194,14 @@ function About() {
           >
             <Card.Img variant="top" src={logo2} style={{ height: "188px" }} />
             <Card.Body style={{ background: "red", color: "white" }}>
-              <Card.Title style={{marginBottom:'10px'}}>
+              <Card.Title style={{ marginBottom: "10px" }}>
                 <b>Siluet Portal Telkomsel</b>
               </Card.Title>
-              <Card.Text style={{ fontSize: "13px",textAlign:'justify'}}>
-                Berpola batik sebagai identitas budaya oleh bangsa Indonesia yang
-                melambangkan optimisme terhadap masa depan yang lebih baik dan
-                portal melambangkan Telkomsel siap membuka peluang untuk semua
-                lini kehidupan
+              <Card.Text style={{ fontSize: "13px", textAlign: "justify" }}>
+                Berpola batik sebagai identitas budaya oleh bangsa Indonesia
+                yang melambangkan optimisme terhadap masa depan yang lebih baik
+                dan portal melambangkan Telkomsel siap membuka peluang untuk
+                semua lini kehidupan
               </Card.Text>
             </Card.Body>
           </Card>
@@ -211,10 +217,16 @@ function About() {
           >
             <Card.Img variant="top" src={logo3} />
             <Card.Body style={{ background: "red", color: "white" }}>
-              <Card.Title style={{marginBottom:'10px'}}>
+              <Card.Title style={{ marginBottom: "10px" }}>
                 <b>Tanda Centang</b>
               </Card.Title>
-              <Card.Text style={{ fontSize: "13px", paddingBottom: "20px", textAlign:'justify'}}>
+              <Card.Text
+                style={{
+                  fontSize: "13px",
+                  paddingBottom: "20px",
+                  textAlign: "justify",
+                }}
+              >
                 Pengejawantahan semangat untuk mencapai visi IBOS ”Menuju Insan
                 Telkomsel paripurna yang beriman dan bertaqwa, berakhlak mulia,
                 sehat jasmani, dan peduli”
@@ -226,7 +238,12 @@ function About() {
       </div>
       <div
         className="font-bold"
-        style={{ textAlign: "center", fontSize: "24px", paddingBlock: "70px", marginTop:'40px' }}
+        style={{
+          textAlign: "center",
+          fontSize: "24px",
+          paddingBlock: "70px",
+          marginTop: "40px",
+        }}
       >
         {" "}
         Kategori

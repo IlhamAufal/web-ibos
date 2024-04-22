@@ -1,6 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import banner from "../asset/bannerIbadah.svg";
+import banner from "../asset/bannerBudaya.png";
 import "../style/landingpage.css";
 
 const BannerIbadah = () => {
@@ -27,7 +26,7 @@ const BannerIbadah = () => {
           }}
         >
           <h1 className="title" style={{ letterSpacing: "10px" }}>
-            IBADAH
+            BUDAYA
           </h1>
         </div>
       </div>
