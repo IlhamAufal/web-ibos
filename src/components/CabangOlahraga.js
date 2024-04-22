@@ -13,6 +13,8 @@ import TenisMeja from "../asset/iconCabang/Tenis table.svg"
 import Tennis from "../asset/iconCabang/Tennis.svg"
 import Volley from "../asset/iconCabang/Volley.svg"
 import Yoga from "../asset/iconCabang/Yoga.svg"
+import imgBasket from "../asset/imgBasket.png"
+import { Col, Container, Row } from "react-bootstrap";
 
 // const svgs = {
 //     Aerobik: require("../asset/banner1.svg"),
@@ -71,6 +73,56 @@ const CabangOlahraga = () =>{
             <button style={{marginInline:'10px'}}>
                 <img src={Yoga} style={{height:'80px'}}/>
             </button>
+        </div>
+
+{/* Rincian Tiap Cabang */}
+
+        <div style={{backgroundColor:'#FED4A6', marginBlock:'50px', padding:'20px 0 40px 0' }}>
+            <div className="mySubMenu1" style={{fontSize:'20px'}}>Rincian Tiap Cabang</div>
+            <Container style={{ marginBlock: '40px', position: 'relative' }}>
+            <Row>
+  <Col className="col-3">
+    <div className="redBackground"></div>
+    <div style={{ position: 'relative', zIndex: '2', margin: '0 0 40px 30px' }}>
+      <img src={imgBasket} className="radiusImg" />
+    </div>
+  </Col>
+  <Col>
+  <h4 style={{ textAlign: 'left', fontWeight: 'bold' }}>Basket</h4>
+<div className="textBoxAbuabu">
+  Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in tellus libero porttitor viverra nisi. Nunc nunc vestibulum suspendisse ultricies etiam elementum netus. Iaculis consequat amet hac quis purus arcu ligula. Sapien augue congue tincidunt risus leo scelerisque. A cursus tortor auctor non in sem scelerisque integer. Turpis enim est ut massa. Tortor mi lobortis maecenas phasellus. Semper ut.
+</div>
+  </Col>
+</Row>
+</Container>
+    <Container style={{ marginBlock: '40px', position: 'relative' }}>
+            <Row>
+  <Col>
+  <h4 style={{ textAlign: 'right', fontWeight: 'bold', marginRight:'10px'}}>Basket</h4>
+<div className="textBoxAbuabu">
+  Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in tellus libero porttitor viverra nisi. Nunc nunc vestibulum suspendisse ultricies etiam elementum netus. Iaculis consequat amet hac quis purus arcu ligula. Sapien augue congue tincidunt risus leo scelerisque. A cursus tortor auctor non in sem scelerisque integer. Turpis enim est ut massa. Tortor mi lobortis maecenas phasellus. Semper ut.
+</div>
+  </Col>
+  <Col className="col-3">
+    <div style={{backgroundColor: 'red',
+  width: '150px',
+  height: '200px',
+  borderRadius: '50px 0 0 50px',
+  position: 'absolute',
+  zIndex: '1',
+  paddingLeft:'15%',
+  marginLeft:'5%'}}></div>
+    <div style={{ position: 'relative', zIndex: '2', margin: '20px 0 40px 30px' }}>
+      <img src={imgBasket}  style={{borderRadius: '0 50px 0 50px 0',
+  position: 'relative',
+  width: '200px',
+  height: '200px'}}/>
+    </div>
+  </Col>
+</Row>
+</Container>
+
+
         </div>
       </div>
     )

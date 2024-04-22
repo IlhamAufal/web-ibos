@@ -175,11 +175,18 @@
 
 .masked-image-overlay {
   position: absolute;
-  width: 23.2%;
+  width: 20.8%;
   height: 200px;
   color: white;
   transition: background-color 0.3s;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .masked-image-overlay {
+    width: 100%; /* Lebar penuh saat di bawah lebar layar 768px */
+    height: auto; /* Tinggi otomatis agar sesuai perbandingan lebar */
+  }
 }
 
 .masked-image-overlay:hover {
