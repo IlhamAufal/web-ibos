@@ -1,37 +1,43 @@
 import React from "react";
-import banner from "../asset/bannerBudaya.png";
+import { Container } from "react-bootstrap";
+import banner from "../asset/bannerOlahraga.svg";
 import "../style/landingpage.css";
 
-const BannerIbadah = () => {
+const BannerOlahraga = () => {
   return (
-    <div className="intro position-relative">
+    <div
+      className="intro position-relative"
+      style={{ marginBottom: "135px", marginTop: "100px" }}>
       <div className="relative h-screen">
-        <img
-          className="d-block w-auto h-80 "
-          src={banner}
-          style={{
-            marginTop: "75px",
-            height: "780px",
-            width: "1400px",
-            zIndex: 2,
-          }}
-        />
         <div
           className="position-absolute text-overlay"
           style={{
-            marginLeft: "45%",
+            color: "white",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
             textAlign: "center",
             zIndex: 1,
-            top: "60%",
           }}
         >
           <h1 className="title" style={{ letterSpacing: "10px" }}>
             BUDAYA
           </h1>
         </div>
+        <img
+          className="d-block w-auto"
+          src={banner}
+          style={{
+            marginTop: "75px",
+            height: "620px",
+            width: "1400px",
+            objectFit: "cover",
+            zIndex: 2
+          }}
+        />
       </div>
     </div>
   );
 };
 
-export default BannerIbadah;
+export default BannerOlahraga;

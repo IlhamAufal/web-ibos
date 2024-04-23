@@ -1,6 +1,7 @@
 import React from "react";
 import BannerCommunity from "../components/bannerCommunity";
 import PendaftaranAnggota from "../components/PendaftaranAnggota";
+import PendaftaranKomunitas from "../components/PendaftaranKomunitas";
 import atlet from "../asset/Photo atlet jamaah.svg";
 import Documentation from "../components/Documentation";
 import { Col, Container } from "react-bootstrap";
@@ -36,6 +37,7 @@ const CommunityPage = () => {
             <div style={{ fontWeight: "bold", fontSize: "35px" }}>
               Kenapa Harus Gabung?
             </div>
+            <div style={{fontSize:'12px', maxWidth:'80%'}}>
             Lorem ipsum dolor sit amet consectetur. Curabitur sit enim in
             vulputate faucibus suspendisse sit. Vulputate eros nulla rutrum
             felis quam. Nulla elit elit ut ut eros ac velit. Et consequat massa
@@ -51,6 +53,7 @@ const CommunityPage = () => {
             id. Feugiat ut nibh tellus congue eget. A a sit pretium sed sit
             blandit blandit feugiat eget. Risus senectus tellus auctor ante
             tempor scelerisque diam tellus pulvinar.
+            </div>
           </div>
         </div>
         <div style={{ position: "relative", zIndex: "2" }}>
@@ -59,6 +62,8 @@ const CommunityPage = () => {
       </div>
 
       <PendaftaranAnggota/>
+      <PendaftaranKomunitas/>
+      
 
       {/* <Documentation /> */}
     </div>

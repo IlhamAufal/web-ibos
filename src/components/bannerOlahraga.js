@@ -7,8 +7,7 @@ const BannerOlahraga = () => {
   return (
     <div
       className="intro position-relative"
-      style={{ marginBottom: "180px", marginTop: "100px" }}
-    >
+      style={{ marginBottom: "180px", marginTop: "100px" }}>
       <div className="relative h-screen">
         <div
           className="position-absolute text-overlay"
@@ -21,7 +20,7 @@ const BannerOlahraga = () => {
             zIndex: 1,
           }}
         >
-          <h1 className="overlay" style={{ letterSpacing: "10px" }}>
+          <h1 className="title" style={{ letterSpacing: "10px" }}>
             OLAHRAGA
           </h1>
         </div>
@@ -33,7 +32,7 @@ const BannerOlahraga = () => {
             height: "620px",
             width: "1400px",
             objectFit: "cover",
-            zIndex: 2,
+            zIndex: 2
           }}
         />
       </div>
