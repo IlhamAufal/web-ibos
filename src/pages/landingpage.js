@@ -19,7 +19,9 @@ const Landing = () => {
           <h5 className="myAbout">
             <b>Tentang IBOS</b>
           </h5>
-          <About />
+          <div>
+            <About />
+          </div>
         </div>
         <div className="customSpacing"></div>
       </div>

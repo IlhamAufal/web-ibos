@@ -7,43 +7,66 @@ import logo2 from "../asset/logo2.png";
 import logo3 from "../asset/logo3.png";
 import { Container, Row, Col } from "react-bootstrap";
 import Category from "./Category";
+import pfp from "../asset/pfp.svg";
 ("");
 
 function About() {
   return (
-    <div>
+    <div style={{ marginBlock: "40px" }}>
       <div
         style={{
           display: "flex",
-          marginTop: "25px",
-          marginBottom: "25px",
           justifyContent: "center",
         }}
       >
-        <div>
-          <h3 style={{ color: "red", marginTop: "50px", marginRight: "300px" }}>
-            Definisi IBOS
-          </h3>
-        </div>
-        <Card
-          style={{
-            width: "610px",
-            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
-          }}
-        >
-          <Card.Body>
-            <Card.Title>
-              <b>Card Title</b>
-            </Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-              Card Subtitle
-            </Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+        <Container>
+          <Row>
+            <Col className="col-6">
+              <div
+                style={{
+                  color: "red",
+                  margin: "30px 0 0 30%",
+                  textAlign: "left",
+                }}
+              >
+                <h3 style={{ fontWeight: "bold" }}>
+                  Definisi
+                  <div
+                    style={{
+                      letterSpacing: "5px",
+                      fontSize: "45px",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    IBOS
+                  </div>
+                </h3>
+              </div>
+            </Col>
+            <Col>
+              <Card
+                style={{
+                  width: "610px",
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
+                }}
+              >
+                <Card.Body>
+                  <Card.Title>
+                    <b>Card Title</b>
+                  </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    Card Subtitle
+                  </Card.Subtitle>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <div
         style={{
@@ -53,29 +76,55 @@ function About() {
           justifyContent: "center",
         }}
       >
-        <div>
-          <Card
-            style={{
-              width: "610px",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
-              marginRight: "140px",
-            }}
-          >
-            <Card.Body>
-              <Card.Title>
-                <b>Card Title</b>
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                Card Subtitle
-              </Card.Subtitle>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-        <h3 className="subAbout font-bold">Definisi IBOS</h3>
+        <Container>
+          <Row>
+            <Col>
+              <Card
+                style={{
+                  width: "610px",
+                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
+                  marginLeft: "5%",
+                }}
+              >
+                <Card.Body>
+                  <Card.Title>
+                    <b>Card Title</b>
+                  </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    Card Subtitle
+                  </Card.Subtitle>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="col-6">
+              <div
+                style={{
+                  color: "red",
+                  margin: "30px 0 0 30%",
+                  textAlign: "left",
+                }}
+              >
+                <h3 style={{ fontWeight: "bold" }}>
+                  Definisi
+                  <div
+                    style={{
+                      letterSpacing: "5px",
+                      fontSize: "45px",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    IBOS
+                  </div>
+                </h3>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       <div
@@ -101,42 +150,53 @@ function About() {
           }}
         >
           <img
-            src={logoo}
+            src={pfp}
             className="image"
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
               borderRadius: "50%",
+              zIndex: "2",
             }}
           />
-          <div
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              zIndex: "2",
-              background: "black",
-              borderRadius: "5px",
-              padding: "5px 20px",
-            }}
-          >
-            <h5 style={{ color: "white", margin: "0" }}>Test</h5>
-          </div>
         </div>
+        <div
+          style={{
+            position: "relative",
+            transform: "translateX(calc(-167% - 10px))",
+            zIndex: "1",
+            background: "black",
+            borderRadius: "5px",
+            padding: "10px",
+            height: "40px",
+            top: "79%",
+          }}
+        >
+          <h5 style={{ color: "white" }}>Name</h5>
+        </div>
+
         <p
           style={{
             color: "white",
-            marginLeft: "40px",
+            marginLeft: "20px",
             justifyContent: "center",
             display: "flex",
             flexDirection: "column",
             height: "100%",
+            maxWidth: "60%",
             alignItems: "center",
+            textAlign: "justify",
           }}
         >
-          Nulla vitae elit libero, a pharetra augue mollis interdum.
+          “Lorem ipsum dolor sit amet consectetur. Risus cras risus nec vel eu
+          amet scelerisque malesuada curabitur. Sed senectus natoque feugiat
+          odio. Purus eget amet bibendum ornare. Auctor lacinia enim cursus
+          donec nibh posuere enim auctor ac. Ultricies faucibus ut dignissim
+          convallis vitae. Tellus tellus quisque purus proin elementum massa.
+          Hac mi enim pellentesque ridiculus in maecenas sem fermentum sit.
+          Turpis parturient ut dignissim eu. Ultrices interdum commodo tristique
+          risus. Non hendrerit accumsan sed urna.”
         </p>
       </div>
 

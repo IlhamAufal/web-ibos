@@ -48,7 +48,7 @@
   height: 8vh;
   justify-content: center;
   align-items: center;
-  background: rgba(128, 128, 128, 0.519);
+  background: #d9d9d9;
   color: black;
 }
 
@@ -175,18 +175,11 @@
 
 .masked-image-overlay {
   position: absolute;
-  width: 20.8%;
+  width: 20.1%;
   height: 200px;
   color: white;
   transition: background-color 0.3s;
   z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .masked-image-overlay {
-    width: 100%; /* Lebar penuh saat di bawah lebar layar 768px */
-    height: auto; /* Tinggi otomatis agar sesuai perbandingan lebar */
-  }
 }
 
 .masked-image-overlay:hover {
