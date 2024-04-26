@@ -1,7 +1,7 @@
 import React from "react";
-import MyCarousel from "../components/MyCarousel";
-import BoxNews from "../components/BoxNews";
-import About from "../components/About";
+import MyCarousel from "../LandingPage/MyCarousel";
+import BoxNews from "../LandingPage/BoxNews";
+import About from "../LandingPage/About";
 import "../style/landingpage.css";
 
 const Landing = () => {
@@ -19,9 +19,7 @@ const Landing = () => {
           <h5 className="myAbout">
             <b>Tentang IBOS</b>
           </h5>
-          <div>
-            <About />
-          </div>
+          <About />
         </div>
         <div className="customSpacing"></div>
       </div>

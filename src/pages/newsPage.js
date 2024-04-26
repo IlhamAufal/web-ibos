@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/landingpage.css";
-import "../style/newspage.css";
-import RealNews from "../components/RealNews";
-import RelatedNews from "../components/RelatedNews";
+import "../NewsPage/newspage.css";
+import RealNews from "../NewsPage/RealNews";
+import RelatedNews from "../NewsPage/RelatedNews";
 import { useNavigate } from "react-router-dom";
 
 const NewsPage = () => {

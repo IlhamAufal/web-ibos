@@ -1,6 +1,6 @@
 import React from "react";
-import UploadImage from "../components/uploadImage";
-import InputNewsDetail from "../components/InputNewsDetail";
+import UploadImage from "../UploadNews/uploadImage";
+import InputNewsDetail from "../UploadNews/InputNewsDetail";
 import "../style/landingpage.css";
 import { Container } from "react-bootstrap";
 

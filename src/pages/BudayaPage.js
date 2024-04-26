@@ -1,8 +1,8 @@
 import React from "react";
-import BannerBudaya from "../components/bannerBudaya";
+import BannerBudaya from "../BudayaPage/bannerBudaya";
 import Documentation from "../components/Documentation";
 import { Container, Row, Col } from "react-bootstrap";
-import imgBasket from "../asset/imgBasket.png";
+import imgBasket from "../OlahragaPage/asset/imgBasket.png";
 
 const BudayaPage = () => {
   return (

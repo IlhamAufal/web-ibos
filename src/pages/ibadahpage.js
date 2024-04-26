@@ -1,5 +1,5 @@
 import React from "react";
-import BannerIbadah from "../components/bannerIbadah";
+import BannerIbadah from "../IbadahPage/bannerIbadah";
 import Documentation from "../components/Documentation";
 
 const IbadahPage = () => {

@@ -1,0 +1,101 @@
+.myNewsCategory {
+  display: flex;
+  height: 23px;
+  width: 85px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.container-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.redBox {
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 70px;
+  padding-left: 100%;
+  width: 1122px;
+  display: flex;
+  height: 8vh;
+  background: red;
+  border-radius: 0 0 40px 0;
+}
+
+.line {
+  margin-top: 75px;
+  margin-right: auto;
+  width: 10px;
+  display: flex;
+  height: 2000px;
+  /* max-height: auto; */
+  background: black;
+}
+
+.redCircle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+}
+
+.relatedNews {
+  display: flex;
+  height: 4vh;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miniNews {
+  padding-left: 10px;
+  display: flex;
+  margin-top: 10px;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+}
+.miniNews :hover {
+  background-color: rgb(196, 196, 196);
+  border-radius: 0px;
+}
+
+.tulisArtikel {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 25px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid white;
+  z-index: 3;
+}
+.tulisArtikel:hover {
+  background: white;
+  border-color: red;
+  color: red;
+  font-weight: bold;
+}
+
+.redBoxDown {
+  margin: auto;
+  padding-top: 100px;
+  width: 1500px;
+  display: flex;
+  height: 8vh;
+  background: red;
+  border-radius: 40px 40px 0 0;
+  z-index: 2;
+}

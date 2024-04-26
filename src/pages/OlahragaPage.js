@@ -1,7 +1,6 @@
 import React from "react";
-import Documentation from "../components/Documentation";
-import CabangOlahraga from "../components/CabangOlahraga";
-import BannerOlahraga from "../components/bannerOlahraga";
+import CabangOlahraga from "../OlahragaPage/CabangOlahraga";
+import BannerOlahraga from "../OlahragaPage/bannerOlahraga";
 
 const IbadahPage = () => {
   return (

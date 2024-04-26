@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import imgMask from "../asset/IBOS profile poster.png";
+import imgMask from "../KomunitasPage/asset/IBOS profile poster.png";
 
 const MaskedContainer = ({ children }) => {
   return (
