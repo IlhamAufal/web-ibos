@@ -50,7 +50,16 @@ const Form = () => {
     return (
         <>
             <div className="container">
-                <div className="card">
+            <div style={{
+    height: '380px',
+    width: '350px',
+    backgroundColor: '#fff',
+    position: 'relative',
+    boxShadow: '0 15px 30px rgba(0, 0, 0, 0.1)',
+    borderRadius: '10px',
+    padding: '20px'
+}}>
+
                     <div className="text">
                         <h3>Welcome Back</h3>
                         <p>Enter your credentials to access your account.</p>

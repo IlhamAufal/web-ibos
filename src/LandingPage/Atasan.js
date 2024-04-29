@@ -1,7 +1,10 @@
 import React from "react";
-import './landingpage.css'; // Pastikan path ke file CSS benar
+import './landingpage.css';
 import { Container,Row, Col } from "react-bootstrap";
-import pfp1 from "./asset/pfp1.svg"; // Perbaiki sintaks import
+import pfp1 from "./asset/pfp1.svg";
+import pfp2 from "./asset/pfp2.svg";
+import pfp3 from "./asset/pfp3.svg";
+import pfp4 from "./asset/pfp4.svg";
 
 const Atasan = () => {
     return (
@@ -13,15 +16,15 @@ const Atasan = () => {
             <div className="font-bold" style={{ color: 'white' }}>Name</div>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto'}}>
-            <img src={pfp1} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
+            <img src={pfp2} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
             <div className="font-bold" style={{ color: 'white' }}>Name</div>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto' }}>
-            <img src={pfp1} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
+            <img src={pfp3} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
             <div className="font-bold" style={{ color: 'white' }}>Name</div>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto' }}>
-            <img src={pfp1} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
+            <img src={pfp4} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
             <div className="font-bold" style={{ color: 'white' }}>Name</div>
         </Col>
     </Row>
