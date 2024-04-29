@@ -12,6 +12,7 @@ import OlahragaPage from "./pages/OlahragaPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BudayaPage from "./pages/BudayaPage";
 import KomunitasPage from "./pages/KomunitasPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/uploadnews" element={<UploadNews />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
           <Route path="/ibadah" element={<IbadahPage />} />
           <Route path="/olahraga" element={<OlahragaPage />} />

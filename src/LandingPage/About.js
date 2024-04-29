@@ -24,21 +24,14 @@ function About() {
                   color: "red",
                   margin: "30px 0 0 30%",
                   textAlign: "left",
-                }}
-              >
-                <h3 style={{ fontWeight: "bold" }}>
-                  Definisi
-                  <div
-                    style={{
-                      letterSpacing: "5px",
+                }}>
+                <div style={{
                       fontSize: "45px",
                       justifyContent: "center",
                       fontWeight: "bold",
-                    }}
-                  >
-                    IBOS
-                  </div>
-                </h3>
+                    }}>
+                  Apa itu IBOS ?
+                </div>
               </div>
             </Col>
             <Col>
@@ -105,19 +98,13 @@ function About() {
                   textAlign: "left",
                 }}
               >
-                <h3 style={{ fontWeight: "bold" }}>
-                  Definisi
-                  <div
-                    style={{
-                      letterSpacing: "5px",
+                <div style={{
                       fontSize: "45px",
                       justifyContent: "center",
                       fontWeight: "bold",
-                    }}
-                  >
-                    IBOS
-                  </div>
-                </h3>
+                    }}>
+                  Apa itu IBOS ?
+                </div>
               </div>
             </Col>
           </Row>

@@ -3,6 +3,7 @@ import MyCarousel from "../LandingPage/MyCarousel";
 import BoxNews from "../LandingPage/BoxNews";
 import About from "../LandingPage/About";
 import Category from "../LandingPage/Category";
+import Atasan from "../LandingPage/Atasan";
 
 const Landing = () => {
   return (
@@ -23,6 +24,7 @@ const Landing = () => {
         </div>
         <div className="customSpacing"></div>
         <Category />
+        <Atasan/>
       </div>
     </div>
   );
