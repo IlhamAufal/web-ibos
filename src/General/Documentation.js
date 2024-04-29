@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import "../style/landingpage.css";
 
 const Documentation = () => {
   const navigate = useNavigate();

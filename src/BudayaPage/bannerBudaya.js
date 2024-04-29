@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "./asset/bannerBudaya.svg";
-import "../style/landingpage.css";
+import "./budayaStyle.css";
 
 const BannerBudaya = () => {
   return (

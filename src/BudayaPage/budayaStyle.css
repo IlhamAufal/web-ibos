@@ -1,9 +1,3 @@
-.myNB {
-  background: black;
-  /* width: 207.7vh;
-    margin-left: 5.4vh; */
-}
-
 .myButton {
   color: white;
   border-color: white;
@@ -15,7 +9,6 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .myButton:hover {
   background: white;
   border-color: black;
@@ -69,11 +62,14 @@
 .myAbout {
   display: flex;
   justify-content: center;
-  padding-block: 40px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
   height: 100px;
   width: 1240px;
-  color: red;
+  background: red;
+  color: white;
   border-radius: 10px;
 }
 

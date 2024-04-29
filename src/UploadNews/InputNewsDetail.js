@@ -124,10 +124,8 @@ const InputNewsDetail = () => {
         <button
           className="myButton"
           style={{
-            marginLeft: "50%",
-            marginTop: "50px",
-            paddingLeft: "40px",
-            paddingRight: "40px",
+            margin:'80px 50% 0 50%',
+            paddingInline:'40px'
           }}
         >
           Unggah

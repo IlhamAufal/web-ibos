@@ -1,18 +1,15 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import logoo from "./asset/IBOS profile poster.png";
 import logo1 from "./asset/logo1.png";
 import logo2 from "./asset/logo2.png";
 import logo3 from "./asset/logo3.png";
 import { Container, Row, Col } from "react-bootstrap";
-import Category from "./Category";
 import pfp from "./asset/pfp.svg";
-("");
+import './landingpage.css';
 
 function About() {
   return (
-    <div style={{ marginBlock: "40px" }}>
+    <div style={{ marginTop: "40px" }}>
       <div
         style={{
           display: "flex",
@@ -308,7 +305,6 @@ function About() {
         {" "}
         Kategori
       </div>
-      <Category />
     </div>
   );
 }

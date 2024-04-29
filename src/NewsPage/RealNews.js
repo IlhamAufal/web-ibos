@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "../NewsPage/newspage.css";
+import "./newsStyle.css";
 import newsimg from "./asset/percobaanNews.svg";
 import pfp from "./asset/pfp.svg";
 import iconX from "../asset/icon-twitter.png";

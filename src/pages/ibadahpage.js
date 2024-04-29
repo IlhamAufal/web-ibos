@@ -1,6 +1,6 @@
 import React from "react";
 import BannerIbadah from "../IbadahPage/bannerIbadah";
-import Documentation from "../components/Documentation";
+import Documentation from "../General/Documentation";
 
 const IbadahPage = () => {
   return (

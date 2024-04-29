@@ -1,7 +1,7 @@
 import React from "react";
 import UploadImage from "../UploadNews/uploadImage";
 import InputNewsDetail from "../UploadNews/InputNewsDetail";
-import "../style/landingpage.css";
+import "../UploadNews/UNStyle.css";
 import { Container } from "react-bootstrap";
 
 const uploadNews = () => {
@@ -11,7 +11,7 @@ const uploadNews = () => {
         className="mySubMenu1"
         style={{ height: "40px", width: "1000px", marginTop: "100px" }}
       >
-        <h5>Unggah Berita Baru</h5>
+        <h5 style={{marginBlock:'auto'}}>Unggah Berita Baru</h5>
       </div>
       <Container>
         <label

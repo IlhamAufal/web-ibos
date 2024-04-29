@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "./asset/IBOS profile poster.png";
-import "../style/landingpage.css";
-import MaskedContainer from "../components/MaskedContainer"; // Sesuaikan dengan path komponen MaskedContainer Anda
+import "./komunitasStyle.css";
+import MaskedContainer from "../General/MaskedContainer"; // Sesuaikan dengan path komponen MaskedContainer Anda
 
 const BannerIbadah = () => {
   return (

@@ -1,0 +1,38 @@
+.myButton {
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 20px;
+  background: black;
+  background-size: cover;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.myButton:hover {
+  background: white;
+  border-color: black;
+  color: black;
+}
+
+.mySubMenu1 {
+  height: auto;
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.myAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 1240px;
+  background: rgba(255, 0, 0, 0.592);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}

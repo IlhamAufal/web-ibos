@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "./asset/bannerIbadah.svg";
-import "../style/landingpage.css";
+import "./ibadahStyle.css";
 
 const BannerIbadah = () => {
   return (

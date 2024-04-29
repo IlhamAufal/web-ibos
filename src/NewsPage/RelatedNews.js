@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import thumbnail from "../NewsPage/asset/thumbnail-news.png";
-import "../NewsPage/newspage.css";
+import thumbnail from "./asset/thumbnail-news.png";
+import "./newsStyle.css";
 
 const RelatedNews = () => {
   return (
@@ -20,7 +20,7 @@ const RelatedNews = () => {
             <Container>
               <div class="overflow-hidden">
                 <div className="relatedNews">Related News</div>
-                <Container>
+                <Col>
                   <div className="miniNews">
                     <a
                       href="#"
@@ -39,8 +39,8 @@ const RelatedNews = () => {
                       </div>
                     </a>
                   </div>
-                </Container>
-                <Container>
+                </Col>
+                <Col>
                   <div className="miniNews">
                     <a
                       href="#"
@@ -59,8 +59,8 @@ const RelatedNews = () => {
                       </div>
                     </a>
                   </div>
-                </Container>
-                <Container>
+                </Col>
+                <Col>
                   <div className="miniNews">
                     <a
                       href="#"
@@ -79,8 +79,8 @@ const RelatedNews = () => {
                       </div>
                     </a>
                   </div>
-                </Container>
-                <Container>
+                </Col>
+                <Col>
                   <div className="miniNews">
                     <a
                       href="#"
@@ -99,8 +99,8 @@ const RelatedNews = () => {
                       </div>
                     </a>
                   </div>
-                </Container>
-                <Container>
+                </Col>
+                <Col>
                   <div className="miniNews">
                     <a
                       href="#"
@@ -119,7 +119,7 @@ const RelatedNews = () => {
                       </div>
                     </a>
                   </div>
-                </Container>
+                </Col>
               </div>
             </Container>
           </div>

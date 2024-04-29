@@ -40,13 +40,13 @@ const RincianAnggota = () => {
           />
         </Col>
         <Col>
+          <div className="form-group font-bold" style={{ marginBottom: "50px" }}>
           <label htmlFor="exampleFormControlInput1">Jenis Kelamin</label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Jenis Kelamin Karyawan"
-          />
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Pria</option>
+            <option>Wanita</option>
+          </select>
+        </div>
         </Col>
       </Row>
       <Row style={{ width: "250%", marginBlock: "20px" }}>

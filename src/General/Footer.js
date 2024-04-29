@@ -5,7 +5,7 @@ import iconX from "../asset/icon-twitter.png";
 import iconFB from "../asset/icon-facebook.png";
 import iconIG from "../asset/icon-instagram.png";
 import iconYT from "../asset/icon-youtube.png";
-import { Container } from "react-bootstrap";
+import { Container, Row ,Col} from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -13,7 +13,32 @@ const Footer = () => {
       <Container>
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src={logo} className="myFooter-img" />
-          <Container style={{ paddingRight: "100px" }}>
+          <Row style={{marginTop:'40px'}}>
+          <Col>
+            <div className="nav-group">
+              <ul>
+                <div className="link-header" style={{ whiteSpace: "nowrap" }}>
+                  <span className="header-title">
+                    <b>Support Us</b>
+                  </span>
+                </div>
+                <li className="list-item" style={{ paddingTop: "5px" }}>
+                  <a href="">Contact</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Faq</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Location</a>
+                </li>
+                <li className="list-item">
+                  <a href="">Product</a>
+                </li>
+              </ul>
+            </div>
+          </Col>
+
+          <Col>
             <div className="nav-group col-md-4 col-sm-4">
               <ul>
                 <div className="link-header" style={{ whiteSpace: "nowrap" }}>
@@ -35,37 +60,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </Container>
+          </Col>
 
-          <Container>
-            <div className="nav-group col-md-4 col-sm-4">
-              <ul>
-                <div className="link-header" style={{ whiteSpace: "nowrap" }}>
-                  <span className="header-title">
-                    <b>Support Us</b>
-                  </span>
-                </div>
-                <li className="list-item" style={{ paddingTop: "5px" }}>
-                  <a href="">Contact</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Faq</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Location</a>
-                </li>
-                <li className="list-item">
-                  <a href="">Product</a>
-                </li>
-              </ul>
-            </div>
-          </Container>
-
-          <Container>
-            <div
-              className="nav-group col-md-4 col-sm-4"
-              style={{ paddingTop: "15px" }}
-            >
+          <Col >
+            <div className="nav-group">
               <ul>
                 <div className="link-header" style={{ whiteSpace: "nowrap" }}>
                   <span className="header-title">
@@ -82,7 +80,6 @@ const Footer = () => {
                 >
                   <img
                     src={iconFB}
-                    alt="Icon"
                     style={{ marginRight: "5px", height: "28px" }}
                   />
                   <a href="#">IbosTelkom</a>
@@ -134,7 +131,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </Container>
+          </Col>
+          </Row>
         </div>
         <p style={{ marginLeft: "1200px", fontSize: "13px" }}>Powered By</p>
         <img

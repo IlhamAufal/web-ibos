@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import banner from "../OlahragaPage/asset/bannerOlahraga.svg";
-import "../style/landingpage.css";
+import "./olahragaStyle.css";
 
 const BannerOlahraga = () => {
   return (

@@ -11,6 +11,12 @@
 .container-column {
   flex: 1;
   margin-right: 20px;
+  max-width:90%;
+}
+
+.container-columnRelated {
+  margin-right: 20px;
+  max-width:90%;
 }
 
 .redBox {
@@ -70,29 +76,26 @@
   border-radius: 0px;
 }
 
-.tulisArtikel {
+.buttonTulisArtikel {
   position: absolute;
   margin-left: 50%;
   margin-top: 25px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 20px 10px 20px;
   color: white;
   border-radius: 25px;
   border: 2px solid white;
   z-index: 3;
 }
-.tulisArtikel:hover {
+.buttonTulisArtikel:hover {
   background: white;
   border-color: red;
   color: red;
-  font-weight: bold;
 }
 
 .redBoxDown {
   margin: auto;
   padding-top: 100px;
-  width: 1500px;
+  width: 100%;
   display: flex;
   height: 8vh;
   background: red;

@@ -2,7 +2,7 @@ import React from "react";
 import MyCarousel from "../LandingPage/MyCarousel";
 import BoxNews from "../LandingPage/BoxNews";
 import About from "../LandingPage/About";
-import "../style/landingpage.css";
+import Category from "../LandingPage/Category";
 
 const Landing = () => {
   return (
@@ -11,17 +11,18 @@ const Landing = () => {
         {/* <Intro /> */}
         <MyCarousel />
         <div>
-          <h5 className="mySubMenu">
-            <b>Updated News</b>
-          </h5>
+          <div className="mySubMenu font-bold" style={{fontSize:'20px'}} >
+            Updated News
+          </div>
           <BoxNews />
-          {/* <Category /> */}
-          <h5 className="myAbout">
-            <b>Tentang IBOS</b>
-          </h5>
+
+          <div className="myAbout font-bold" style={{fontSize:'45px'}}>
+            Everything about IBOS
+          </div>
           <About />
         </div>
         <div className="customSpacing"></div>
+        <Category />
       </div>
     </div>
   );

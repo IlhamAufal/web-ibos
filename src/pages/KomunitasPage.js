@@ -3,7 +3,7 @@ import BannerCommunity from "../KomunitasPage/bannerCommunity";
 import PendaftaranAnggota from "../KomunitasPage/PendaftaranAnggota";
 import PendaftaranKomunitas from "../KomunitasPage/PendaftaranKomunitas";
 import atlet from "../KomunitasPage/asset/Photo atlet jamaah.svg";
-import Documentation from "../components/Documentation";
+import Documentation from "../General/Documentation";
 import { Col, Container } from "react-bootstrap";
 
 const CommunityPage = () => {

@@ -1,0 +1,65 @@
+.myButton {
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    background: black;
+    background-size: cover;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .myButton:hover {
+    background: white;
+    border-color: black;
+    color: black;
+  }
+  
+  .myBG {
+    background: white;
+    background-size: 180vh;
+    max-height: 1000vh;
+  }
+  
+  .intro {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 100%;
+  }
+  
+  .myFooter {
+    display: flex;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .myFooter-img {
+    display: flex;
+    height: 100px;
+    margin-right: 300px;
+  }
+  
+  .list-item a {
+    display: flex;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .list-item:hover a {
+    color: rgb(255, 89, 0);
+  }

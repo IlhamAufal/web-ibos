@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import "./style/landingpage.css";
-import NavigationBar from "./components/NavigationBar";
-import Footer from "./components/Footer";
+import "./General/general.css";
+import NavigationBar from "./General/NavigationBar";
+import Footer from "./General/Footer";
 import LandingPage from "./pages/landingpage";
 import NewsPage from "./pages/newsPage";
 import UploadNews from "./pages/uploadNews";

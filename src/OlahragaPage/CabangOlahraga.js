@@ -1,18 +1,18 @@
 import React from "react";
-import "../OlahragaPage/olahragapage.css";
-import Aerobik from "../asset/iconCabang/Aerobik.svg";
-import Badminton from "../asset/iconCabang/Badminton.svg";
-import Basket from "../asset/iconCabang/Basket.svg";
-import Beladiri from "../asset/iconCabang/Beladiri.svg";
-import Catur from "../asset/iconCabang/Catur.svg";
-import Gym from "../asset/iconCabang/Gym.svg";
-import Lari from "../asset/iconCabang/Lari.svg";
-import Panahan from "../asset/iconCabang/Panahan.svg";
-import Sepakbola from "../asset/iconCabang/Sepakbola.svg";
-import TenisMeja from "../asset/iconCabang/Tenis table.svg";
-import Tennis from "../asset/iconCabang/Tennis.svg";
-import Volley from "../asset/iconCabang/Volley.svg";
-import Yoga from "../asset/iconCabang/Yoga.svg";
+import "../OlahragaPage/olahragaStyle.css";
+import Aerobik from "./asset/iconCabang/Aerobik.svg";
+import Badminton from "./asset/iconCabang/Badminton.svg";
+import Basket from "./asset/iconCabang/Basket.svg";
+import Beladiri from "./asset/iconCabang/Beladiri.svg";
+import Catur from "./asset/iconCabang/Catur.svg";
+import Gym from "./asset/iconCabang/Gym.svg";
+import Lari from "./asset/iconCabang/Lari.svg";
+import Panahan from "./asset/iconCabang/Panahan.svg";
+import Sepakbola from "./asset/iconCabang/Sepakbola.svg";
+import TenisMeja from "./asset/iconCabang/Tenis table.svg";
+import Tennis from "./asset/iconCabang/Tennis.svg";
+import Volley from "./asset/iconCabang/Volley.svg";
+import Yoga from "./asset/iconCabang/Yoga.svg";
 import imgBasket from "../OlahragaPage/asset/imgBasket.png";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -29,50 +29,64 @@ const CabangOlahraga = () => {
       style={{ textAlign: "center", fontSize: "24px", marginBottom: "30px" }}
     >
       Cabang Olahraga
-      <div className="mt-5 justify-center">
+      <div className="mt-5 justify-center" style={{fontSize:'16px'}}>
         <button style={{ marginInline: "10px" }}>
-          <img src={Aerobik} className="iconCabang" />
+          <img src={Aerobik} className="iconCabang mb-2" />
+          Aerobik
+        </button>
+        <button style={{ marginInline: "10px"}}>
+          <img src={Badminton} className="iconCabang mb-2 ml-2" />
+          Badminton
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Badminton} className="iconCabang" />
+          <img src={Basket} className="iconCabang mb-2" />
+          Basket
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Basket} className="iconCabang" />
+          <img src={Beladiri} className="iconCabang mb-2" />
+          Beladiri
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Beladiri} className="iconCabang" />
+          <img src={Catur} className="iconCabang mb-2" />
+          Catur
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Catur} className="iconCabang" />
+          <img src={Gym} className="iconCabang mb-2" />
+          Gym
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Gym} className="iconCabang" />
+          <img src={Lari} className="iconCabang mb-2" />
+          Lari
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Lari} className="iconCabang" />
-        </button>
-        <button style={{ marginInline: "10px" }}>
-          <img src={Panahan} style={{ height: "80px" }} />
+          <img src={Panahan} className="iconCabang mb-2" />
+          Panahan
         </button>
       </div>
-      <div className="mt-4 justify-center">
+      <div className="mt-4 justify-center" style={{fontSize:'16px'}}>
         <button style={{ marginInline: "10px" }}>
-          <img src={Sepakbola} style={{ height: "80px" }} />
+          <img src={Sepakbola} className="iconCabang mb-2" />
+          Sepakbola
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Sepakbola} style={{ height: "80px" }} />
+          <img src={Sepakbola} className="iconCabang mb-2" />
+          Futsal
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={TenisMeja} style={{ height: "80px" }} />
+          <img src={TenisMeja} className="iconCabang mb-2" />
+          Tenis Meja
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Tennis} style={{ height: "80px" }} />
+          <img src={Tennis} className="iconCabang mb-2" />
+          Tenis
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Volley} style={{ height: "80px" }} />
+          <img src={Volley} className="iconCabang mb-2" />
+          Voli
         </button>
         <button style={{ marginInline: "10px" }}>
-          <img src={Yoga} style={{ height: "80px" }} />
+          <img src={Yoga} className="iconCabang mb-2" />
+          Yoga
         </button>
       </div>
       {/* Rincian Tiap Cabang */}
