@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import banner from "./asset/bannerIbadah.svg";
 import "./ibadahStyle.css";
 
@@ -14,7 +14,7 @@ const BannerIbadah = () => {
             marginTop: "75px",
             height: "780px",
             width: "1400px",
-            zIndex: 2,
+            zIndex: 2
           }}
         />
         <div

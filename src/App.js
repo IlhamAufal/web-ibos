@@ -7,6 +7,7 @@ import Footer from "./General/Footer";
 import LandingPage from "./pages/landingpage";
 import NewsPage from "./pages/newsPage";
 import UploadNews from "./pages/uploadNews";
+import DonasiPage from "./pages/DonasiPage";
 import IbadahPage from "./pages/ibadahpage";
 import OlahragaPage from "./pages/OlahragaPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/uploadnews" element={<UploadNews />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/donasi" element={<DonasiPage />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
           <Route path="/ibadah" element={<IbadahPage />} />
           <Route path="/olahraga" element={<OlahragaPage />} />

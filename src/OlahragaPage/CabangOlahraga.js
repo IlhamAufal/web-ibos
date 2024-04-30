@@ -1,5 +1,5 @@
 import React from "react";
-import "../OlahragaPage/olahragaStyle.css";
+import "./olahragaStyle.css";
 import Aerobik from "./asset/iconCabang/Aerobik.svg";
 import Badminton from "./asset/iconCabang/Badminton.svg";
 import Basket from "./asset/iconCabang/Basket.svg";
@@ -108,7 +108,7 @@ const CabangOlahraga = () => {
                 style={{
                   position: "relative",
                   zIndex: "2",
-                  margin: "0 0 40px 30px",
+                  margin: "0 0 40px 30px"
                 }}
               >
                 <img src={imgBasket} className="radiusImg" />

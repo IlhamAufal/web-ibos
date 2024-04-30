@@ -8,24 +8,25 @@ import pfp4 from "./asset/pfp4.svg";
 
 const Atasan = () => {
     return (
-        <div style={{ backgroundColor: '#600606', padding: '90px 50px'}}>
+        <div style={{ backgroundColor: '#600606', padding: '90px 50px', marginTop:'100px', color: 'white'}}>
+            <h2 className="text-center font-bold">Lorem Ipsum</h2>
     <Container>
-    <Row className="justify-content-center d-flex">
+    <Row className="justify-content-center d-flex" style={{marginTop:'100px'}}>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto' }}>
             <img src={pfp1} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
-            <div className="font-bold" style={{ color: 'white' }}>Name</div>
+            <h4 className="font-bold">Name</h4>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto'}}>
             <img src={pfp2} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
-            <div className="font-bold" style={{ color: 'white' }}>Name</div>
+            <h4 className="font-bold">Name</h4>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto' }}>
             <img src={pfp3} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
-            <div className="font-bold" style={{ color: 'white' }}>Name</div>
+            <h4 className="font-bold" >Name</h4>
         </Col>
         <Col className="col-auto text-center" style={{ marginInline: '50px', maxWidth: 'auto' }}>
             <img src={pfp4} style={{ borderRadius: '50%', marginBottom: '20px', height:'200px'}} />
-            <div className="font-bold" style={{ color: 'white' }}>Name</div>
+            <h4 className="font-bold" >Name</h4>
         </Col>
     </Row>
     <Row>

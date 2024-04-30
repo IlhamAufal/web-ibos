@@ -8,9 +8,9 @@ const NavigationBar = () => {
       <Navbar variant="dark">
         <Container>
           <Navbar.Brand>
-            <img src={logoDark} alt="Logo" width="50%" height="50%" />
+            <img src={logoDark} width="50%" height="50%" />
           </Navbar.Brand>
-          <Nav className="me-auto" style={{ color: "white" }}>
+          <Nav className="me-auto" style={{ color: "white", gap:'15px'}}>
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="News">
               <NavDropdown.Item href="#">All</NavDropdown.Item>
@@ -24,9 +24,10 @@ const NavigationBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#">Event</Nav.Link>
+            <Nav.Link href="#">Donasi</Nav.Link>
             <Nav.Link href="">Tentang IBOS</Nav.Link>
           </Nav>
-          <button className="text-sm myButton myButtonHover">Login</button>
+          <button className="text-sm myButton myButtonHover" onClick={() => window.location.href = '/login'}>Login</button>
         </Container>
       </Navbar>
     </div>

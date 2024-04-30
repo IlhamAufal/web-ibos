@@ -3,6 +3,7 @@ import BannerBudaya from "../BudayaPage/bannerBudaya";
 import Documentation from "../General/Documentation";
 import { Container, Row, Col } from "react-bootstrap";
 import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import '../BudayaPage/budayaStyle.css'
 
 const BudayaPage = () => {
   return (
@@ -44,8 +45,9 @@ const BudayaPage = () => {
         </Row>
       </Container>
       <Container>
-        <div className="mySubMenu1 mb-4 mt-4">Program Divisi Budaya</div>
+        
         <div className="textBoxAbuabu">
+        <div className="mySubMenu1 mb-8 mt-4">Program Divisi Budaya</div>
           <Row style={{ marginBlock: "20px" }}>
             <Col className="col-auto">
               <div style={{ margin: "20px 0 40px 50px" }}>
