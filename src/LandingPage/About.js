@@ -5,7 +5,8 @@ import logo2 from "./asset/logo2.png";
 import logo3 from "./asset/logo3.png";
 import { Container, Row, Col } from "react-bootstrap";
 import pfp from "./asset/pfp.svg";
-import './landingpage.css';
+import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import "./landingpage.css";
 
 function About() {
   return (
@@ -16,44 +17,64 @@ function About() {
           justifyContent: "center",
         }}
       >
-        <Container>
-          <Row>
+        <Container style={{ marginBlock: "50px" }}>
+          <Row className="d-flex justify-content-center">
+            <Col className="col-3">
+              <div
+                style={{
+                  backgroundColor: "#001A41",
+                  width: "250px",
+                  height: "250px",
+                  borderRadius: "0 50px 0 50px",
+                  position: "absolute",
+                  zIndex: "1",
+                  marginTop: "20px",
+                }}
+              ></div>
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: "2",
+                  margin: "0 0 40px 30px",
+                }}
+              >
+                <img
+                  src={imgBasket}
+                  style={{
+                    borderRadius: "0 50px 0 50px",
+                    position: "relative",
+                    width: "250px",
+                    height: "250px",
+                  }}
+                />
+              </div>
+            </Col>
             <Col className="col-6">
               <div
                 style={{
-                  color: "red",
-                  margin: "30px 0 0 30%",
+                  margin: "30px 0 0 10%",
                   textAlign: "left",
-                }}>
-                <div style={{
-                      fontSize: "45px",
-                      justifyContent: "center",
-                      fontWeight: "bold",
-                    }}>
-                  Apa itu IBOS ?
-                </div>
-              </div>
-            </Col>
-            <Col>
-              <Card
-                style={{
-                  width: "610px",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
+                  textAlign: "justify",
                 }}
               >
-                <Card.Body>
-                  <Card.Title>
-                    <b>Card Title</b>
-                  </Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
-                    Card Subtitle
-                  </Card.Subtitle>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+                <div
+                  style={{
+                    color: "red",
+                    fontSize: "45px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Apa itu IBOS ?
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Lacus viverra in
+                  adipiscing enim eu habitasse morbi imperdiet. Ornare dui non
+                  suspendisse massa. Et purus nibh blandit ipsum. Sed habitant
+                  dolor aliquet sit tellus pulvinar eu erat nibh. Tellus
+                  vestibulum ut nisi quis lectus dignissim. Volutpat ac
+                  consequat natoque at convallis ut lectus fames morbi
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -67,60 +88,74 @@ function About() {
         }}
       >
         <Container>
-          <Row>
-            <Col>
-              <Card
-                style={{
-                  width: "610px",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.418)",
-                  marginLeft: "5%",
-                }}
-              >
-                <Card.Body>
-                  <Card.Title>
-                    <b>Card Title</b>
-                  </Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
-                    Card Subtitle
-                  </Card.Subtitle>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+          <Row
+            className="d-flex justify-content-center"
+            style={{ gap: "100px" }}
+          >
             <Col className="col-6">
               <div
                 style={{
-                  color: "red",
-                  margin: "30px 0 0 30%",
+                  margin: "30px 0 0 10%",
                   textAlign: "left",
+                  textAlign: "justify",
                 }}
               >
-                <div style={{
-                      fontSize: "45px",
-                      justifyContent: "center",
-                      fontWeight: "bold",
-                    }}>
+                <div
+                  style={{
+                    color: "red",
+                    fontSize: "45px",
+                    fontWeight: "bold",
+                  }}
+                >
                   Apa itu IBOS ?
                 </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Lacus viverra in
+                  adipiscing enim eu habitasse morbi imperdiet. Ornare dui non
+                  suspendisse massa. Et purus nibh blandit ipsum. Sed habitant
+                  dolor aliquet sit tellus pulvinar eu erat nibh. Tellus
+                  vestibulum ut nisi quis lectus dignissim. Volutpat ac
+                  consequat natoque at convallis ut lectus fames morbi
+                </p>
+              </div>
+            </Col>
+            <Col className="col-3">
+              <div
+                style={{
+                  backgroundColor: "red",
+                  width: "250px",
+                  height: "250px",
+                  borderRadius: "50% 40% 0 0",
+                  position: "absolute",
+                  zIndex: "1",
+                  marginLeft: "100px",
+                  padding: "100px",
+                }}
+              ></div>
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: "2",
+                  margin: "30px 0 40px 30px",
+                }}
+              >
+                <img
+                  src={imgBasket}
+                  style={{
+                    borderRadius: "0 50px 0 50px",
+                    margin: "20px 20px 0 0",
+                    position: "relative",
+                    width: "250px",
+                    height: "250px",
+                  }}
+                />
               </div>
             </Col>
           </Row>
         </Container>
       </div>
 
-      <div
-        className="myAbout-director"
-        style={{
-          marginTop: "10px",
-          marginBottom: "20px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          display: "flex",
-        }}
-      >
+      <div className="myAbout-director">
         <div
           className="image-container"
           style={{

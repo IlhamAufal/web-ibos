@@ -1,5 +1,4 @@
 import React from "react";
-import "./olahragaStyle.css";
 import Aerobik from "./asset/iconCabang/Aerobik.svg";
 import Badminton from "./asset/iconCabang/Badminton.svg";
 import Basket from "./asset/iconCabang/Basket.svg";
@@ -15,6 +14,7 @@ import Volley from "./asset/iconCabang/Volley.svg";
 import Yoga from "./asset/iconCabang/Yoga.svg";
 import imgBasket from "../OlahragaPage/asset/imgBasket.png";
 import { Col, Container, Row } from "react-bootstrap";
+import "./olahragaStyle.css";
 
 // const svgs = {
 //     Aerobik: require("../asset/banner1.svg"),
@@ -25,16 +25,23 @@ import { Col, Container, Row } from "react-bootstrap";
 const CabangOlahraga = () => {
   return (
     <div
-      className="font-bold"
-      style={{ textAlign: "center", fontSize: "24px", marginBottom: "30px" }}
+      style={{
+        textAlign: "center",
+        fontWeight: "bold",
+        fontSize: "24px",
+        marginBottom: "30px",
+      }}
     >
       Cabang Olahraga
-      <div className="mt-5 justify-center" style={{fontSize:'16px'}}>
+      <div
+        className="mt-5 justify-center font-bold"
+        style={{ fontSize: "16px", marginTop: "150px" }}
+      >
         <button style={{ marginInline: "10px" }}>
           <img src={Aerobik} className="iconCabang mb-2" />
           Aerobik
         </button>
-        <button style={{ marginInline: "10px"}}>
+        <button style={{ marginInline: "10px" }}>
           <img src={Badminton} className="iconCabang mb-2 ml-2" />
           Badminton
         </button>
@@ -63,7 +70,10 @@ const CabangOlahraga = () => {
           Panahan
         </button>
       </div>
-      <div className="mt-4 justify-center" style={{fontSize:'16px'}}>
+      <div
+        className="mt-4 justify-center"
+        style={{ fontSize: "16px", marginBottom: "150px" }}
+      >
         <button style={{ marginInline: "10px" }}>
           <img src={Sepakbola} className="iconCabang mb-2" />
           Sepakbola
@@ -90,33 +100,37 @@ const CabangOlahraga = () => {
         </button>
       </div>
       {/* Rincian Tiap Cabang */}
-      <div
-        style={{
-          backgroundColor: "#FED4A6",
-          marginBlock: "50px",
-          padding: "20px 0 40px 0",
-        }}
-      >
-        <div className="mySubMenu1" style={{ fontSize: "20px" }}>
-          Rincian Tiap Cabang
-        </div>
-        <Container style={{ marginBlock: "40px", position: "relative" }}>
-          <Row>
-            <Col className="col-3">
-              <div className="redBackground"></div>
-              <div
-                style={{
-                  position: "relative",
-                  zIndex: "2",
-                  margin: "0 0 40px 30px"
-                }}
-              >
-                <img src={imgBasket} className="radiusImg" />
+      <Container>
+        <div className="textBoxAbuabu" style={{ backgroundColor: "#FBC995" }}>
+          <div className="mySubMenu1 mb-8 mt-4">Rincian Program Olahraga</div>
+          <Row style={{ marginBlock: "20px" }}>
+            <Col className="col-auto">
+              <div style={{ margin: "20px 0 40px 50px" }}>
+                <div className="redBackground"></div>
+                <div
+                  style={{
+                    position: "relative",
+                    zIndex: "2",
+                    margin: "0 0 40px 30px",
+                  }}
+                >
+                  <img src={imgBasket} className="radiusImg" />
+                </div>
               </div>
             </Col>
             <Col>
-              <h4 style={{ textAlign: "left", fontWeight: "bold" }}>Basket</h4>
-              <div className="textBoxAbuabu">
+              <div className="col-9">
+                <h4
+                  style={{
+                    textAlign: "justify",
+                    fontWeight: "bold",
+                    margin: "30px 0 10px 20px",
+                  }}
+                >
+                  Basket
+                </h4>
+              </div>
+              <div className="w-3/4 ml-5">
                 Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in
                 tellus libero porttitor viverra nisi. Nunc nunc vestibulum
                 suspendisse ultricies etiam elementum netus. Iaculis consequat
@@ -127,20 +141,23 @@ const CabangOlahraga = () => {
               </div>
             </Col>
           </Row>
-        </Container>
-        <Container style={{ marginBlock: "40px", position: "relative" }}>
-          <Row>
-            <Col>
-              <h4
-                style={{
-                  textAlign: "right",
-                  fontWeight: "bold",
-                  marginRight: "10px",
-                }}
+          <Row style={{ marginBlock: "40px", position: "relative" }}>
+            <Col className="col-9">
+              <div>
+                <h4
+                  style={{
+                    textAlign: "right",
+                    fontWeight: "bold",
+                    margin: "30px 0 10px 20px",
+                  }}
+                >
+                  Basket
+                </h4>
+              </div>
+              <div
+                className="w-3/4 mr-5"
+                style={{ textAlign: "justify", marginLeft: "230px" }}
               >
-                Basket
-              </h4>
-              <div className="textBoxAbuabu">
                 Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in
                 tellus libero porttitor viverra nisi. Nunc nunc vestibulum
                 suspendisse ultricies etiam elementum netus. Iaculis consequat
@@ -182,8 +199,8 @@ const CabangOlahraga = () => {
               </div>
             </Col>
           </Row>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 };

@@ -12,19 +12,19 @@ const Landing = () => {
         {/* <Intro /> */}
         <MyCarousel />
         <div>
-          <div className="mySubMenu font-bold" style={{fontSize:'20px'}} >
+          <div className="mySubMenu font-bold" style={{ fontSize: "20px" }}>
             Updated News
           </div>
           <BoxNews />
 
-          <div className="myAbout font-bold" style={{fontSize:'45px'}}>
+          <div className="myAbout font-bold" style={{ fontSize: "45px" }}>
             Everything about IBOS
           </div>
           <About />
         </div>
         <div className="customSpacing"></div>
         <Category />
-        <Atasan/>
+        <Atasan />
       </div>
     </div>
   );

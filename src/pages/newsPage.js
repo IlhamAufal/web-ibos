@@ -20,7 +20,7 @@ const NewsPage = () => {
         <div className="col-auto">
           <RealNews />
         </div>
-        <div className="col" style={{zIndex:'1'}}>
+        <div className="col" style={{ zIndex: "1" }}>
           <RelatedNews />
         </div>
       </div>

@@ -4,9 +4,9 @@ import Dokumentasi from "../NotFoundPage/dokumentasi";
 const NotFoundPage = () => {
   return (
     <div>
-      <Dokumentasi/>
+      <Dokumentasi />
     </div>
-  )
+  );
 };
 
 export default NotFoundPage;

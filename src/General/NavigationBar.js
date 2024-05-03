@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import logoDark from "../asset/logo-dark.jpg";
+import "./general.css";
 
 const NavigationBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavigationBar = () => {
           <Navbar.Brand>
             <img src={logoDark} width="50%" height="50%" />
           </Navbar.Brand>
-          <Nav className="me-auto" style={{ color: "white", gap:'15px'}}>
+          <Nav className="me-auto" style={{ color: "white", gap: "20px" }}>
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="News">
               <NavDropdown.Item href="#">All</NavDropdown.Item>
@@ -27,7 +28,12 @@ const NavigationBar = () => {
             <Nav.Link href="#">Donasi</Nav.Link>
             <Nav.Link href="">Tentang IBOS</Nav.Link>
           </Nav>
-          <button className="text-sm myButton myButtonHover" onClick={() => window.location.href = '/login'}>Login</button>
+          <button
+            className="text-sm myButton"
+            onClick={() => (window.location.href = "/login")}
+          >
+            Login
+          </button>
         </Container>
       </Navbar>
     </div>

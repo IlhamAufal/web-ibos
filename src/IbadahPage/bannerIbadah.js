@@ -14,7 +14,7 @@ const BannerIbadah = () => {
             marginTop: "75px",
             height: "780px",
             width: "1400px",
-            zIndex: 2
+            zIndex: 2,
           }}
         />
         <div

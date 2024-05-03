@@ -6,8 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const media = [
-  { type: 'video', url: require('./asset/vid.mp4') },
-  { type: 'img', url: require('./asset/img.jpg') }
+  { type: "video", url: require("./asset/vid.mp4") },
+  { type: "img", url: require("./asset/img.jpg") },
 ];
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

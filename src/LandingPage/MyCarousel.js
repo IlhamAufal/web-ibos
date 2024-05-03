@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import news1 from "./asset/news1.png";
 import news2 from "./asset/news2.png";
 import news3 from "./asset/news3.png";
-import './landingpage.css'
+import "./landingpage.css";
 
 function MyCarousel() {
   return (

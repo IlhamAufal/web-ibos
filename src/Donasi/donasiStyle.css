@@ -1,4 +1,4 @@
-.titleContent{
+.titleContent {
   color: white;
   background-color: black;
   padding: 5px 30px;
@@ -14,7 +14,6 @@
   color: white;
 }
 
-
 .icon-box {
   background-color: #ccc;
   font-weight: bold;
@@ -28,10 +27,11 @@
   align-items: center;
   top: 50%;
   left: 50%;
-  transition: 0.3s ease-in-out;
   margin-inline: 30px;
+  filter: drop-shadow(0px 5px 5px);
+  transition: 0.3s ease-in-out;
 }
 
-.icon-box:hover{
-    filter: brightness(100%) invert(100%);
+.icon-box:hover {
+  filter: brightness(100%) invert(100%);
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import Background from '../Login/background';
+import Background from "../Login/background";
 
 const Landing = () => {
   return (
-    <div >
+    <div>
       <div>
-        <Background/>
+        <Background />
       </div>
     </div>
   );

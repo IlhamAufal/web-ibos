@@ -10,14 +10,23 @@ const DonasiPage = () => {
   return (
     <div>
       <BannerDonasi />
-      <div style={{fontSize:'28px', margin:'100px 0 50px 0', textAlign:'center', fontWeight:'bold'}}>Selamat Datang di Halaman Kebaikan</div>
-      
-      <Tombol/>
+      <div
+        style={{
+          fontSize: "28px",
+          margin: "100px 0 50px 0",
+          textAlign: "center",
+          fontWeight: "bold",
+        }}
+      >
+        Selamat Datang di Halaman Kebaikan !
+      </div>
 
-{/* Berbagi bersama IBOS */}
-      <BlackBox/>
-      <Konten/>
-      
+      <Tombol />
+
+      {/* Berbagi bersama IBOS */}
+      <BlackBox />
+      <Konten />
+
       {/* <Documentation /> */}
     </div>
   );
