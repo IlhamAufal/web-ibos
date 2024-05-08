@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import "./sosialStyle.css";
 
 const pendahuluan = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import thumbnail from "./asset/thumbnail-news.png";
+import thumbnail from "./asset/thumbnail-event.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const BlogCard = () => {
+const BoxEvent = () => {
   const navigate = useNavigate();
   return (
 <Container>
@@ -27,7 +27,6 @@ const BlogCard = () => {
                 marginLeft: "20px",
                 marginTop: "13px",
               }}
-              alt={d.title} // tambahkan alt untuk gambar
             />
             <div className="flex flex-col p-4 leading-normal">
               <h6 className="font-bold text-black-900 dark:text-black">
@@ -79,4 +78,4 @@ const data = [
   }
 ]
 
-export default BlogCard;
+export default BoxEvent;

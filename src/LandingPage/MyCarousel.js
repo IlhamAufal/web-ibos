@@ -7,38 +7,12 @@ import "./landingpage.css";
 
 function MyCarousel() {
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item style={{ height: "80vh", marginTop: "75px" }}>
-          <div className="relative h-screen bg-black/60">
-            <img className="d-block w-100 " src={news1} />
-            <div
-              className="overlay"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                background:
-                  "linear-gradient(to top, rgba(0, 0, 0, 5), transparent)",
-              }}
-            ></div>
-          </div>
-          <Carousel.Caption style={{ marginBottom: "50px" }}>
-            <h3 className="text-left">
-              <b>
-                <span style={{ color: "red" }}>First</span> slide label
-              </b>
-            </h3>
-            <p className="text-left">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item style={{ height: "80vh", marginTop: "75px" }}>
-          <img className="d-block w-100" src={news2} />
+<div>
+  <Carousel>
+    {data.map((d, index) => (
+      <Carousel.Item key={index} style={{ height: "80vh", marginTop: "75px" }}>
+        <div className="relative h-screen bg-black/60">
+          <img className="d-block w-100" src={d.img} />
           <div
             className="overlay"
             style={{
@@ -47,50 +21,44 @@ function MyCarousel() {
               left: 0,
               width: "100%",
               height: "100%",
-              background:
-                "linear-gradient(to top, rgba(0, 0, 0, 5), transparent)",
+              background: "linear-gradient(to top, rgba(0, 0, 0, 5), transparent)",
             }}
           ></div>
-          <Carousel.Caption style={{ marginBottom: "50px" }}>
-            <h3 className="text-left">
-              <b>
-                <span style={{ color: "red" }}>First</span> slide label
-              </b>
-            </h3>
-            <p className="text-left">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item style={{ height: "80vh", marginTop: "75px" }}>
-          <img className="d-block w-100" src={news3} />
-          <div
-            className="overlay"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              background:
-                "linear-gradient(to top, rgba(0, 0, 0, 5), transparent)",
-            }}
-          ></div>
-          <Carousel.Caption style={{ marginBottom: "50px" }}>
-            <h3 className="text-left">
-              <b>
-                <span style={{ color: "red" }}>First</span> slide label
-              </b>
-            </h3>
-            <p className="text-left">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+        </div>
+        <Carousel.Caption style={{ marginBottom: "50px" }}>
+          <h3 className="text-left font-bold">
+              <span style={{ color: "red" }}> {d.first}</span> {d.label}
+          </h3>
+          <p className="text-left font-bold">
+            {d.description}
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    ))}
+  </Carousel>
+</div>
   );
 }
+
+const data=[
+  {
+    img: news1,
+    first:'First',
+    label:' slide label',
+    description:'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+  },
+  {
+    img: news2,
+    first:'Second',
+    label:' slide label',
+    description:'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+  },
+  {
+    img: news3,
+    first:'Third',
+    label:' slide label',
+    description:'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+  }
+]
 
 export default MyCarousel;

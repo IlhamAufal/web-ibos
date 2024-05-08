@@ -12,7 +12,6 @@ const Landing = () => {
       <div>
         {/* <Intro /> */}
         <MyCarousel />
-        <div>
 
           
           <Tabbed/>
@@ -21,7 +20,6 @@ const Landing = () => {
             Everything about IBOS
           </div>
           <About />
-        </div>
         <div className="customSpacing"></div>
         <Category />
         <Atasan />

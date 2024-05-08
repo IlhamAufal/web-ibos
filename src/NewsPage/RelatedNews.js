@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import thumbnail from "./asset/thumbnail-news.png";
 import "./newsStyle.css";
@@ -19,107 +19,30 @@ const RelatedNews = () => {
           >
             <Container>
               <div class="overflow-hidden">
-                <div className="relatedNews">Related News</div>
-                <Col>
-                  <div className="miniNews">
-                    <a
-                      href="#"
-                      className="flex w-full"
-                      onClick={() => navigate("/news")}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={thumbnail}
-                        style={{ blockSize: "100px", borderRadius: "10px" }}
-                      />
-                      <div className="flex p-2 leading-normal">
-                        <h5 className="text-sm font-bold dark:text-black">
-                          Noteworthy technology acquisitions 2021
-                        </h5>
-                      </div>
-                    </a>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="miniNews">
-                    <a
-                      href="#"
-                      className="flex w-full"
-                      onClick={() => navigate("/news")}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={thumbnail}
-                        style={{ blockSize: "100px", borderRadius: "10px" }}
-                      />
-                      <div className="flex p-2 leading-normal">
-                        <h5 className="text-sm font-bold dark:text-black">
-                          Noteworthy technology acquisitions 2021
-                        </h5>
-                      </div>
-                    </a>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="miniNews">
-                    <a
-                      href="#"
-                      className="flex w-full"
-                      onClick={() => navigate("/news")}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={thumbnail}
-                        style={{ blockSize: "100px", borderRadius: "10px" }}
-                      />
-                      <div className="flex p-2 leading-normal">
-                        <h5 className="text-sm font-bold dark:text-black">
-                          Noteworthy technology acquisitions 2021
-                        </h5>
-                      </div>
-                    </a>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="miniNews">
-                    <a
-                      href="#"
-                      className="flex w-full"
-                      onClick={() => navigate("/news")}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={thumbnail}
-                        style={{ blockSize: "100px", borderRadius: "10px" }}
-                      />
-                      <div className="flex p-2 leading-normal">
-                        <h5 className="text-sm font-bold dark:text-black">
-                          Noteworthy technology acquisitions 2021
-                        </h5>
-                      </div>
-                    </a>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="miniNews">
-                    <a
-                      href="#"
-                      className="flex w-full"
-                      onClick={() => navigate("/news")}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={thumbnail}
-                        style={{ blockSize: "100px", borderRadius: "10px" }}
-                      />
-                      <div className="flex p-2 leading-normal">
-                        <h5 className="text-sm font-bold dark:text-black">
-                          Noteworthy technology acquisitions 2021
-                        </h5>
-                      </div>
-                    </a>
-                  </div>
-                </Col>
+              <div className="relatedNews">Related News</div>
+<Row>
+  {data.map((d, index) => (
+    <Col key={index}>
+      <div className="miniNews">
+        <a
+          href="#"
+          className="flex w-full"
+          onClick={() => navigate("/news")}
+          style={{ textDecoration: "none" }}>
+          <img
+            src={d.img}
+            style={{ height: "100px", width: "auto", borderRadius: "10px" }}
+          />
+          <div className="flex p-2 leading-normal">
+            <h5 className="text-sm font-bold dark:text-black">
+              {d.description}
+            </h5>
+          </div>
+        </a>
+      </div>
+    </Col>
+  ))}
+</Row>
               </div>
             </Container>
           </div>
@@ -135,5 +58,24 @@ const RelatedNews = () => {
     </div>
   );
 };
+
+const data=[
+  {
+    img:thumbnail,
+    description:'Noteworthy technology acquisitions 2021'
+  },
+  {
+    img:thumbnail,
+    description:'Noteworthy technology acquisitions 2021'
+  },
+  {
+    img:thumbnail,
+    description:'Noteworthy technology acquisitions 2021'
+  },
+  {
+    img:thumbnail,
+    description:'Noteworthy technology acquisitions 2021'
+  }
+]
 
 export default RelatedNews;

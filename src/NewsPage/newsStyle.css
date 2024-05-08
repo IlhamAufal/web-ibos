@@ -102,3 +102,23 @@
   border-radius: 40px 40px 0 0;
   z-index: 2;
 }
+
+.cardNews {
+  width: 18rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.cardNews:hover {
+  transform: translate(13px, 13px);
+}
+
+.cardNews-overlay {
+  display: flex;
+  background-color: red;
+  border-radius: 8px;
+  width: 18rem;
+  height: 20rem;
+  z-index: 1;
+}
