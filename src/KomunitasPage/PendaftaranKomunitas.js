@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import RincianKomunitas from "./RincianKomunitas";
+import UploadImage from '../UploadNews/uploadImage'
 
 const PendaftaranAnggota = () => {
   return (
@@ -28,8 +29,8 @@ const PendaftaranAnggota = () => {
           Rincian Komunitas
         </div>
         <Row>
-          <Col className="col-3" style={{ marginLeft: "30px" }}>
-            <uploadImage />
+          <Col className="col-auto mt-4" >
+            <UploadImage/>
           </Col>
           <Col className="textBoxAbuabu" style={{ margin: "30px 0 o 50px" }}>
             <div style={{ marginLeft: "25px" }}>

@@ -183,10 +183,18 @@
   text-align: center;
   font-weight: bold;
   margin-top: 30%;
-  opacity: 0; /* Atur opacity menjadi 0 secara default */
-  transition: opacity 0.3s ease; /* Tambahkan transisi pada opacity */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .masked-image-overlay:hover .centered-text {
-  opacity: 1; /* Atur opacity menjadi 1 saat dihover */
+  opacity: 1;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link .active {
+  color: white !important;
 }

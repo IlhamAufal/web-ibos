@@ -1,11 +1,11 @@
 import React from "react";
-import BannerIbadah from "../IbadahPage/bannerIbadah";
+import BannerIman from "../IbadahPage/bannerIman";
 import Documentation from "../General/Documentation";
 
 const IbadahPage = () => {
   return (
     <div>
-      <BannerIbadah />
+      <BannerIman />
       {/* <Documentation /> */}
     </div>
   );

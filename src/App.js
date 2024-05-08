@@ -8,12 +8,14 @@ import LandingPage from "./pages/landingpage";
 import NewsPage from "./pages/newsPage";
 import UploadNews from "./pages/uploadNews";
 import DonasiPage from "./pages/DonasiPage";
-import IbadahPage from "./pages/ibadahpage";
-import OlahragaPage from "./pages/OlahragaPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import BudayaPage from "./pages/BudayaPage";
 import KomunitasPage from "./pages/KomunitasPage";
 import LoginPage from "./pages/LoginPage";
+
+// import ImanPage from "./pages/imanpage";
+import BudayaPage from "./pages/BudayaPage";
+import OlahragaPage from "./pages/OlahragaPage";
+import SosialPage from "./pages/SosialPage";
 
 function App() {
   return (
@@ -29,9 +31,10 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/donasi" element={<DonasiPage />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
-          <Route path="/ibadah" element={<IbadahPage />} />
+          {/* <Route path="/ibadah" element={<ImanPage />} /> */}
           <Route path="/olahraga" element={<OlahragaPage />} />
           <Route path="/budaya" element={<BudayaPage />} />
+          <Route path="/sosial" element={<SosialPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>

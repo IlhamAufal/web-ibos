@@ -65,15 +65,15 @@ const CabangOlahraga = () => {
           <img src={Lari} className="iconCabang mb-2" />
           Lari
         </button>
-        <button style={{ marginInline: "10px" }}>
-          <img src={Panahan} className="iconCabang mb-2" />
-          Panahan
-        </button>
       </div>
       <div
         className="mt-4 justify-center"
         style={{ fontSize: "16px", marginBottom: "150px" }}
       >
+         <button style={{ marginInline: "10px" }}>
+          <img src={Panahan} className="iconCabang mb-2" />
+          Panahan
+        </button>
         <button style={{ marginInline: "10px" }}>
           <img src={Sepakbola} className="iconCabang mb-2" />
           Sepakbola

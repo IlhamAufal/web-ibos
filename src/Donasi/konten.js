@@ -1,211 +1,101 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import './donasiStyle.css'
+import thumbnail from './asset/percobaanNews.png'
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const CarouselCards = () => {
+  const settings = {
+    dots: true, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
+
   return (
-    <section className="pt-5 pb-5">
-      <div class="container">
-        <div className="row">
-          <div className="col-6">
-            <h3 className="mb-3">Carousel cards title </h3>
-          </div>
-          <div className="col-6 text-right">
-            <a
-              className="btn btn-primary mb-3 mr-1"
-              href="#carouselExampleIndicators2"
-              role="button"
-              data-slide="prev"
-            >
-              <i className="fa fa-arrow-left"></i>
-            </a>
-            <a
-              className="btn btn-primary mb-3 "
-              href="#carouselExampleIndicators2"
-              role="button"
-              data-slide="next"
-            >
-              <i className="fa fa-arrow-right"></i>
-            </a>
-          </div>
-          <div className="col-12">
-            <div
-              id="carouselExampleIndicators2"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="row">
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="row">
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="row">
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="card">
-                        <img
-                          className="img-fluid"
-                          src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
-                        />
-                        <div className="card-body">
-                          <h4 className="card-title">
-                            Special title treatment
-                          </h4>
-                          <p className="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <Container>
+      <Row style={{margin:'60px'}}>
+      <div className="kategori mb-4">Kategori</div>
+        <Slider {...settings} prevArrow={<CustomPrevArrow />} nextArrow={<CustomNextArrow />}>
+          {data.map((d, index) => (
+            <Col key={index}>
+              <a href="*" style={{ textDecoration: 'none' }}>
+              <div className="bg-white text-black rounded-xl shadow-2xl" style={{ maxHeight: 'auto' }}>
+              <div className="h-auto w-auto" style={{ overflowX: 'hidden' }}> 
+  <img src={d.img} style={{ borderRadius: '30px 30px 0 0', height: '100%', width: '100%' }}/> 
+</div>
+                <div className="flex flex-col p-6">
+                  <p className="text-xl font-semibold">{d.name.toUpperCase()}</p>
+                  <p className="text-justify text-sm">{d.review}</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+              </a>
+            </Col>
+          
+          ))}
+        </Slider>
+      </Row>
+    </Container>
   );
 };
+
+const CustomPrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{ filter: 'invert(100%)', position: 'absolute', top: '65%', left: '10px', zIndex: 1, cursor: 'pointer'}}
+    >
+
+    </div>
+  );
+};
+
+const CustomNextArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{  filter: 'invert(100%)', position: 'absolute', top: '65%', right: '10px', zIndex: 1, cursor: 'pointer' }}
+    >
+      
+    </div>
+  );
+};
+
+
+const data = [
+  {
+    name: 'john morgan',
+    img: thumbnail,
+    review: 'Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. '
+  },
+  {
+    name: 'john morgan',
+    img: thumbnail,
+    review: 'Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. '
+  },
+  {
+    name: 'john morgan',
+    img: thumbnail,
+    review: 'Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. '
+  },
+  {
+    name: 'john morgan',
+    img: thumbnail,
+    review: 'Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. '
+  },
+  {
+    name: 'john morgan',
+    img: thumbnail,
+    review: 'Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. '
+  }
+];
 
 export default CarouselCards;

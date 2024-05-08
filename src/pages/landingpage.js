@@ -4,6 +4,7 @@ import BoxNews from "../LandingPage/BoxNews";
 import About from "../LandingPage/About";
 import Category from "../LandingPage/Category";
 import Atasan from "../LandingPage/Atasan";
+import Tabbed from "../LandingPage/Tabbed";
 
 const Landing = () => {
   return (
@@ -12,10 +13,9 @@ const Landing = () => {
         {/* <Intro /> */}
         <MyCarousel />
         <div>
-          <div className="mySubMenu font-bold" style={{ fontSize: "20px" }}>
-            Updated News
-          </div>
-          <BoxNews />
+
+          
+          <Tabbed/>
 
           <div className="myAbout font-bold" style={{ fontSize: "45px" }}>
             Everything about IBOS
@@ -25,6 +25,7 @@ const Landing = () => {
         <div className="customSpacing"></div>
         <Category />
         <Atasan />
+
       </div>
     </div>
   );
