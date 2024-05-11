@@ -7,7 +7,7 @@ const BannerDonasi = () => {
   return (
     <div
       className="intro position-relative"
-      style={{ marginBottom: "180px", marginTop: "100px" }}
+      style={{ marginBottom: "230px", marginTop: "100px" }}
     >
       <div className="relative h-screen">
         <div

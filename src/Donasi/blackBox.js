@@ -7,10 +7,8 @@ const blackBox = () => {
   return (
     <div className="relative bg-black/60 d-flex justify-content-end mt-12">
       {" "}
-      {/* Tambahkan justify-content-end */}
       <img className="d-block w-50" src={img1} />
       <div
-        className="overlay"
         style={{
           position: "absolute",
           color: "white",

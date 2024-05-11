@@ -7,6 +7,7 @@ import NewsPage from "./pages/newsPage";
 import NewsList from "./pages/NewsList";
 import UploadNews from "./pages/uploadNews";
 import DonasiPage from "./pages/DonasiPage";
+import DonasiCase from "./pages/DonasiCase";
 import NotFoundPage from "./pages/NotFoundPage";
 import KomunitasPage from "./pages/KomunitasPage";
 import LoginPage from "./pages/LoginPage";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/uploadnews" element={<UploadNews />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/donasi" element={<DonasiPage />} />
+          <Route path="/donasi/case" element={<DonasiCase />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
           {/* <Route path="/iman" element={<ImanPage />} /> */}
           <Route path="/olahraga" element={<OlahragaPage />} />

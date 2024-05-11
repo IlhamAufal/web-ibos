@@ -13,7 +13,7 @@ const NavigationBar = () => {
           </Navbar.Brand>
           <Nav className="me-auto" style={{ color: "white", gap: "20px" }}>
             <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown title="News">
+            <NavDropdown title="News & Event">
               <NavDropdown.Item href="#">All</NavDropdown.Item>
               <NavDropdown.Item href="#">Ibadah</NavDropdown.Item>
               <NavDropdown.Item href="#">Budaya</NavDropdown.Item>
@@ -24,8 +24,7 @@ const NavigationBar = () => {
                 Tulis Artikel
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">Event</Nav.Link>
-            <Nav.Link href="#">Donasi</Nav.Link>
+            <Nav.Link href="/donasi">Donasi</Nav.Link>
             <Nav.Link href="">Tentang IBOS</Nav.Link>
           </Nav>
           <button

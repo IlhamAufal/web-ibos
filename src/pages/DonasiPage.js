@@ -25,6 +25,7 @@ const DonasiPage = () => {
 
       {/* Berbagi bersama IBOS */}
       <BlackBox />
+
       <Konten />
 
       {/* <Documentation /> */}

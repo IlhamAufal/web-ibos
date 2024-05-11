@@ -102,7 +102,7 @@ const CabangOlahraga = () => {
       {/* Rincian Tiap Cabang */}
       <Container>
         <div className="textBoxAbuabu" style={{ backgroundColor: "#FBC995" }}>
-          <div className="mySubMenu1 mb-8 mt-4">Rincian Program Olahraga</div>
+          <div className="mySubMenu1 mb-8 mt-4" style={{fontSize:'25px'}}>Rincian Program Olahraga</div>
           <Row style={{ marginBlock: "20px" }}>
             <Col className="col-auto">
               <div style={{ margin: "20px 0 40px 50px" }}>
