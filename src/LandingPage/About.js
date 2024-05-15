@@ -10,7 +10,7 @@ import "./landingpage.css";
 
 function About() {
   return (
-    <div style={{ marginTop: "40px" }}>
+    <div id="tentang" style={{ marginTop: "40px" }}>
       <div
         style={{
           display: "flex",

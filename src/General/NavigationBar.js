@@ -3,6 +3,13 @@ import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import logoDark from "../asset/logo-dark.jpg";
 import "./general.css";
 
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const NavigationBar = () => {
   return (
     <div className="myNB fixed-top">
@@ -25,7 +32,7 @@ const NavigationBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/donasi">Donasi</Nav.Link>
-            <Nav.Link href="">Tentang IBOS</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection("tentang")}>Tentang IBOS</Nav.Link>
           </Nav>
           <button
             className="text-sm myButton"

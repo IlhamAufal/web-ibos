@@ -10,12 +10,8 @@ const Landing = () => {
   return (
     <div className="landing-container">
       <div>
-        {/* <Intro /> */}
         <MyCarousel />
-
-          
           <Tabbed/>
-
           <div className="myAbout font-bold" style={{ fontSize: "45px" }}>
             Everything about IBOS
           </div>

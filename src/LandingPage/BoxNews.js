@@ -27,7 +27,7 @@ const BlogCard = () => {
                 marginLeft: "20px",
                 marginTop: "13px",
               }}
-              alt={d.title} // tambahkan alt untuk gambar
+              alt={d.title}
             />
             <div className="flex flex-col p-4 leading-normal">
               <h6 className="font-bold text-black-900 dark:text-black">

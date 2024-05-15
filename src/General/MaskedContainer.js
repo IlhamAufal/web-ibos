@@ -9,7 +9,7 @@ const MaskedContainer = ({ children }) => {
         position: "relative",
         overflow: "hidden",
         width: "1600px",
-        height: "620px",
+        height: "620px"
       }}
     >
       <img
@@ -22,7 +22,7 @@ const MaskedContainer = ({ children }) => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          zIndex: -1,
+          zIndex: -1
         }}
       />
       <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
