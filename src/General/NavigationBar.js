@@ -38,7 +38,14 @@ const NavigationBar = () => {
               <NavDropdown.Item href="/sosial">Sosial</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/donasi">Donasi</Nav.Link>
-            <Nav.Link onClick={() => scrollToSection("tentang")}>Tentang IBOS</Nav.Link>
+            <Nav.Link href="/tentang">Tentang IBOS</Nav.Link>
+
+            {/* Ini yang Scroll
+            <Nav.Link onClick={() => scrollToSection("tentang")}>
+              Tentang IBOS
+            </Nav.Link> */}
+
+
           </Nav>
           <button
             className="text-sm myButton"

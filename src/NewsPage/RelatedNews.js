@@ -19,30 +19,35 @@ const RelatedNews = () => {
           >
             <Container>
               <div class="overflow-hidden">
-              <div className="relatedNews">Related News</div>
-<Row>
-  {data.map((d, index) => (
-    <Col key={index}>
-      <div className="miniNews">
-        <a
-          href="#"
-          className="flex w-full"
-          onClick={() => navigate("/news")}
-          style={{ textDecoration: "none" }}>
-          <img
-            src={d.img}
-            style={{ height: "100px", width: "auto", borderRadius: "10px" }}
-          />
-          <div className="flex p-2 leading-normal">
-            <h5 className="text-sm font-bold dark:text-black">
-              {d.description}
-            </h5>
-          </div>
-        </a>
-      </div>
-    </Col>
-  ))}
-</Row>
+                <div className="relatedNews">Related News</div>
+                <Row>
+                  {data.map((d, index) => (
+                    <Col key={index}>
+                      <div className="miniNews">
+                        <a
+                          href="#"
+                          className="flex w-full"
+                          onClick={() => navigate("/news")}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <img
+                            src={d.img}
+                            style={{
+                              height: "100px",
+                              width: "auto",
+                              borderRadius: "10px",
+                            }}
+                          />
+                          <div className="flex p-2 leading-normal">
+                            <h5 className="text-sm font-bold dark:text-black">
+                              {d.description}
+                            </h5>
+                          </div>
+                        </a>
+                      </div>
+                    </Col>
+                  ))}
+                </Row>
               </div>
             </Container>
           </div>
@@ -59,23 +64,23 @@ const RelatedNews = () => {
   );
 };
 
-const data=[
+const data = [
   {
-    img:thumbnail,
-    description:'Noteworthy technology acquisitions 2021'
+    img: thumbnail,
+    description: "Noteworthy technology acquisitions 2021",
   },
   {
-    img:thumbnail,
-    description:'Noteworthy technology acquisitions 2021'
+    img: thumbnail,
+    description: "Noteworthy technology acquisitions 2021",
   },
   {
-    img:thumbnail,
-    description:'Noteworthy technology acquisitions 2021'
+    img: thumbnail,
+    description: "Noteworthy technology acquisitions 2021",
   },
   {
-    img:thumbnail,
-    description:'Noteworthy technology acquisitions 2021'
-  }
-]
+    img: thumbnail,
+    description: "Noteworthy technology acquisitions 2021",
+  },
+];
 
 export default RelatedNews;

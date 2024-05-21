@@ -13,10 +13,19 @@ const NewsList = () => {
 
   return (
     <div>
-      <Container className="text-white font-bold d-flex" style={{ marginBlock: '90px', borderRadius: '0 0 0 60px', background: 'linear-gradient(to left, #00327B, #000000)' }}>
-        <div style={{ margin: '80px 0 80px 25px', fontSize: '30px'}}>Daftar Berita & Acara</div>
+      <Container
+        className="text-white font-bold d-flex"
+        style={{
+          marginBlock: "90px",
+          borderRadius: "0 0 0 60px",
+          background: "linear-gradient(to left, #00327B, #000000)",
+        }}
+      >
+        <div style={{ margin: "80px 0 80px 25px", fontSize: "30px" }}>
+          Daftar Berita & Acara
+        </div>
       </Container>
-      <NewsCard/>
+      <NewsCard />
     </div>
   );
 };

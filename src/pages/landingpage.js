@@ -11,15 +11,14 @@ const Landing = () => {
     <div className="landing-container">
       <div>
         <MyCarousel />
-          <Tabbed/>
-          <div className="myAbout font-bold" style={{ fontSize: "45px" }}>
-            Everything about IBOS
-          </div>
-          <About />
+        <Tabbed />
+        <div className="myAbout font-bold" style={{ fontSize: "45px" }}>
+          Everything about IBOS
+        </div>
+        <About />
         <div className="customSpacing"></div>
         <Category />
         <Atasan />
-
       </div>
     </div>
   );

@@ -243,7 +243,7 @@ function About() {
               height: "400px",
             }}
           >
-            <Card.Img variant="top" src={logo1} style={{ height: "188px" }}/>
+            <Card.Img variant="top" src={logo1} style={{ height: "188px" }} />
             <Card.Body style={{ background: "red", color: "white" }}>
               <Card.Title style={{ marginBottom: "10px" }}>
                 <b>Para Insan Telkomsel</b>

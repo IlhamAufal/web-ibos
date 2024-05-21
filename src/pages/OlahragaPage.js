@@ -10,7 +10,7 @@ const OlahragaPage = () => {
       <BannerOlahraga />
       <Pendahuluan />
       <CabangOlahraga />
-      <Jadwal/>
+      <Jadwal />
       {/* <Documentation /> */}
     </div>
   );
