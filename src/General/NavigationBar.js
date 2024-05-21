@@ -22,7 +22,7 @@ const NavigationBar = () => {
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="News & Event">
               <NavDropdown.Item href="#">All</NavDropdown.Item>
-              <NavDropdown.Item href="#">Ibadah</NavDropdown.Item>
+              <NavDropdown.Item href="#">Iman</NavDropdown.Item>
               <NavDropdown.Item href="#">Budaya</NavDropdown.Item>
               <NavDropdown.Item href="#">Olahraga</NavDropdown.Item>
               <NavDropdown.Item href="#">Sosial</NavDropdown.Item>
@@ -30,6 +30,12 @@ const NavigationBar = () => {
               <NavDropdown.Item href="/uploadNews">
                 Tulis Artikel
               </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Bidang">
+              <NavDropdown.Item href="/iman">Iman</NavDropdown.Item>
+              <NavDropdown.Item href="/budaya">Budaya</NavDropdown.Item>
+              <NavDropdown.Item href="/olahraga">Olahraga</NavDropdown.Item>
+              <NavDropdown.Item href="/sosial">Sosial</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/donasi">Donasi</Nav.Link>
             <Nav.Link onClick={() => scrollToSection("tentang")}>Tentang IBOS</Nav.Link>
