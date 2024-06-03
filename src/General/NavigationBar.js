@@ -44,8 +44,6 @@ const NavigationBar = () => {
             <Nav.Link onClick={() => scrollToSection("tentang")}>
               Tentang IBOS
             </Nav.Link> */}
-
-
           </Nav>
           <button
             className="text-sm myButton"
