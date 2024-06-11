@@ -2,18 +2,18 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./tentangStyle.css";
 
-const sejarah = () => {
+const sejarahKomunitas = () => {
   return (
     <Container style={{ marginTop: "80px" }}>
       <h5
         className="mySubMenu1"
         style={{ marginBlock: "auto", fontWeight: "bold" }}
       >
-        Sejarah IBOS
+        Sejarah Komunitas IBOS
       </h5>
       <Row
         className="bg-white mt-4"
-        style={{ padding: "20px", borderRadius: "15px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)" }}
+        style={{ padding: "20px", borderRadius: "15px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)"}}
       >
         <Col className="col-auto"></Col>
         <Col>
@@ -40,4 +40,4 @@ const sejarah = () => {
   );
 };
 
-export default sejarah;
+export default sejarahKomunitas;

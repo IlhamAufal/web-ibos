@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="myFooter">
       <Container>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img src={logo} className="myFooter-img" />
+          <img src={logo} alt="" className="myFooter-img" />
           <Row style={{ marginTop: "40px" }}>
             <Col>
               <div className="nav-group">
@@ -37,9 +37,8 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-
             <Col>
-              <div className="nav-group col-md-4 col-sm-4">
+              <div className="nav-group">
                 <ul>
                   <div className="link-header" style={{ whiteSpace: "nowrap" }}>
                     <span className="header-title">
@@ -80,9 +79,10 @@ const Footer = () => {
                   >
                     <img
                       src={iconFB}
+                      alt=""
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkom</a>
+                    <a href="#">IbosTelkomsel</a>
                   </li>
                   <li
                     className="list-item"
@@ -97,7 +97,7 @@ const Footer = () => {
                       alt="Icon"
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">@IbosTelkom</a>
+                    <a href="#">@IbosTelkomsel</a>
                   </li>
                   <li
                     className="list-item"
@@ -112,7 +112,7 @@ const Footer = () => {
                       alt="Icon"
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkom</a>
+                    <a href="#">IbosTelkomsel</a>
                   </li>
                   <li
                     className="list-item"
@@ -127,7 +127,7 @@ const Footer = () => {
                       alt="Icon"
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkom</a>
+                    <a href="#">IbosTelkomsel</a>
                   </li>
                 </ul>
               </div>
@@ -137,6 +137,7 @@ const Footer = () => {
         <p style={{ marginLeft: "1200px", fontSize: "13px" }}>Powered By</p>
         <img
           src={telkomsel}
+          alt=""
           style={{ width: "122px", height: "30px", marginLeft: "1250px" }}
         />
       </Container>

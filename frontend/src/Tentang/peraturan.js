@@ -56,8 +56,8 @@ const Peraturan = () => {
       {data.map((d, index) => (
         <div key={index} style={{ textDecoration: "none" }}>
           <div
-            className="bg-white justify-content-center"
-            style={{ borderRadius: "25px" }}
+            className="bg-white justify-content-center "
+            style={{ borderRadius: "25px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)" }}
           >
             <Row className="d-flex mt-3">
               <Col className="col-9">
@@ -85,7 +85,7 @@ const Peraturan = () => {
       ))}
       <div
         className="bg-white justify-content-center"
-        style={{ borderRadius: "25px" }}
+        style={{ borderRadius: "25px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)" }}
       >
         <Row className="d-flex mt-3">
           <Col className="col-9">

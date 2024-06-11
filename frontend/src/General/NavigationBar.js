@@ -3,12 +3,12 @@ import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import logoDark from "../asset/logo-dark.jpg";
 import "./general.css";
 
-const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-};
+// const scrollToSection = (sectionId) => {
+//   const section = document.getElementById(sectionId);
+//   if (section) {
+//     section.scrollIntoView({ behavior: "smooth" });
+//   }
+// };
 
 const NavigationBar = () => {
   return (
@@ -16,7 +16,7 @@ const NavigationBar = () => {
       <Navbar variant="dark">
         <Container>
           <Navbar.Brand>
-            <img src={logoDark} width="50%" height="50%" />
+            <img src={logoDark} alt='' width="50%" height="50%" />
           </Navbar.Brand>
           <Nav className="me-auto" style={{ color: "white", gap: "20px" }}>
             <Nav.Link href="/">Home</Nav.Link>
@@ -31,13 +31,18 @@ const NavigationBar = () => {
                 Tulis Artikel
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Bidang">
-              <NavDropdown.Item href="/iman">Iman</NavDropdown.Item>
+            <NavDropdown title="Komunitas">
+            <NavDropdown.Item href="/iman">MTT</NavDropdown.Item>
+              <NavDropdown.Item href="/iman">Persekutuan Doa</NavDropdown.Item>
+              <NavDropdown.Item href="/iman">Forum Hindu</NavDropdown.Item>
               <NavDropdown.Item href="/budaya">Budaya</NavDropdown.Item>
               <NavDropdown.Item href="/olahraga">Olahraga</NavDropdown.Item>
               <NavDropdown.Item href="/sosial">Sosial</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/donasi">Donasi</Nav.Link>
+            <NavDropdown title="Pendaftaran">
+              <NavDropdown.Item href="/iman">Anggota</NavDropdown.Item>
+              <NavDropdown.Item href="/budaya">Komunitas</NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link href="/tentang">Tentang IBOS</Nav.Link>
 
             {/* Ini yang Scroll

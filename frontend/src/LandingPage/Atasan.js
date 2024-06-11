@@ -16,68 +16,32 @@ const Atasan = () => {
         color: "white",
       }}
     >
-      <h2 className="text-center font-bold">Lorem Ipsum</h2>
+      <h2 className="text-center font-bold">Apa Kata Mereka?</h2>
       <Container>
         <Row
           className="justify-content-center d-flex"
           style={{ marginTop: "100px" }}
         >
-          <Col
-            className="col-auto text-center"
-            style={{ marginInline: "50px", maxWidth: "auto" }}
-          >
-            <img
-              src={pfp1}
-              style={{
-                borderRadius: "50%",
-                marginBottom: "20px",
-                height: "200px",
-              }}
-            />
-            <h4 className="font-bold">Name</h4>
-          </Col>
-          <Col
-            className="col-auto text-center"
-            style={{ marginInline: "50px", maxWidth: "auto" }}
-          >
-            <img
-              src={pfp2}
-              style={{
-                borderRadius: "50%",
-                marginBottom: "20px",
-                height: "200px",
-              }}
-            />
-            <h4 className="font-bold">Name</h4>
-          </Col>
-          <Col
-            className="col-auto text-center"
-            style={{ marginInline: "50px", maxWidth: "auto" }}
-          >
-            <img
-              src={pfp3}
-              style={{
-                borderRadius: "50%",
-                marginBottom: "20px",
-                height: "200px",
-              }}
-            />
-            <h4 className="font-bold">Name</h4>
-          </Col>
-          <Col
-            className="col-auto text-center"
-            style={{ marginInline: "50px", maxWidth: "auto" }}
-          >
-            <img
-              src={pfp4}
-              style={{
-                borderRadius: "50%",
-                marginBottom: "20px",
-                height: "200px",
-              }}
-            />
-            <h4 className="font-bold">Name</h4>
-          </Col>
+         {data.map((d, index) => (
+  <Col
+    key={index}
+    className="col-auto text-center"
+    style={{ marginInline: "50px" }}
+  >
+    <img
+      src={d.img}
+      alt={d.name}
+      style={{
+        borderRadius: "50%",
+        marginBottom: "20px",
+        height: "200px",
+      }}
+    />
+    <h4 className="font-bold">{d.name}</h4>
+  </Col>
+))}
+
+          
         </Row>
         <Row>
           <div
@@ -98,5 +62,22 @@ const Atasan = () => {
     </div>
   );
 };
+
+const data =[{
+  img:pfp1,
+  name:'Name 1'
+},
+{
+  img:pfp2,
+  name:'Name 2'
+},
+{
+  img:pfp3,
+  name:'Name 3'
+},
+{
+  img:pfp4,
+  name:'Name 4'
+}]
 
 export default Atasan;
