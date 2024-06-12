@@ -40,8 +40,8 @@ const NavigationBar = () => {
               <NavDropdown.Item href="/sosial">Sosial</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Pendaftaran">
-              <NavDropdown.Item href="/iman">Anggota</NavDropdown.Item>
-              <NavDropdown.Item href="/budaya">Komunitas</NavDropdown.Item>
+              <NavDropdown.Item href="/komunitas">Anggota</NavDropdown.Item>
+              <NavDropdown.Item href="/komunitas/buat">Komunitas</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/tentang">Tentang IBOS</Nav.Link>
 

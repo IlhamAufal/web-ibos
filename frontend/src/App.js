@@ -10,6 +10,7 @@ import DonasiPage from "./pages/DonasiPage";
 import DonasiCase from "./pages/DonasiCase";
 import NotFoundPage from "./pages/NotFoundPage";
 import KomunitasPage from "./pages/KomunitasPage";
+import KomunitasBaruPage from "./pages/KomunitasBaruPage";
 import LoginPage from "./pages/LoginPage";
 import TentangPage from "./pages/tentangPage";
 import "./App.css";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/donasi" element={<DonasiPage />} />
           <Route path="/donasi/case" element={<DonasiCase />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
+          <Route path="/komunitas/baru" element={<KomunitasBaruPage />} />
           {/* <Route path="/iman" element={<ImanPage />} /> */}
           <Route path="/olahraga" element={<OlahragaPage />} />
           <Route path="/budaya" element={<BudayaPage />} />

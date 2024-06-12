@@ -32,8 +32,8 @@ const PendaftaranAnggota = () => {
           <Col className="col-auto mt-4">
             <UploadImage />
           </Col>
-          <Col className="textBoxAbuabu" style={{ margin: "30px 0 o 50px" }}>
-            <div style={{ marginLeft: "25px" }}>
+          <Col style={{ margin: "30px 0 o 50px" }}>
+            <div style={{ marginLeft: "25px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)", borderRadius:'25px' }}>
               <RincianKomunitas />
             </div>
           </Col>

@@ -1,80 +1,69 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+const data=[{
+  label:'Nama Komunitas',
+  placeholder:'Masukkan Nama Komunitas'},
+  {
+  label:'Alamat Sekretariat',
+  placeholder:'Masukkan Alamat Sekretariat'
+}]
 
 const RincianKomunitas = () => {
   return (
     <div
-      className="form-group font-bold"
-      style={{ marginBottom: "20px", maxWidth: "40%" }}
+      className="form-group font-bold ml-2"
+      style={{ marginBottom: "20px", maxWidth: "40%"}}
     >
-      <Row style={{ width: "250%", marginBlock: "20px" }}>
+      <Row style={{ width: "250%", padding:'20px 20px 0 20px'}}>
         <Col>
-          <label htmlFor="exampleFormControlInput1">Nama Program</label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Email Anggota"
-          />
-        </Col>
+                <label htmlFor="exampleFormControlInput1" ty>Nama Komunitas</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder='Masukkan Nama Komunitas'
+                />
+                </Col>
         <Col>
-          <label htmlFor="exampleFormControlInput1">Nomor Telepon</label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Nomor Telepon Anggota"
-          />
-        </Col>
+                <label htmlFor="exampleFormControlInput1" ty>Bidang </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+            <option>Iman</option>
+            <option>Budaya</option>
+            <option>Olahraga</option>
+            <option>Sosial</option>
+          </select>
+                </Col>
       </Row>
-      <Row style={{ width: "250%", marginBlock: "20px" }}>
+      <Row style={{ width: "250%", marginBlock: "20px", padding:'20px 20px 0 20px'}}>
+                <label htmlFor="exampleFormControlInput1" ty>Alamat Sekretariat</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder='Masukkan Alamat Sekretariat'
+                />
+                </Row>
+      <Row style={{ width: "250%", marginBlock: "20px", padding:'20px 20px 40px 20px'}}>
+        <label >Jadwal Kegiatan</label>
         <Col>
-          <label htmlFor="exampleFormControlInput1">
-            Nomor Identitas Karyawan
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Nomor Identitas Karyawan"
-          />
-        </Col>
+            <select class="form-control" id="exampleFormControlSelect1">
+            <option>Senin</option>
+            <option>Selasa</option>
+            <option>Rabu</option>
+            <option>Kamis</option>
+            <option>Jumat</option>
+          </select>
+          </Col>
         <Col>
-          <label htmlFor="exampleFormControlInput1">Jenis Kelamin</label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Jenis Kelamin Karyawan"
-          />
-        </Col>
-      </Row>
-      <Row style={{ width: "250%", marginBlock: "20px" }}>
-        <Col>
-          <div
-            className="form-group font-bold"
-            style={{ marginBottom: "20px" }}
-          >
-            <label htmlFor="exampleFormControlTextarea1">
-              Deskripsi Komunitas
-            </label>
-            <textarea
+            <input
+              type="time"
               className="form-control"
-              id="exampleFormControlTextarea1"
-              rows="4"
-              placeholder="Masukkan deskripsi komunitas"
-            ></textarea>
-          </div>
-        </Col>
-        <Col>
-          <label htmlFor="exampleFormControlInput1">Alamat</label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Alamat Karyawan"
-          />
-        </Col>
+              id="exampleFormControlInput2"
+            />
+          </Col>
       </Row>
     </div>
   );

@@ -4,45 +4,26 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password:'ilham234',
-    database:'ibos'
+    password: 'ilham234',
+    database: 'ibos'
 })
 
-app.get("/", (req, res)=> {
+app.get("/", (req, res) => {
     return res.json("From backend side");
 });
 
-app.get("/olahraga", (req, res)=> {
+app.get("/olahraga", (req, res) => {
     const sql = "select * from jadwal_olahraga";
-    db.query(sql, (err,data)=>{
-        if (err) throw res.json(err);
+    db.query(sql, (err, data) => {
+        if (err) return res.status(500).json({ error: err.message }); // Mengembalikan pesan kesalahan dalam objek
         return res.json(data);
     })
 });
-
-// Percobaan multi table data
-// app.get("/olahraga", (req, res) => {
-//     const sqlJadwal = "SELECT * FROM jadwal_olahraga";
-//     const sqlBerita = "SELECT * FROM berita";
-
-//     db.query(sqlJadwal, (err, jadwalData) => {
-//         if (err) return res.json(err);
-
-//         db.query(sqlBerita, (err, beritaData) => {
-//             if (err) return res.json(err);
-
-//             // Gabungkan kedua data dalam satu objek respon
-//             return res.json({
-//                 jadwal: jadwalData,
-//                 berita: beritaData
-//             });
-//         });
-//     });
-// });
 
 // Percobaan untuk login
 app.post('/login', (req, res) => {
@@ -54,17 +35,17 @@ app.post('/login', (req, res) => {
     db.query(sql, values, (err, data) => {
         if (err) {
             console.error(err);
-            return res.status(500).json("Error" );
+            return res.status(500).json("Internal Server Error" );
         }
-        
+
         if (data.length > 0) {
-            return res.status(200).json("Login Successfully" );
+            return res.status(200).json( "Login Successfully" )
         } else {
-            return res.status(404).json("No Record" );
+            return res.status(404).json( "No Record" )
         }
     });
 });
 
-app.listen(5000, ()=> {
+app.listen(5000, () => {
     console.log("listening");
 })
