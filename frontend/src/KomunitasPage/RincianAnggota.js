@@ -7,7 +7,7 @@ const RincianAnggota = () => {
       className="form-group font-bold"
       style={{ marginBottom: "20px", maxWidth: "40%" }}
     >
-      <Row style={{ width: "250%", marginTop:'40px' }}>
+      <Row style={{ width: "250%", marginTop: "40px" }}>
         <Col>
           <label htmlFor="exampleFormControlInput1">Email</label>
           <input
@@ -27,7 +27,7 @@ const RincianAnggota = () => {
           />
         </Col>
       </Row>
-      <Row style={{ width: "250%", marginTop:'40px'}}>
+      <Row style={{ width: "250%", marginTop: "40px" }}>
         <Col>
           <label htmlFor="exampleFormControlInput1">
             Nomor Identitas Karyawan
@@ -52,7 +52,7 @@ const RincianAnggota = () => {
           </div>
         </Col>
       </Row>
-      <Row style={{ width: "250%", paddingBottom:'20px'}}>
+      <Row style={{ width: "250%", paddingBottom: "20px" }}>
         <Col>
           <div
             className="form-group font-bold"

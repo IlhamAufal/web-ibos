@@ -1,10 +1,9 @@
 import React from "react";
 import BannerCommunity from "../KomunitasPage/bannerCommunity";
 import PendaftaranAnggota from "../KomunitasPage/PendaftaranAnggota";
-import PendaftaranKomunitas from "../KomunitasPage/PendaftaranKomunitas";
 import atlet from "../KomunitasPage/asset/Photo atlet jamaah.svg";
 import Documentation from "../General/Documentation";
-import { Col, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const CommunityPage = () => {
   return (
@@ -62,7 +61,11 @@ const CommunityPage = () => {
           </div>
 
           <div style={{ position: "relative", zIndex: "2", right: "10%" }}>
-            <img src={atlet} alt="" style={{ height: "400px", marginLeft:'5%'}} />
+            <img
+              src={atlet}
+              alt=""
+              style={{ height: "400px", marginLeft: "5%" }}
+            />
           </div>
         </Container>
       </div>

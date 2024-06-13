@@ -18,66 +18,86 @@ const Atasan = () => {
     >
       <h2 className="text-center font-bold">Apa Kata Mereka?</h2>
       <Container>
-        <Row
-          className="justify-content-center d-flex"
-          style={{ marginTop: "100px" }}
+        <div
+          className="justify-content-center"
+          style={{ marginTop: "70px" }}
         >
-         {data.map((d, index) => (
-  <Col
-    key={index}
-    className="col-auto text-center"
-    style={{ marginInline: "50px" }}
-  >
-    <img
-      src={d.img}
-      alt={d.name}
-      style={{
-        borderRadius: "50%",
-        marginBottom: "20px",
-        height: "200px",
-      }}
-    />
-    <h4 className="font-bold">{d.name}</h4>
-  </Col>
-))}
-
-          
-        </Row>
-        <Row>
-          <div
-            style={{ color: "white", marginTop: "70px", textAlign: "center" }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            conDuis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatuExcepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id es Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudantium, to Nemo enim ipsam
-            voluptatem quia voluptas sit
-          </div>
-        </Row>
+          {data.map((d, index) => (
+            <Row
+              key={index}
+              className="col-auto text-center"
+              style={{ marginInline: "50px", marginBottom:'50px'}}
+            >
+              <Col className="col-auto">
+                <img
+                  src={d.img}
+                  alt={d.name}
+                  style={{
+                    borderRadius: "50%",
+                    marginBottom: "20px",
+                    height: "200px",
+                  }}
+                />
+                <h5 className="font-semibold">{d.name}</h5>
+                <label>{d.position}</label>
+              </Col>
+              <Col>
+                <div
+                  style={{
+                    color: "white",
+                    marginTop: "70px",
+                    marginInline:'40px',
+                    textAlign: "justify",
+                  }}
+                >
+                  " {d.text} "
+                </div>
+              </Col>
+            </Row>
+          ))}
+        </div>
       </Container>
     </div>
   );
 };
 
-const data =[{
-  img:pfp1,
-  name:'Name 1'
-},
-{
-  img:pfp2,
-  name:'Name 2'
-},
-{
-  img:pfp3,
-  name:'Name 3'
-},
-{
-  img:pfp4,
-  name:'Name 4'
-}]
+const data = [
+  {
+    img: pfp1,
+    name: "Name 1",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+  {
+    img: pfp2,
+    name: "Name 2",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+  {
+    img: pfp3,
+    name: "Name 3",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+  {
+    img: pfp4,
+    name: "Name 4",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+  {
+    img: pfp1,
+    name: "Name 5",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+  {
+    img: pfp2,
+    name: "Name 6",
+    position:"position",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
+];
 
 export default Atasan;

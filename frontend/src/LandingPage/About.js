@@ -313,7 +313,7 @@ function About() {
             </Card.Body>
           </Card>
         </div>
-        {/* Logo IBOS */}
+        {/* Samnbutan Direktur */}
       </div>
       <div
         className="font-bold"
@@ -322,10 +322,11 @@ function About() {
           fontSize: "24px",
           paddingBlock: "70px",
           marginTop: "40px",
+          letterSpacing: "4px",
         }}
       >
         {" "}
-        Kategori
+        BIDANG
       </div>
     </div>
   );

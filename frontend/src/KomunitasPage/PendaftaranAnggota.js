@@ -40,13 +40,26 @@ const PendaftaranAnggota = () => {
                   margin: "50px 0 30px 20%",
                 }}
               />
-              <div className="mySubMenu1" style={{ textAlign: "center", maxWidth:'200px', maxHeight:'30px' }}>
+              <div
+                className="mySubMenu1"
+                style={{
+                  textAlign: "center",
+                  maxWidth: "200px",
+                  maxHeight: "30px",
+                }}
+              >
                 Name
               </div>
               <div style={{ textAlign: "center" }}>Job Position</div>
             </div>
           </Col>
-          <Col style={{ margin: "30px 0 0 50px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)", borderRadius:'25px' }}>
+          <Col
+            style={{
+              margin: "30px 0 0 50px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)",
+              borderRadius: "25px",
+            }}
+          >
             <div style={{ marginLeft: "25px" }}>
               <RincianAnggota />
             </div>
@@ -61,7 +74,7 @@ const PendaftaranAnggota = () => {
         >
           Daftar Program
         </div>
-          <DaftarProgram/>
+        <DaftarProgram />
       </div>
     </Container>
   );

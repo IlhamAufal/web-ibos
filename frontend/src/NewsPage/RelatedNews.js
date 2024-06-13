@@ -8,23 +8,22 @@ const RelatedNews = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="myBG">
-      <div className="container-column">
-        <div style={{ display: "flex", marginTop: "170px" }}>
+      <div className="container-colum">
           <div
             style={{
               width: "auto",
               height: "calc(100vh - 40px)",
               overflowY: "auto",
               justifyContent: "right",
+              marginTop:'200px'
             }}
           >
             <Container>
               <div class="overflow-hidden">
                 <div className="relatedNews">Related News</div>
-                <Row>
+                <Col className="ml-4">
                   {data.map((d, index) => (
-                    <Col key={index}>
+                    <Row key={index} className="mb-4">
                       <div className="miniNews">
                         <a
                           href="#"
@@ -47,9 +46,9 @@ const RelatedNews = () => {
                           </div>
                         </a>
                       </div>
-                    </Col>
+                    </Row>
                   ))}
-                </Row>
+                </Col>
               </div>
             </Container>
           </div>
@@ -61,8 +60,6 @@ const RelatedNews = () => {
             }}
           ></div>
         </div>
-      </div>
-    </div>
   );
 };
 

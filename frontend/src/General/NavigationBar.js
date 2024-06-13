@@ -16,7 +16,7 @@ const NavigationBar = () => {
       <Navbar variant="dark">
         <Container>
           <Navbar.Brand>
-            <img src={logoDark} alt='' width="50%" height="50%" />
+            <img src={logoDark} alt="" width="50%" height="50%" />
           </Navbar.Brand>
           <Nav className="me-auto" style={{ color: "white", gap: "20px" }}>
             <Nav.Link href="/">Home</Nav.Link>
@@ -32,7 +32,7 @@ const NavigationBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Komunitas">
-            <NavDropdown.Item href="/iman">MTT</NavDropdown.Item>
+              <NavDropdown.Item href="/iman">MTT</NavDropdown.Item>
               <NavDropdown.Item href="/iman">Persekutuan Doa</NavDropdown.Item>
               <NavDropdown.Item href="/iman">Forum Hindu</NavDropdown.Item>
               <NavDropdown.Item href="/budaya">Budaya</NavDropdown.Item>
@@ -41,7 +41,9 @@ const NavigationBar = () => {
             </NavDropdown>
             <NavDropdown title="Pendaftaran">
               <NavDropdown.Item href="/komunitas">Anggota</NavDropdown.Item>
-              <NavDropdown.Item href="/komunitas/buat">Komunitas</NavDropdown.Item>
+              <NavDropdown.Item href="/komunitas/buat">
+                Komunitas
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/tentang">Tentang IBOS</Nav.Link>
 
@@ -49,8 +51,6 @@ const NavigationBar = () => {
             <Nav.Link onClick={() => scrollToSection("tentang")}>
               Tentang IBOS
             </Nav.Link> */}
-
-
           </Nav>
           <button
             className="text-sm myButton"

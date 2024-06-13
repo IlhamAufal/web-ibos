@@ -14,9 +14,6 @@ const RealNews = () => {
   const AuthorPosition = "Distribution Maintenance Server";
 
   return (
-    <div className="myBG">
-      <div className="redBox"></div>
-      <div className="container-column">
         <div
           style={{
             display: "flex",
@@ -26,7 +23,6 @@ const RealNews = () => {
             marginLeft: "80px",
           }}
         >
-          <div style={{ width: "calc(80% - 10px)" }}>
             <Container>
               <h4>
                 <b>Lorem ipsum dolor sit amet consectetur.</b>
@@ -134,9 +130,6 @@ const RealNews = () => {
               </div>
             </Container>
           </div>
-        </div>
-      </div>
-    </div>
   );
 };
 

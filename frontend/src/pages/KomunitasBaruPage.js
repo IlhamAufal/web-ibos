@@ -60,7 +60,11 @@ const CommunityPage = () => {
           </div>
 
           <div style={{ position: "relative", zIndex: "2", right: "10%" }}>
-            <img src={atlet} alt="Atlet" style={{ height: "400px", marginLeft:'5%' }} />
+            <img
+              src={atlet}
+              alt="Atlet"
+              style={{ height: "400px", marginLeft: "5%" }}
+            />
           </div>
         </Container>
       </div>

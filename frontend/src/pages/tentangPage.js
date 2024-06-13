@@ -7,7 +7,7 @@ const tentang = () => {
   return (
     <div className="bg-gray-100">
       <Sejarah />
-      <SejarahKomunitas/>
+      <SejarahKomunitas />
       <Peraturan />
     </div>
   );

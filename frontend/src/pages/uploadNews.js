@@ -1,5 +1,4 @@
-import React from "react";
-import UploadImage from "../UploadNews/uploadImage";
+import { React} from "react";
 import InputNewsDetail from "../UploadNews/InputNewsDetail";
 import "../UploadNews/UNStyle.css";
 import { Container } from "react-bootstrap";
@@ -19,18 +18,7 @@ const uploadNews = () => {
           for="customFile"
           style={{ marginLeft: "11.5%", marginTop: "40px" }}
         >
-          1. Unggah Gambar Berita
-          <caption class="d-flex">
-            Pilih gambar sesuai dengan topik berita yang anda pilih
-          </caption>
-        </label>
-        <UploadImage />
-        <label
-          class="form-label font-bold"
-          for="customFile"
-          style={{ marginLeft: "11.5%", marginTop: "40px" }}
-        >
-          2. Masukkan Detail Berita
+          Masukkan Detail Berita
           <caption class="d-flex">
             Masukkan detail terkait berita yang anda pilih
           </caption>

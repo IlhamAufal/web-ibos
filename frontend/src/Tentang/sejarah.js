@@ -13,7 +13,11 @@ const sejarah = () => {
       </h5>
       <Row
         className="bg-white mt-4"
-        style={{ padding: "20px", borderRadius: "15px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)" }}
+        style={{
+          padding: "20px",
+          borderRadius: "15px",
+          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)",
+        }}
       >
         <Col className="col-auto"></Col>
         <Col>

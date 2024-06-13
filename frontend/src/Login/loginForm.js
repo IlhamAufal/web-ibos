@@ -13,14 +13,15 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:5000/login', inputText)
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    axios
+      .post("http://localhost:5000/login", inputText)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
   const inputEvent = (event) => {
     const { name, value } = event.target;
-    setInputText(prevValue => ({
+    setInputText((prevValue) => ({
       ...prevValue,
       [name]: value,
     }));

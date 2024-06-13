@@ -5,10 +5,10 @@ function Jadwal() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/olahraga')
-      .then(res => res.json())
-      .then(data => setData(data))
-      .catch(err => console.error('Error fetching data:', err));
+    fetch("http://localhost:5000/olahraga")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((err) => console.error("Error fetching data:", err));
   }, []);
 
   return (
@@ -38,7 +38,9 @@ function Jadwal() {
               ))
             ) : (
               <tr>
-                <td colSpan="4" className="text-center">No data available</td>
+                <td colSpan="4" className="text-center">
+                  No data available
+                </td>
               </tr>
             )}
           </tbody>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../NotFoundPage/NFStyle.css'
+import "../NotFoundPage/NFStyle.css";
 
 const NotFoundPage = () => {
   const [file, setFile] = useState(null);
@@ -9,7 +9,6 @@ const NotFoundPage = () => {
   ];
 
   return (
-
     <div className="container bg-black">
       <h1>Dokumentasi</h1>
       <div className="media-container">
@@ -26,8 +25,8 @@ const NotFoundPage = () => {
 
       <div className="popup-media">
         <span>&times;</span>
-        {file?.type === 'video' ? (
-          <video src={file?.url} muted autoPlay controls/>
+        {file?.type === "video" ? (
+          <video src={file?.url} muted autoPlay controls />
         ) : (
           <img src={file?.url} />
         )}

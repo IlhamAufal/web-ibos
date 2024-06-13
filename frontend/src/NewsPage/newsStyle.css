@@ -20,12 +20,10 @@
 }
 
 .redBox {
-  margin: auto;
+  margin-right: 30%;
   margin-top: 50px;
   padding-bottom: 70px;
   padding-left: 100%;
-  width: 1122px;
-  display: flex;
   height: 8vh;
   background: red;
   border-radius: 0 0 40px 0;
@@ -85,6 +83,7 @@
   border-radius: 25px;
   border: 2px solid white;
   z-index: 3;
+  transition: all 0.3s ease-in-out;
 }
 .buttonTulisArtikel:hover {
   background: white;
