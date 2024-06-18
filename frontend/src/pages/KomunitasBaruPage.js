@@ -8,8 +8,7 @@ const CommunityPage = () => {
   return (
     <div>
       <BannerCommunity />
-
-      {/* Komponen KEnapa Harus Gabung? */}
+      {/* Komponen Kenapa Harus Gabung? */}
       <div
         style={{ marginBlock: "50px", position: "relative", display: "flex" }}
       >
@@ -68,7 +67,6 @@ const CommunityPage = () => {
           </div>
         </Container>
       </div>
-
       <PendaftaranKomunitas />
       {/* <Documentation /> */}
     </div>

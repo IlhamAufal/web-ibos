@@ -1,24 +1,3 @@
-.myButton {
-  color: white;
-  border-color: white;
-  border-width: 1px;
-  border-radius: 20px;
-  background: black;
-  background-size: cover;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.myButton:hover {
-  background: white;
-  border-color: black;
-  color: black;
-}
-
-.media {
-  box-sizing: border-box;
-}
-
 .media-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -26,7 +5,7 @@
   margin: 20px auto;
 }
 
-.media-container .media {
+.media {
   max-height: 220px;
   width: 100%;
   border: 3px solid #fff;
@@ -34,13 +13,34 @@
   cursor: pointer;
 }
 
-.media-container .media :is(video, img) {
+.media :is(video, img){
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.media-container .media:hover :is(video, img) {
+.media:hover :is(video, img){
   transform: scale(1.1);
+}
+
+.popup-media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.popup-media :is(video, img){
+  margin-top: 20px;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  border: 3px solid #fff;
 }

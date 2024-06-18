@@ -21,11 +21,11 @@ const NavigationBar = () => {
           <Nav className="me-auto" style={{ color: "white", gap: "20px" }}>
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="News & Event">
-              <NavDropdown.Item href="#">All</NavDropdown.Item>
-              <NavDropdown.Item href="#">Iman</NavDropdown.Item>
+              <NavDropdown.Item href="/newslist">Baca</NavDropdown.Item>
+              {/* <NavDropdown.Item href="#">Iman</NavDropdown.Item>
               <NavDropdown.Item href="#">Budaya</NavDropdown.Item>
               <NavDropdown.Item href="#">Olahraga</NavDropdown.Item>
-              <NavDropdown.Item href="#">Sosial</NavDropdown.Item>
+              <NavDropdown.Item href="#">Sosial</NavDropdown.Item> */}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/uploadNews">
                 Tulis Artikel
@@ -41,7 +41,7 @@ const NavigationBar = () => {
             </NavDropdown>
             <NavDropdown title="Pendaftaran">
               <NavDropdown.Item href="/komunitas">Anggota</NavDropdown.Item>
-              <NavDropdown.Item href="/komunitas/buat">
+              <NavDropdown.Item href="/komunitas/baru">
                 Komunitas
               </NavDropdown.Item>
             </NavDropdown>

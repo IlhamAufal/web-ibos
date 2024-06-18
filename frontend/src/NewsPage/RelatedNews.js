@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import thumbnail from "./asset/thumbnail-news.png";
@@ -6,6 +6,51 @@ import "./newsStyle.css";
 
 const RelatedNews = () => {
   const navigate = useNavigate();
+
+  // Ketika sudah fetch
+  // const [news, setNews] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/news")
+  //     .then((res) => res.json())
+  //     .then((news) => setNews(news))
+  //     .catch((err) => console.error("Error fetching data:", err));
+  // }, []);
+
+  // const shortDescription = (text) => {
+  //   const words = text.split(' ');
+  //   const truncatedWords = words.slice(0, 10);
+  //   const truncatedDescription = truncatedWords.join(' ');
+  //   return truncatedDescription;
+  // };
+
+
+  {/* {news.map((d, index) => (
+                    <Row key={index} className="mb-4">
+                      <div className="miniNews">
+                        <a
+                          href="#"
+                          className="flex w-full"
+                          onClick={() => navigate("/news")}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <img
+                            src={n.gambar}
+                            style={{
+                              height: "100px",
+                              width: "auto",
+                              borderRadius: "10px",
+                            }}
+                          />
+                          <div className="flex p-2 leading-normal">
+                            <h5 className="text-sm font-bold dark:text-black">
+                              {n.deskripsi}
+                            </h5>
+                          </div>
+                        </a>
+                      </div>
+                    </Row>
+                  ))} */}
 
   return (
       <div className="container-colum">
