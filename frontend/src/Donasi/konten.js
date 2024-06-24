@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const CarouselCards = () => {
-  const kategori = "kategori";
   const settings = {
     dots: true,
     infinite: true,
@@ -20,7 +19,7 @@ const CarouselCards = () => {
   return (
     <Container>
       <Row style={{ margin: "60px" }}>
-        <div className="kategori mb-4">{kategori}</div>
+        <div className="kategori mb-4">Kasus</div>
         <Slider
           {...settings}
           prevArrow={<CustomPrevArrow />}

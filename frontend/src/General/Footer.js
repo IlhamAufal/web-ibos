@@ -9,12 +9,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="myFooter">
+    <footer className="myFooter" style={{paddingBottom:'40px'}}>
       <Container>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center"}}>
           <img src={logo} alt="" className="myFooter-img" />
           <Row style={{ marginTop: "40px" }}>
-            <Col>
+            
+            {/* <Col>
               <div className="nav-group">
                 <ul>
                   <div className="link-header" style={{ whiteSpace: "nowrap" }}>
@@ -36,32 +37,19 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </Col>
-            <Col>
-              <div className="nav-group">
-                <ul>
-                  <div className="link-header" style={{ whiteSpace: "nowrap" }}>
-                    <span className="header-title">
-                      <b>Support Us</b>
-                    </span>
-                  </div>
-                  <li className="list-item" style={{ paddingTop: "5px" }}>
-                    <a href="">Contact</a>
-                  </li>
-                  <li className="list-item">
-                    <a href="">Faq</a>
-                  </li>
-                  <li className="list-item">
-                    <a href="">Location</a>
-                  </li>
-                  <li className="list-item">
-                    <a href="">Product</a>
-                  </li>
-                </ul>
-              </div>
-            </Col>
+            </Col> */}
 
-            <Col>
+            <Col className="mt-4">
+              <div className="nav-group">
+                  <div className="link-header" style={{ whiteSpace: "nowrap" }}>
+                    <span className="header-title">
+                      <b>Sekretariat IBOS</b>
+                    </span>
+                    <p className="mt-2">Telkomsel Sport Center, Lantai 6, TSO</p>
+                  </div>
+              </div>
+            </Col>
+            <Col className="col-auto mt-4">
               <div className="nav-group">
                 <ul>
                   <div className="link-header" style={{ whiteSpace: "nowrap" }}>
@@ -82,22 +70,7 @@ const Footer = () => {
                       alt=""
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkomsel</a>
-                  </li>
-                  <li
-                    className="list-item"
-                    style={{
-                      paddingTop: "5px",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <img
-                      src={iconX}
-                      alt="Icon"
-                      style={{ marginRight: "5px", height: "28px" }}
-                    />
-                    <a href="#">@IbosTelkomsel</a>
+                    <a href="#">IBOSTelkomsel</a>
                   </li>
                   <li
                     className="list-item"
@@ -112,7 +85,7 @@ const Footer = () => {
                       alt="Icon"
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkomsel</a>
+                    <a href="#">IBOSTelkomsel</a>
                   </li>
                   <li
                     className="list-item"
@@ -127,7 +100,37 @@ const Footer = () => {
                       alt="Icon"
                       style={{ marginRight: "5px", height: "28px" }}
                     />
-                    <a href="#">IbosTelkomsel</a>
+                    <a href="#">IBOSTelkomsel</a>
+                  </li>
+                  <li
+                    className="list-item"
+                    style={{
+                      paddingTop: "5px",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={iconX}
+                      alt="Icon"
+                      style={{ marginRight: "5px", height: "28px" }}
+                    />
+                    <a href="IBOS@telkomsel.co.id">IBOS@telkomsel.co.id</a>
+                  </li>
+                  <li
+                    className="list-item"
+                    style={{
+                      paddingTop: "5px",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={iconX}
+                      alt="Icon"
+                      style={{ marginRight: "5px", height: "28px" }}
+                    />
+                    <a href="@IBOS-l@telkomsel.co.id">@IBOS-l@telkomsel.co.id</a>
                   </li>
                 </ul>
               </div>

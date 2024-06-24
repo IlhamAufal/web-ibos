@@ -1,5 +1,11 @@
 import React from "react";
 import thumbnail from "./asset/thumbnail-event.png";
+import thumbnail1 from "./asset/thumbnail1.png";
+import thumbnail2 from "./asset/thumbnail2.png";
+import thumbnail3 from "./asset/thumbnail3.png";
+import thumbnail4 from "./asset/thumbnail4.png";
+import thumbnail5 from "./asset/thumbnail5.png";
+import thumbnail6 from "./asset/thumbnail6.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -51,40 +57,40 @@ const BoxEvent = () => {
 
 const data = [
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "44 Tflyers Penerima Program Penghargaan",
+    img: thumbnail1,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      "Karyawan terpilih penerima program IBOS - Penghargaan Perjalanan Kerohanian tahun 2022..",
   },
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "MTT Adakan Kegiatan Donor Darah",
+    img: thumbnail2,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      "Kegiatan bersama antara komunitas MTT, Persekutuan Doa",
   },
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "Memperingati Hari Bati Adyaksa, BUMN selenggarakan Seni Tari & Musik",
+    img: thumbnail3,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      "Selain seni musik terdapat komunitas Tari Tradisional yang berpartisipasi dalam berbagai event.",
   },
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "Pemeringatan Hari Olahraga Nasional 2023",
+    img: thumbnail4,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      "komunitas olahraga juga menyelenggarakan perhelatan internal seperti pertandingan antar direktorat, latihan bersama.",
   },
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "Olahraga saat ini terdiri dari 17 komunitas cabang olahraga.",
+    img: thumbnail5,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      "Bidang Olahraga menyelenggarakan agenda perhelatan tahunan seperti HUT Telkomsel dan BUMN Fest serta perhelatan tiga tahunan Olympiasel.",
   },
   {
-    title: "Noteworthy technology acquisitions 2021",
-    img: thumbnail,
+    title: "Toys for Charity",
+    img: thumbnail6,
     description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      " program CSR Perusahaan, karyawan juga berpartisipasi dalam kegiatan kepedulian sosial dan lingkungan.",
   },
 ];
 

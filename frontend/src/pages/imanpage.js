@@ -1,14 +1,19 @@
 import React from "react";
-import BannerIman from "../IbadahPage/bannerIman";
-import Documentation from "../General/Documentation";
+import BannerIman from "../ImanPage/bannerIman";
+import ProgramIman from "../ImanPage/programIman";
+import Pendahuluan from "../ImanPage/pendahuluan";
+import Dokumentasi from "../ImanPage/dokumentasiIman";
+import "../ImanPage/imanStyle.css";
 
-const IbadahPage = () => {
+const BudayaPage = () => {
   return (
     <div>
       <BannerIman />
-      {/* <Documentation /> */}
+      <Pendahuluan />
+      <ProgramIman />
+      <Dokumentasi/>
     </div>
   );
 };
 
-export default IbadahPage;
+export default BudayaPage;

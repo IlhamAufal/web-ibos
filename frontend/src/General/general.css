@@ -64,3 +64,54 @@
 .list-item:hover a {
   color: rgb(255, 89, 0);
 }
+
+
+/* Khusus Dokumentasi */
+.media-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.media {
+  max-height: 220px;
+  width: 100%;
+  border: 3px solid #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.media :is(video, img) {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .media:hover video, */
+.media:hover img{
+  transform: scale(1.1);
+}
+
+.popup-media {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup-media :is(video, img) {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  border: 3px solid #fff;
+}

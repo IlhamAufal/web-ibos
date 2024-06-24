@@ -16,7 +16,7 @@ import TentangPage from "./pages/tentangPage";
 import "./App.css";
 import "./General/general.css";
 
-// import ImanPage from "./pages/imanpage";
+import ImanPage from "./pages/ImanPage";
 import BudayaPage from "./pages/BudayaPage";
 import OlahragaPage from "./pages/OlahragaPage";
 import SosialPage from "./pages/SosialPage";
@@ -38,7 +38,7 @@ function App() {
           <Route path="/donasi/case" element={<DonasiCase />} />
           <Route path="/komunitas" element={<KomunitasPage />} />
           <Route path="/komunitas/baru" element={<KomunitasBaruPage />} />
-          {/* <Route path="/iman" element={<ImanPage />} /> */}
+          <Route path="/iman" element={<ImanPage />} />
           <Route path="/olahraga" element={<OlahragaPage />} />
           <Route path="/budaya" element={<BudayaPage />} />
           <Route path="/sosial" element={<SosialPage />} />

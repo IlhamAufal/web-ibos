@@ -1,10 +1,12 @@
 import React from "react";
 import "./landingpage.css";
 import { Container, Row, Col } from "react-bootstrap";
-import pfp1 from "./asset/pfp1.svg";
-import pfp2 from "./asset/pfp2.svg";
-import pfp3 from "./asset/pfp3.svg";
-import pfp4 from "./asset/pfp4.svg";
+import pfp1 from "./asset/pfp1.png";
+import pfp2 from "./asset/pfp2.png";
+import pfp3 from "./asset/pfp3.png";
+import pfp4 from "./asset/pfp4.png";
+import pfp5 from "./asset/pfp5.png";
+import pfp6 from "./asset/pfp6.png";
 
 const Atasan = () => {
   return (
@@ -35,7 +37,9 @@ const Atasan = () => {
                   style={{
                     borderRadius: "50%",
                     marginBottom: "20px",
-                    height: "200px",
+                    maxHeight: "200px",
+                    maxWidth:"200px",
+                    autoFit:"cover"
                   }}
                 />
                 <h5 className="font-semibold">{d.name}</h5>
@@ -64,38 +68,38 @@ const Atasan = () => {
 const data = [
   {
     img: pfp1,
-    name: "Name 1",
-    position:"position",
+    name: "Herdin Hasibuan",
+    position:"Ketua Umum MTT",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
     img: pfp2,
-    name: "Name 2",
-    position:"position",
+    name: "Kristian W.A. Nugroho",
+    position:"Ketua Umum Persekutuan Doa",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
     img: pfp3,
-    name: "Name 3",
-    position:"position",
+    name: "I Gede Pongki Witraguna",
+    position:"Ketua Umum Forum Hindu",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
     img: pfp4,
-    name: "Name 4",
-    position:"position",
+    name: "I Putu Yoga Semadi",
+    position:"Ketua Bidang Budaya",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    img: pfp1,
-    name: "Name 5",
-    position:"position",
+    img: pfp5,
+    name: "Lukman Hakim",
+    position:"Ketua Bidang Olahraga",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    img: pfp2,
-    name: "Name 6",
-    position:"position",
+    img: pfp6,
+    name: "Ketua Bidang Sosial",
+    position:"Andry Priyo Santoso",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
 ];

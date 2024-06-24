@@ -49,9 +49,9 @@ const NotFoundPage = () => {
       {file && (
         <div className="popup-media">
           {file.type === "video" ? (
-            <video src={file.url} muted autoPlay controls preload="metadata" />
+            <video src={file.url} muted autoPlay controls loop preload="metadata" />
           ) : (
-            <img src={file.url} alt="popup" />
+            <img src={file.url} alt="" />
           )}
         </div>
       )}

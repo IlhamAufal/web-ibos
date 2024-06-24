@@ -13,14 +13,14 @@
   cursor: pointer;
 }
 
-.media :is(video, img){
+.media :is(video, img) {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
-.media:hover :is(video, img){
+.media:hover img{
   transform: scale(1.1);
 }
 
@@ -35,10 +35,11 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.popup-media :is(video, img){
-  margin-top: 20px;
+.popup-media :is(video, img) {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;

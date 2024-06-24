@@ -1,5 +1,5 @@
 import React from "react";
-import BannerCommunity from "../KomunitasPage/bannerCommunity";
+import BannerKomunitas from "../KomunitasPage/bannerKomunitas";
 import PendaftaranKomunitas from "../KomunitasPage/PendaftaranKomunitas";
 import atlet from "../KomunitasPage/asset/Photo atlet jamaah.svg";
 import { Container } from "react-bootstrap";
@@ -7,10 +7,10 @@ import { Container } from "react-bootstrap";
 const CommunityPage = () => {
   return (
     <div>
-      <BannerCommunity />
+      <BannerKomunitas />
       {/* Komponen Kenapa Harus Gabung? */}
       <div
-        style={{ marginBlock: "50px", position: "relative", display: "flex" }}
+        style={{ marginBlock: "50px", position: "relative", display: "flex" , marginTop:'150px'}}
       >
         <Container>
           <div
@@ -38,22 +38,7 @@ const CommunityPage = () => {
                 Kenapa Harus Gabung?
               </div>
               <div style={{ fontSize: "12px", maxWidth: "80%" }}>
-                Lorem ipsum dolor sit amet consectetur. Curabitur sit enim in
-                vulputate faucibus suspendisse sit. Vulputate eros nulla rutrum
-                felis quam. Nulla elit elit ut ut eros ac velit. Et consequat
-                massa adipiscing dignissim odio. Auctor etiam sed in aliquet
-                eleifend arcu. Ut ultrices ac enim mattis lorem. Lorem et diam
-                nulla est. In lorem pretium urna nibh condimentum aliquam. Enim
-                turpis at sodales leo eget commodo sem volutpat. Malesuada
-                mauris accumsan sed convallis sed facilisis. Euismod dignissim
-                ut tincidunt lobortis vitae nunc pulvinar. Scelerisque lacus
-                eget egestas est magna fermentum velit senectus sed. Non ornare
-                lectus sollicitudin lorem tortor. Suspendisse urna molestie
-                dolor sit id. Mauris diam risus dictumst tortor. Sed scelerisque
-                sapien faucibus ut risus enim nam id. Feugiat ut nibh tellus
-                congue eget. A a sit pretium sed sit blandit blandit feugiat
-                eget. Risus senectus tellus auctor ante tempor scelerisque diam
-                tellus pulvinar.
+              Tflyers berkesempatan untuk bergabung dalam komunitas karyawan sesuai minat/hobinya dalam bidang kerohanian, seni dan budaya, olahraga, serta kepedulian sosial dan lingkungan. Ini sebagai upaya menyeimbangkan antara bekerja dan kehidupan pribadi (work-life balance). Dalam komunitas IBOS, Tflyers dapat mengembangkan jiwa kepemimpinan (cultural leader), bagaimana mengelola suatu organisasi, walaupun dalam skala kecil dengan tetap memperhatikan tata kelola yang baik. Selain itu kegiatan dalam komunitas IBOS bermanfaat pada kesehatan fisik dan mental, menjalin persahabatan, kebersamaan, kerja sama, sportivitas, dan aspek positif lainnya yang akan mendorong produktivitas dalam bekerja. Ayuk… bergabung dalam komunitas IBOS.
               </div>
             </div>
           </div>

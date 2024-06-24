@@ -87,6 +87,7 @@ const BlogCard = () => {
                     width: "300px",
                     marginLeft: "20px",
                     marginTop: "13px",
+                    overflowY:'hidden'
                   }}
                   alt={d.title}
                 />

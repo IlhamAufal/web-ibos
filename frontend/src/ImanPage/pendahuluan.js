@@ -33,7 +33,6 @@ const pendahuluan = () => {
           >
             <img
               src={imgBasket}
-              alt=""
               style={{
                 borderRadius: "0 50px 0 50px",
                 position: "relative",

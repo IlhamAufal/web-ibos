@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flatDonation from "../Donasi/asset/flatDonation.svg";
-import flatZakat from "../Donasi/asset/flatZakat.svg";
-import flatRelawan from "../Donasi/asset/flatRelawan.svg";
+// import flatZakat from "../Donasi/asset/flatZakat.svg";
+// import flatRelawan from "../Donasi/asset/flatRelawan.svg";
 import flatGalangDana from "../Donasi/asset/flatGalangDana.svg";
 import "./donasiStyle.css";
 
@@ -21,38 +21,6 @@ const Tombol = () => {
                 style={{ marginBottom: "20px", height: "80px" }}
               />
               Donasi
-            </div>
-          </button>
-        </Col>
-        <Col>
-          <button
-            style={{ textDecoration: "none" }}
-            onClick={() => (window.location.href = "/#")}
-          >
-            <div className="icon-box">
-              <img
-                src={flatZakat}
-                style={{
-                  marginBottom: "20px",
-                  height: "80px",
-                  marginLeft: "25px",
-                }}
-              />
-              Zakat
-            </div>
-          </button>
-        </Col>
-        <Col>
-          <button
-            style={{ textDecoration: "none" }}
-            onClick={() => (window.location.href = "/#")}
-          >
-            <div className="icon-box">
-              <img
-                src={flatRelawan}
-                style={{ marginBottom: "20px", height: "80px" }}
-              />
-              Jadi Relawan
             </div>
           </button>
         </Col>

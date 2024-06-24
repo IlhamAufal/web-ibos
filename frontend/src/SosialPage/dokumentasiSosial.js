@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../NotFoundPage/NFStyle.css";
+import "../General/general.css";
 
-const dokumentasi = () => {
+const Dokumentasi = () => {
   const [file, setFile] = useState(null);
+  const [data, setData] = useState(null);
 
-  const media = [
+  const konten = [
     { type: "img", url: require("../asset/img.jpg") },
     { type: "video", url: require("../asset/vid.mp4") },
   ];
@@ -16,11 +17,13 @@ const dokumentasi = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/dokumentasi/:kategori")
+    fetch("http://localhost:5000/dokumentasi/sosial")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.error("Error fetching data:", err));
+  }, []);
 
+  useEffect(() => {
     if (file) {
       document.addEventListener("click", handleOutsideClick);
     } else {
@@ -33,14 +36,19 @@ const dokumentasi = () => {
   }, [file]);
 
   return (
-    <div className="container bg-black" style={{
-      marginBlock:'120px',
-      color: "white",
-      textAlign:"center"
-      }}>
-      <h1 className="">Dokumentasi</h1>
+    <div
+      className="container bg-black"
+      style={{
+        padding:'40px',
+        borderRadius:"25px",
+        marginBlock: '120px',
+        color: "white",
+        textAlign: "center",
+      }}
+    >
+      <h1>Dokumentasi</h1>
       <div className="media-container mt-4">
-        {media.map((mediaFile, index) => (
+        {konten.map((mediaFile, index) => (
           <div className="media" key={index} onClick={() => setFile(mediaFile)}>
             {mediaFile.type === "img" ? (
               <img src={mediaFile.url} alt={`media-${index}`} />
@@ -56,7 +64,7 @@ const dokumentasi = () => {
           {file.type === "video" ? (
             <video src={file.url} muted autoPlay controls loop preload="metadata" />
           ) : (
-            <img src={file.url} alt="" />
+            <img src={file.url} alt="popup" />
           )}
         </div>
       )}
@@ -64,4 +72,4 @@ const dokumentasi = () => {
   );
 };
 
-export default dokumentasi;
+export default Dokumentasi;
