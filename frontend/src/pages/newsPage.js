@@ -14,20 +14,20 @@ const NewsPage = () => {
 
   return (
     <>
-        <Row>
-          <Col className="col-7 mr-5">
+      <Row>
+        <Col className="col-7 mr-5">
           <div className="redBox"></div>
-            <RealNews/>
-          </Col>
-          <Col className="col-auto" style={{maxWidth:'450px'}}>
-            <RelatedNews />
-          </Col>
-        </Row>
-        <button className="buttonTulisArtikel" onClick={handleClick}>
-          Tulis Artikel
-        </button>
-        <div className="redBoxDown"></div>
-      </>
+          <RealNews />
+        </Col>
+        <Col className="col-auto" style={{ maxWidth: "450px" }}>
+          <RelatedNews />
+        </Col>
+      </Row>
+      <button className="buttonTulisArtikel" onClick={handleClick}>
+        Tulis Artikel
+      </button>
+      <div className="redBoxDown"></div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 .myNewsCategory {
+  max-width: max-content;
+  padding-inline: 20px;
   display: flex;
-  height: 23px;
-  width: 85px;
   justify-content: center;
   align-items: center;
   background: black;
@@ -71,7 +71,7 @@
 }
 .miniNews :hover {
   background-color: rgb(196, 196, 196);
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .buttonTulisArtikel {
@@ -121,3 +121,27 @@
   height: 20rem;
   z-index: 1;
 }
+
+.search-box {
+  -webkit-appearance: none;
+  -moz-appearance: none;   
+  appearance: none;        
+  padding: 10px;
+  line-height: 30px;
+  margin: 30px auto;
+  width: 100%;              
+  max-width: 400px;         
+  border: 1px solid #ccc;  
+  border-radius: 4px;       
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;       
+  color: #333;      
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.search-box:focus {
+  border-color: red;   
+  box-shadow: 0 2px 8px rgb(255, 0, 0); 
+  outline: red;
+}
+

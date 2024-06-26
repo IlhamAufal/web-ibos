@@ -10,7 +10,12 @@ const CommunityPage = () => {
       <BannerKomunitas />
       {/* Komponen Kenapa Harus Gabung? */}
       <div
-        style={{ marginBlock: "50px", position: "relative", display: "flex" , marginTop:'150px'}}
+        style={{
+          marginBlock: "50px",
+          position: "relative",
+          display: "flex",
+          marginTop: "150px",
+        }}
       >
         <Container>
           <div
@@ -38,7 +43,18 @@ const CommunityPage = () => {
                 Kenapa Harus Gabung?
               </div>
               <div style={{ fontSize: "12px", maxWidth: "80%" }}>
-              Tflyers berkesempatan untuk bergabung dalam komunitas karyawan sesuai minat/hobinya dalam bidang kerohanian, seni dan budaya, olahraga, serta kepedulian sosial dan lingkungan. Ini sebagai upaya menyeimbangkan antara bekerja dan kehidupan pribadi (work-life balance). Dalam komunitas IBOS, Tflyers dapat mengembangkan jiwa kepemimpinan (cultural leader), bagaimana mengelola suatu organisasi, walaupun dalam skala kecil dengan tetap memperhatikan tata kelola yang baik. Selain itu kegiatan dalam komunitas IBOS bermanfaat pada kesehatan fisik dan mental, menjalin persahabatan, kebersamaan, kerja sama, sportivitas, dan aspek positif lainnya yang akan mendorong produktivitas dalam bekerja. Ayuk… bergabung dalam komunitas IBOS.
+                Tflyers berkesempatan untuk bergabung dalam komunitas karyawan
+                sesuai minat/hobinya dalam bidang kerohanian, seni dan budaya,
+                olahraga, serta kepedulian sosial dan lingkungan. Ini sebagai
+                upaya menyeimbangkan antara bekerja dan kehidupan pribadi
+                (work-life balance). Dalam komunitas IBOS, Tflyers dapat
+                mengembangkan jiwa kepemimpinan (cultural leader), bagaimana
+                mengelola suatu organisasi, walaupun dalam skala kecil dengan
+                tetap memperhatikan tata kelola yang baik. Selain itu kegiatan
+                dalam komunitas IBOS bermanfaat pada kesehatan fisik dan mental,
+                menjalin persahabatan, kebersamaan, kerja sama, sportivitas, dan
+                aspek positif lainnya yang akan mendorong produktivitas dalam
+                bekerja. Ayuk… bergabung dalam komunitas IBOS.
               </div>
             </div>
           </div>

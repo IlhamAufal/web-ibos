@@ -33,11 +33,14 @@ const dokumentasi = () => {
   }, [file]);
 
   return (
-    <div className="container bg-black" style={{
-      marginBlock:'120px',
-      color: "white",
-      textAlign:"center"
-      }}>
+    <div
+      className="container bg-black"
+      style={{
+        marginBlock: "120px",
+        color: "white",
+        textAlign: "center",
+      }}
+    >
       <h1 className="">Dokumentasi</h1>
       <div className="media-container mt-4">
         {media.map((mediaFile, index) => (
@@ -54,7 +57,14 @@ const dokumentasi = () => {
       {file && (
         <div className="popup-media">
           {file.type === "video" ? (
-            <video src={file.url} muted autoPlay controls loop preload="metadata" />
+            <video
+              src={file.url}
+              muted
+              autoPlay
+              controls
+              loop
+              preload="metadata"
+            />
           ) : (
             <img src={file.url} alt="" />
           )}

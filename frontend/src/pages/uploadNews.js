@@ -1,4 +1,4 @@
-import { React} from "react";
+import { React } from "react";
 import InputNewsDetail from "../UploadNews/InputNewsDetail";
 import "../UploadNews/UNStyle.css";
 import { Container } from "react-bootstrap";

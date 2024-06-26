@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import { useNavigate, BrowserRouter as Router } from "react-router-dom";
 import "./LoginStyle.css";
+
 
 const Form = () => {
   const [inputText, setInputText] = useState({
@@ -10,13 +12,22 @@ const Form = () => {
   });
 
   const [eye, setEye] = useState(true);
+  const navigate = useNavigate();
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
       .post("http://localhost:5000/login", inputText)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      .then((res) => {
+        console.log(res);
+        if (res.status === 200) {
+          navigate('/');
+        } else {
+          console.error('Login failed');
+        }
+      })
+      .catch((err) => console.error(err));
   };
 
   const inputEvent = (event) => {
@@ -74,7 +85,7 @@ const Form = () => {
             ></i>
           </div>
           <div className="buttons">
-            <button type="submit">Sign in</button>
+            <button type="submit" href='/'>Sign in</button>
           </div>
           <div className="forgot">
             <p>
@@ -87,6 +98,12 @@ const Form = () => {
   );
 };
 
-ReactDOM.render(<Form />, document.getElementById("root"));
+ReactDOM.render(
+  <Router>
+    <Form />
+  </Router>,
+  document.getElementById("root")
+);
+
 
 export default Form;

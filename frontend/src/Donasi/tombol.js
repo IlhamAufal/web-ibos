@@ -13,7 +13,7 @@ const Tombol = () => {
         <Col>
           <button
             style={{ textDecoration: "none" }}
-            onClick={() => (window.location.href = "/#")}
+            onClick={() => (window.location.href = "/donasi/case")}
           >
             <div className="icon-box">
               <img

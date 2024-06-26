@@ -1,5 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+// import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import icnoProgram1 from "./asset/iconProgram1.png";
+import icnoProgram2 from "./asset/iconProgram2.png";
+import icnoProgram3 from "./asset/iconProgram3.png";
 import "./imanStyle.css";
 
 const programIman = () => {
@@ -18,7 +21,7 @@ const programIman = () => {
                   margin: "0 0 40px 30px",
                 }}
               >
-                <img src={imgBasket} className="radiusImg" />
+                <img src={icnoProgram1} className="radiusImg" />
               </div>
             </div>
           </Col>
@@ -31,17 +34,11 @@ const programIman = () => {
                   margin: "30px 0 10px 20px",
                 }}
               >
-                Basket
+                Majelis Telekomuniasi Selular Takwa
               </h4>
             </div>
             <div className="w-3/4 ml-5">
-              Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in
-              tellus libero porttitor viverra nisi. Nunc nunc vestibulum
-              suspendisse ultricies etiam elementum netus. Iaculis consequat
-              amet hac quis purus arcu ligula. Sapien augue congue tincidunt
-              risus leo scelerisque. A cursus tortor auctor non in sem
-              scelerisque integer. Turpis enim est ut massa. Tortor mi lobortis
-              maecenas phasellus. Semper ut.
+            Majelis Telekomuniasi Selular Takwa (MTT) adalah organisasi berbadan hukum perkumpulan yang menaungi seluruh kegiatan kerohanian Islam pada perusahaan dan karyawan PT Telekomunikasi Selular (Telkomsel) MTT mempunyai kegiatan di bidang keagamaan, sosial, dan kemanusian.
             </div>
           </Col>
         </Row>
@@ -55,20 +52,14 @@ const programIman = () => {
                   margin: "30px 0 10px 20px",
                 }}
               >
-                Basket
+                Persekutuan Doa Telkomsel
               </h4>
             </div>
             <div
               className="w-3/4 mr-5"
               style={{ textAlign: "justify", marginLeft: "230px" }}
             >
-              Lorem ipsum dolor sit amet consectetur. Imperdiet suscipit ac in
-              tellus libero porttitor viverra nisi. Nunc nunc vestibulum
-              suspendisse ultricies etiam elementum netus. Iaculis consequat
-              amet hac quis purus arcu ligula. Sapien augue congue tincidunt
-              risus leo scelerisque. A cursus tortor auctor non in sem
-              scelerisque integer. Turpis enim est ut massa. Tortor mi lobortis
-              maecenas phasellus. Semper ut.
+              Persekutuan Doa Telkomsel adalah wadah bagi karyawan Kristiani Telkomsel yang dibentuk dengan tujuan sebagai pemersatu umat Kristiani Telkomsel dalam melaksanakan kegiatan kerohanian dan pelayanan dalam berbagai aspek kehidupan dengan selalu berpegang pada Firman Tuhan dan peraturan Perusahaan.
             </div>
           </Col>
           <Col className="col-3">
@@ -92,7 +83,7 @@ const programIman = () => {
               }}
             >
               <img
-                src={imgBasket}
+                src={icnoProgram2}
                 style={{
                   borderRadius: "0 50px 0 50px ",
                   position: "relative",
@@ -100,6 +91,38 @@ const programIman = () => {
                   height: "200px",
                 }}
               />
+            </div>
+          </Col>
+        </Row>
+        <Row style={{ marginBlock: "20px" }}>
+          <Col className="col-auto">
+            <div style={{ margin: "20px 0 40px 50px" }}>
+              <div className="redBackground"></div>
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: "2",
+                  margin: "0 0 40px 30px",
+                }}
+              >
+                <img src={icnoProgram3} className="radiusImg" />
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <div className="col-9">
+              <h4
+                style={{
+                  textAlign: "justify",
+                  fontWeight: "bold",
+                  margin: "30px 0 10px 20px",
+                }}
+              >
+                Forum Hindu Telkomsel
+              </h4>
+            </div>
+            <div className="w-3/4 ml-5">
+            Forum Hindu Telkomsel (FHT) Forum Hindu Telkomsel sebagai bagian dari kegiatan Iman, Budaya,Olahraga, dan Sosial (IBOS) dibentuk berdasarkan Keputusan Direksi No.026/2006 perihal Pelaksanaan Pembinaan Iman, Budaya Olahraga dan Kegiatan Sosial.
             </div>
           </Col>
         </Row>

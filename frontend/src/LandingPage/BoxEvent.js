@@ -65,11 +65,11 @@ const data = [
   {
     title: "MTT Adakan Kegiatan Donor Darah",
     img: thumbnail2,
-    description:
-      "Kegiatan bersama antara komunitas MTT, Persekutuan Doa",
+    description: "Kegiatan bersama antara komunitas MTT, Persekutuan Doa",
   },
   {
-    title: "Memperingati Hari Bati Adyaksa, BUMN selenggarakan Seni Tari & Musik",
+    title:
+      "Memperingati Hari Bati Adyaksa, BUMN selenggarakan Seni Tari & Musik",
     img: thumbnail3,
     description:
       "Selain seni musik terdapat komunitas Tari Tradisional yang berpartisipasi dalam berbagai event.",

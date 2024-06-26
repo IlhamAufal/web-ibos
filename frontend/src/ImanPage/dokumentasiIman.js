@@ -39,9 +39,9 @@ const Dokumentasi = () => {
     <div
       className="container bg-black"
       style={{
-        padding:'40px',
-        borderRadius:"25px",
-        marginBlock: '120px',
+        padding: "40px",
+        borderRadius: "25px",
+        marginBlock: "120px",
         color: "white",
         textAlign: "center",
       }}
@@ -62,7 +62,14 @@ const Dokumentasi = () => {
       {file && (
         <div className="popup-media">
           {file.type === "video" ? (
-            <video src={file.url} muted autoPlay controls loop preload="metadata" />
+            <video
+              src={file.url}
+              muted
+              autoPlay
+              controls
+              loop
+              preload="metadata"
+            />
           ) : (
             <img src={file.url} alt="popup" />
           )}

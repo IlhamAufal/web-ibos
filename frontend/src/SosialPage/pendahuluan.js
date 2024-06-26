@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import imgSocial from "./asset/imgSocial.png";
 import "./sosialStyle.css";
 
 const pendahuluan = () => {
@@ -33,11 +33,11 @@ const pendahuluan = () => {
             }}
           >
             <img
-              src={imgBasket}
+              src={imgSocial}
               style={{
                 borderRadius: "0 50px 0 50px",
                 position: "relative",
-                width: "70%",
+                width: "auto",
                 height: "200px",
               }}
             />
@@ -45,17 +45,10 @@ const pendahuluan = () => {
         </Col>
         <Col>
           <div className="w-4/5 text-justify">
-            <h3 className="font-bold mb-3">Lorem Ipsum</h3>
+            <h3 className="font-bold mb-3">Deskripsi Bidang</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Lacus viverra in
-              adipiscing enim eu habitasse morbi imperdiet. Ornare dui non
-              suspendisse massa. Et purus nibh blandit ipsum. Sed habitant dolor
-              aliquet sit tellus pulvinar eu erat nibh. Tellus vestibulum ut
-              nisi quis lectus dignissim. Volutpat ac consequat natoque at
-              convallis ut lectus fames morbi. Risus laoreet vel luctus
-              fermentum mauris morbi. Nisl mattis purus massa ipsum sed. Amet
-              neque integer elementum in justo proin turpis congue. Nunc
-              adipiscing nibh consequat volutpat interdum feugiat euismod{" "}
+            IBOS Bidang Sosial mendorong keterlibatan karyawan dalam kegiatan sosial baik melalui program CSR Perseroan (corporate social responsibility) maupun program ESR Karyawan (employee social responsibility).  Program kolaborasi  antara program sosial karyawan dengan Perusahaan (CSR) dalam wadah Telkomsel Employee  Volunteerism. Karyawan dapat berpartisipasi dalam berbagai program CSR seperti Internet Baik, Bakti Negeriku, Terra, Telkomsel Siaga.
+{" "}
             </p>
           </div>
         </Col>

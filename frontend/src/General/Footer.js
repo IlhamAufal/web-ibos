@@ -1,20 +1,19 @@
 import React from "react";
 import logo from "../asset/logo-dark.jpg";
 import telkomsel from "../asset/Telkomsel.png";
-import iconX from "../asset/icon-twitter.png";
 import iconFB from "../asset/icon-facebook.png";
 import iconIG from "../asset/icon-instagram.png";
 import iconYT from "../asset/icon-youtube.png";
+import iconEmail from "../asset/icon-email.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="myFooter" style={{paddingBottom:'40px'}}>
+    <footer className="myFooter" style={{ paddingBottom: "40px" }}>
       <Container>
-        <div style={{ display: "flex", alignItems: "center"}}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <img src={logo} alt="" className="myFooter-img" />
           <Row style={{ marginTop: "40px" }}>
-            
             {/* <Col>
               <div className="nav-group">
                 <ul>
@@ -41,12 +40,12 @@ const Footer = () => {
 
             <Col className="mt-4">
               <div className="nav-group">
-                  <div className="link-header" style={{ whiteSpace: "nowrap" }}>
-                    <span className="header-title">
-                      <b>Sekretariat IBOS</b>
-                    </span>
-                    <p className="mt-2">Telkomsel Sport Center, Lantai 6, TSO</p>
-                  </div>
+                <div className="link-header" style={{ whiteSpace: "nowrap" }}>
+                  <span className="header-title">
+                    <b>Sekretariat IBOS</b>
+                  </span>
+                  <p className="mt-2">Telkomsel Sport Center, Lantai 6, TSO</p>
+                </div>
               </div>
             </Col>
             <Col className="col-auto mt-4">
@@ -111,12 +110,15 @@ const Footer = () => {
                     }}
                   >
                     <img
-                      src={iconX}
+                      src={iconEmail}
                       alt="Icon"
-                      style={{ marginRight: "5px", height: "28px" }}
+                      style={{ marginRight: "5px", height: "28px", filter: 'invert(100%)'}}
                     />
-                    <a href="IBOS@telkomsel.co.id">IBOS@telkomsel.co.id</a>
+                    <a href="@IBOS-l@telkomsel.co.id">
+                      @IBOS-l@telkomsel.co.id
+                    </a>
                   </li>
+
                   <li
                     className="list-item"
                     style={{
@@ -125,12 +127,8 @@ const Footer = () => {
                       alignItems: "center",
                     }}
                   >
-                    <img
-                      src={iconX}
-                      alt="Icon"
-                      style={{ marginRight: "5px", height: "28px" }}
-                    />
-                    <a href="@IBOS-l@telkomsel.co.id">@IBOS-l@telkomsel.co.id</a>
+                    <div className="mr-2">Milist: </div>
+                    <a href="IBOS@telkomsel.co.id">IBOS@telkomsel.co.id</a>
                   </li>
                 </ul>
               </div>

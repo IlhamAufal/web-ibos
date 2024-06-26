@@ -64,7 +64,7 @@ const BlogCard = () => {
           </Col>
         ))} */}
 
-                  {/* Ini yang sebelumnya */}
+        {/* Ini yang sebelumnya */}
         {data.map((d, index) => (
           <Col
             key={index}
@@ -87,7 +87,7 @@ const BlogCard = () => {
                     width: "300px",
                     marginLeft: "20px",
                     marginTop: "13px",
-                    overflowY:'hidden'
+                    overflowY: "hidden",
                   }}
                   alt={d.title}
                 />

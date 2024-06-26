@@ -11,7 +11,7 @@ const BudayaPage = () => {
       <BannerIman />
       <Pendahuluan />
       <ProgramIman />
-      <Dokumentasi/>
+      <Dokumentasi />
     </div>
   );
 };

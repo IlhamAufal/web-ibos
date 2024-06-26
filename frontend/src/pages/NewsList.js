@@ -1,15 +1,11 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import NewsCard from "../NewsPage/NewsCard";
+import iconSearch from '../NewsPage/asset/iconSearch.svg';
 import "../NewsPage/newsStyle.css";
 
 const NewsList = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/uploadNews");
-  };
+  const [query, setQuery] = useState("");
 
   return (
     <div>
@@ -25,7 +21,18 @@ const NewsList = () => {
           Daftar Berita & Acara
         </div>
       </Container>
-      <NewsCard />
+
+      {/* Search Box */}
+      <div>
+        <input
+          className="d-flex search-box justify-center"
+          placeholder="Masukkan kata kunci"
+          onChange={(event) => setQuery(event.target.value)}
+          value={query}
+        />
+      </div>
+
+      <NewsCard query={query} />
     </div>
   );
 };

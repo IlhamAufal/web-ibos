@@ -65,7 +65,6 @@
   color: rgb(255, 89, 0);
 }
 
-
 /* Khusus Dokumentasi */
 .media-container {
   display: grid;
@@ -90,7 +89,7 @@
 }
 
 /* .media:hover video, */
-.media:hover img{
+.media:hover img {
   transform: scale(1.1);
 }
 

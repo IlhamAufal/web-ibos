@@ -23,7 +23,9 @@ function Jadwal() {
               <th>No</th>
               <th>Cabang</th>
               <th>Tempat Latihan</th>
-              <th>Waktu</th>
+              <th>Hari</th>
+              <th>Jam</th>
+              <th>PIC</th>
             </tr>
           </thead>
           <tbody>
@@ -33,7 +35,9 @@ function Jadwal() {
                   <td>{index + 1}</td>
                   <td>{d.nama_olahraga}</td>
                   <td>{d.tempat}</td>
-                  <td>{d.waktu}</td>
+                  <td>{d.hari}</td>
+                  <td>{d.jam}</td>
+                  <td>{d.pic}</td>
                 </tr>
               ))
             ) : (

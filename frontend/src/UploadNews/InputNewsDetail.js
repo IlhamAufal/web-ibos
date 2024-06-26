@@ -20,10 +20,7 @@ const Checkbox = () => {
         checked={isChecked}
         onChange={handleCheckboxChange}
       />
-      <label
-        className="form-check-label text-muted text-sm"
-        htmlFor="Checkbox"
-      >
+      <label className="form-check-label text-muted text-sm" htmlFor="Checkbox">
         Saya menyatakan bahwa data yang saya berikan adalah benar
       </label>
     </div>
@@ -31,12 +28,12 @@ const Checkbox = () => {
 };
 
 const InputNewsDetail = () => {
-  const [judul, setJudul] = useState('');
-  const [deskripsi, setDeskripsi] = useState('');
-  const [tanggal, setTanggal] = useState('');
+  const [judul, setJudul] = useState("");
+  const [deskripsi, setDeskripsi] = useState("");
+  const [tanggal, setTanggal] = useState("");
   const [file, setFile] = useState(null);
-  const [lokasi, setLokasi] = useState('');
-  const [kategori, setKategori] = useState('Iman');
+  const [lokasi, setLokasi] = useState("");
+  const [kategori, setKategori] = useState("Iman");
   const [previewImage, setPreviewImage] = useState(null);
 
   const handleFileChange = (e) => {
@@ -52,18 +49,21 @@ const InputNewsDetail = () => {
       reader.readAsDataURL(selectedFile);
     }
   };
-  
+
   const handleSubmit = async () => {
     const formData = new FormData();
-    formData.append('judul', judul);
-    formData.append('deskripsi', deskripsi);
-    formData.append('tanggal', tanggal);
-    formData.append('file', file); 
-    formData.append('lokasi', lokasi);
-    formData.append('kategori', kategori);
+    formData.append("judul", judul);
+    formData.append("deskripsi", deskripsi);
+    formData.append("tanggal", tanggal);
+    formData.append("file", file);
+    formData.append("lokasi", lokasi);
+    formData.append("kategori", kategori);
 
     try {
-      const response = await axios.post("http://localhost:5000/upload", formData);
+      const response = await axios.post(
+        "http://localhost:5000/upload",
+        formData,
+      );
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -71,7 +71,9 @@ const InputNewsDetail = () => {
   };
 
   return (
-    <Container style={{ width: "1000px", marginBottom: "50px", position: "relative" }}>
+    <Container
+      style={{ width: "1000px", marginBottom: "50px", position: "relative" }}
+    >
       <form>
         <div className="form-group font-bold" style={{ marginBottom: "20px" }}>
           <label htmlFor="judulBerita">Judul Berita</label>
@@ -96,7 +98,10 @@ const InputNewsDetail = () => {
           ></textarea>
         </div>
         <div className="d-flex">
-          <div className="form-group font-bold" style={{ marginBottom: "20px", width: "45%" }}>
+          <div
+            className="form-group font-bold"
+            style={{ marginBottom: "20px", width: "45%" }}
+          >
             <label htmlFor="tanggalKejadian">Tanggal Kejadian</label>
             <input
               type="date"
@@ -106,7 +111,10 @@ const InputNewsDetail = () => {
               onChange={(e) => setTanggal(e.target.value)}
             />
           </div>
-          <div className="form-group font-bold" style={{ marginBottom: "50px", marginLeft: "10%", width: "45%" }}>
+          <div
+            className="form-group font-bold"
+            style={{ marginBottom: "50px", marginLeft: "10%", width: "45%" }}
+          >
             <label htmlFor="lokasiKejadian">Lokasi Kejadian</label>
             <input
               type="text"
@@ -114,11 +122,14 @@ const InputNewsDetail = () => {
               id="lokasiKejadian"
               placeholder="Masukkan Lokasi Kejadian"
               value={lokasi}
-              onChange={(e) => setLokasi(e.target.value)}  
+              onChange={(e) => setLokasi(e.target.value)}
             />
           </div>
         </div>
-        <div className="form-group font-bold" style={{ marginBottom: "20px", width: "45%" }}>
+        <div
+          className="form-group font-bold"
+          style={{ marginBottom: "20px", width: "45%" }}
+        >
           <label htmlFor="gambarkejadian">Foto Kejadian</label>
           <input
             type="file"
@@ -131,7 +142,11 @@ const InputNewsDetail = () => {
         {previewImage && (
           <div
             className="mb-4 d-flex justify-content-center"
-            style={{ border: "dashed grey 4px", width: "500px", margin: "auto" }}
+            style={{
+              border: "dashed grey 4px",
+              width: "500px",
+              margin: "auto",
+            }}
           >
             <img
               src={previewImage}
@@ -142,11 +157,11 @@ const InputNewsDetail = () => {
         )}
         <div className="form-group font-bold" style={{ marginBottom: "50px" }}>
           <label htmlFor="kategoriBerita">Kategori Berita</label>
-          <select 
-            className="form-control" 
+          <select
+            className="form-control"
             id="kategoriBerita"
             value={kategori}
-            onChange={(e) => setKategori(e.target.value)}  
+            onChange={(e) => setKategori(e.target.value)}
           >
             <option>Iman</option>
             <option>Budaya</option>
@@ -165,7 +180,7 @@ const InputNewsDetail = () => {
           style={{
             margin: "20px auto",
             display: "block",
-            padding: "10px 20px"
+            padding: "10px 20px",
           }}
           onClick={handleSubmit}
         >

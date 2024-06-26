@@ -12,7 +12,7 @@ const BudayaPage = () => {
       <BannerBudaya />
       <Pendahuluan />
       <ProgramBudaya />
-      <Dokumentasi/>
+      <Dokumentasi />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import imgReligion from './asset/imgReligion.png'
 
 const pendahuluan = () => {
   return (
@@ -32,7 +32,7 @@ const pendahuluan = () => {
             }}
           >
             <img
-              src={imgBasket}
+              src={imgReligion}
               style={{
                 borderRadius: "0 50px 0 50px",
                 position: "relative",

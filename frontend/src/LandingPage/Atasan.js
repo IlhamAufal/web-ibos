@@ -20,47 +20,45 @@ const Atasan = () => {
     >
       <h2 className="text-center font-bold">Apa Kata Mereka?</h2>
       <Container>
-        <div
-          className="justify-content-center"
-          style={{ marginTop: "70px" }}
-        >
-          {data.map((d, index) => (
-            <Row
-              key={index}
-              className="col-auto text-center"
-              style={{ marginInline: "50px", marginBottom:'50px'}}
-            >
-              <Col className="col-auto">
-                <img
-                  src={d.img}
-                  alt={d.name}
-                  style={{
-                    borderRadius: "50%",
-                    marginBottom: "20px",
-                    maxHeight: "200px",
-                    maxWidth:"200px",
-                    autoFit:"cover"
-                  }}
-                />
-                <h5 className="font-semibold">{d.name}</h5>
-                <label>{d.position}</label>
-              </Col>
-              <Col>
-                <div
-                  style={{
-                    color: "white",
-                    marginTop: "70px",
-                    marginInline:'40px',
-                    textAlign: "justify",
-                  }}
+      <div className="justify-content-center" style={{ marginTop: "70px" }}>
+        {Array.from({ length: 2 }, (_, rowIndex) => (
+          <Row
+            key={rowIndex}
+            className="text-center"
+            style={{ marginBottom: "50px" }}
+          >
+            {data
+              .slice(rowIndex * 3, rowIndex * 3 + 3)
+              .map((d, colIndex) => (
+                <Col
+                  key={colIndex}
+                  className="col-4 d-flex flex-column align-items-center"
                 >
-                  " {d.text} "
-                </div>
-              </Col>
-            </Row>
-          ))}
-        </div>
-      </Container>
+                  <img
+                    src={d.img}
+                    alt={d.name}
+                    style={{
+                      borderRadius: "50%",
+                      marginBottom: "20px",
+                      maxHeight: "200px",
+                      maxWidth: "200px",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <h5 className="font-semibold">{d.name}</h5>
+                  <label>{d.position}</label>
+                </Col>
+              ))}
+          </Row>
+        ))}
+          <Row className="justify-content-center">
+            <div className="text-center text-white" style={{marginBlock:'20px', maxWidth:'50%'}}>"Komunitas Tenis Meja Telkomsel kembali menghadirkan kompetisi antar karyawan, Internal Telkomsel Table Tennis 2023. Kompetisi ini diselenggarakan pada 21-31 Agustus 2023 yang diikuti 54 peserta."
+            <p className="font-semibold italic mt-4">- Suhandi (Ketua Komunitas Tenis Meja)</p></div>
+            
+          </Row>
+  
+      </div>
+    </Container>
     </div>
   );
 };
@@ -69,38 +67,32 @@ const data = [
   {
     img: pfp1,
     name: "Herdin Hasibuan",
-    position:"Ketua Umum MTT",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Ketua Umum MTT",
   },
   {
     img: pfp2,
     name: "Kristian W.A. Nugroho",
-    position:"Ketua Umum Persekutuan Doa",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Ketua Umum Persekutuan Doa",
   },
   {
     img: pfp3,
     name: "I Gede Pongki Witraguna",
-    position:"Ketua Umum Forum Hindu",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Ketua Umum Forum Hindu",
   },
   {
     img: pfp4,
     name: "I Putu Yoga Semadi",
-    position:"Ketua Bidang Budaya",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Ketua Bidang Budaya",
   },
   {
     img: pfp5,
     name: "Lukman Hakim",
-    position:"Ketua Bidang Olahraga",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Ketua Bidang Olahraga",
   },
   {
     img: pfp6,
     name: "Ketua Bidang Sosial",
-    position:"Andry Priyo Santoso",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+    position: "Andry Priyo Santoso",
   },
 ];
 
