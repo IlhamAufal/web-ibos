@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import imgBasket from "../OlahragaPage/asset/imgBasket.png";
+import imgCulture from "./asset/imgCulture.png";
 
 const pendahuluan = () => {
   return (
@@ -32,7 +32,7 @@ const pendahuluan = () => {
             }}
           >
             <img
-              src={imgBasket}
+              src={imgCulture}
               alt=""
               style={{
                 borderRadius: "0 50px 0 50px",
@@ -45,17 +45,14 @@ const pendahuluan = () => {
         </Col>
         <Col>
           <div className="w-4/5 text-justify">
-            <h3 className="font-bold mb-3">Lorem Ipsum</h3>
+            <h3 className="font-bold mb-3">Deskripsi Bidang</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Lacus viverra in
-              adipiscing enim eu habitasse morbi imperdiet. Ornare dui non
-              suspendisse massa. Et purus nibh blandit ipsum. Sed habitant dolor
-              aliquet sit tellus pulvinar eu erat nibh. Tellus vestibulum ut
-              nisi quis lectus dignissim. Volutpat ac consequat natoque at
-              convallis ut lectus fames morbi. Risus laoreet vel luctus
-              fermentum mauris morbi. Nisl mattis purus massa ipsum sed. Amet
-              neque integer elementum in justo proin turpis congue. Nunc
-              adipiscing nibh consequat volutpat interdum feugiat euismod{" "}
+              IBOS Bidang Budaya sebagai agen budaya perusahaan dan budaya
+              nasional bertujuan untuk memajukan kebudayaan sebagai aset Bangsa
+              dan Perusahaan dengan berasas pada pemajuan kebudayaan dengan
+              memperhatikan keberagaman dan kelokalan. Komunitas IBOS Bidang
+              Budaya antara lain Paduan Suara, Band, Tari Tradisional, Tari
+              Modern, Toys Community, dan Sketsa.{" "}
             </p>
           </div>
         </Col>

@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate, BrowserRouter as Router } from "react-router-dom";
 import "./LoginStyle.css";
 
-
 const Form = () => {
   const [inputText, setInputText] = useState({
     email: "",
@@ -13,7 +12,6 @@ const Form = () => {
 
   const [eye, setEye] = useState(true);
   const navigate = useNavigate();
-  
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,9 +20,9 @@ const Form = () => {
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
-          navigate('/');
+          navigate("/");
         } else {
-          console.error('Login failed');
+          console.error("Login failed");
         }
       })
       .catch((err) => console.error(err));
@@ -85,7 +83,9 @@ const Form = () => {
             ></i>
           </div>
           <div className="buttons">
-            <button type="submit" href='/'>Sign in</button>
+            <button type="submit" href="/">
+              Sign in
+            </button>
           </div>
           <div className="forgot">
             <p>
@@ -102,8 +102,7 @@ ReactDOM.render(
   <Router>
     <Form />
   </Router>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
-
 
 export default Form;

@@ -7,11 +7,6 @@ import iconFB from "../asset/icon-facebook.png";
 import iconIG from "../asset/icon-instagram.png";
 
 const RealNews = () => {
-  // const place = "JAKARTA ";
-  // const tanggal = "Jumat, 12 April 2024";
-  // const Author = "Guy hawkins";
-  // const AuthorPosition = "Distribution Maintenance Server";
-
   return (
     <div
       style={{
@@ -24,7 +19,7 @@ const RealNews = () => {
     >
       <Container>
         <h4>
-          <b>Noteworthy Technology Acquisitions</b>
+          <b>Kolaborasi Membawa Prestasi: Peraihan Juara Runner Up</b>
         </h4>
         <p className="myNewsCategory">Olahraga</p>
         <div
@@ -43,12 +38,28 @@ const RealNews = () => {
               marginBottom: "100px",
             }}
           >
-            <b>JAKARTA - </b>Rabu, 30 Juli 2023 
+            <b>JAKARTA - </b>Rabu, 30 Juli 2023
             <br />
-            Kementerian BUMN menyelenggarakan BUMN Fest 2023 yang berlangsung dari tanggal 17-30 Juli 2023 di Jakarta.  Perhelatan tahunan ini merupakan ajang perlombaan seni, budaya, dan olahraga yang ikuti 12 klaster BUMN dengan 2.850 peserta, yaitu Sepak Bola 420 orang ,Tenis Lapangan 216 orang, Bulutangkis Putra 285 orang, Bulutangkis Putri 105 orang, Bola Voli Putra 170 orang, Bola Voli Putri 51 orang, Bola Basket Putra 270 orang, Bola Basket Putri 90 orang, Tenis Meja Putra 160 orang, Tenis Meja Putri 60 orang, Zumba 100 orang, e-Eport ML 171 orang, E-sport PUBG 104 orang, Bakiak 72 orang, Gobak Sodor 72 orang, Band 189 orang, Paduan Suara 240 orang, dan Berbalas Pantun 75 orang, serta 359 orang official.
+            Kementerian BUMN menyelenggarakan BUMN Fest 2023 yang berlangsung
+            dari tanggal 17-30 Juli 2023 di Jakarta. Perhelatan tahunan ini
+            merupakan ajang perlombaan seni, budaya, dan olahraga yang ikuti 12
+            klaster BUMN dengan 2.850 peserta, yaitu Sepak Bola 420 orang ,Tenis
+            Lapangan 216 orang, Bulutangkis Putra 285 orang, Bulutangkis Putri
+            105 orang, Bola Voli Putra 170 orang, Bola Voli Putri 51 orang, Bola
+            Basket Putra 270 orang, Bola Basket Putri 90 orang, Tenis Meja Putra
+            160 orang, Tenis Meja Putri 60 orang, Zumba 100 orang, e-Eport ML
+            171 orang, E-sport PUBG 104 orang, Bakiak 72 orang, Gobak Sodor 72
+            orang, Band 189 orang, Paduan Suara 240 orang, dan Berbalas Pantun
+            75 orang, serta 359 orang official.
             <br />
             <b>Tim Telkomsel </b>
-             menyertakan 31 peserta  (Sepak Bola 5 orang, Bulutangkis 6 orang, Bola Basket 3 orang, Tenis Meja 2 orang, e-Sport 5 orang, Band 6 orang, Paduan Suara 4 orang) dan 4 orang official. Mereka tergabung dalam tim Telkom Group yang termasuk dalam kontingen klaster Telekomunikasi dan Media. Pada BUMN Fest 2023 ini juara umum ditempati oleh klaster Jasa Keuangan dan sebagai runner-up adalah klaster Telekomunikasi dan Media.
+            menyertakan 31 peserta (Sepak Bola 5 orang, Bulutangkis 6 orang,
+            Bola Basket 3 orang, Tenis Meja 2 orang, e-Sport 5 orang, Band 6
+            orang, Paduan Suara 4 orang) dan 4 orang official. Mereka tergabung
+            dalam tim Telkom Group yang termasuk dalam kontingen klaster
+            Telekomunikasi dan Media. Pada BUMN Fest 2023 ini juara umum
+            ditempati oleh klaster Jasa Keuangan dan sebagai runner-up adalah
+            klaster Telekomunikasi dan Media.
           </p>
         </div>
         <h6>

@@ -76,6 +76,24 @@ app.post('/upload', upload.single('file'), (req, res) => {
   });
 });
 
+app.post('/upload/komunitas', upload.single('file'), (req, res) => {
+  const { nama, bidang, alamat, jadwal } = req.body;
+  const aturan = req.file.filename;
+  const pengurus = req.file.filename;
+  const beritaAcara = req.file.filename;
+
+  const sql = "INSERT INTO news(`nama`, `bidang`, `alamat`, `jadwal`, `aturan`, `pengurus`, `beritaAcara`) VALUES (?, ?, ?, ?, ?, ?, ?)";
+  const values = [nama, bidang, alamat, jadwal, aturan, pengurus, beritaAcara];
+
+  db.query(sql, values, (err, result) => {
+    if (err) {
+      console.error("Error in upload query:", err);
+      return res.status(500).json({ error: 'Error in upload query' });
+    }
+    return res.json({ status: "Success" });
+  });
+});
+
 app.post('/upload/dokumentasi', upload.single('file'), (req, res) => {
     const { nama, kategori } = req.body;
     const media = req.file.filename;

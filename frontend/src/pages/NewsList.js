@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import NewsCard from "../NewsPage/NewsCard";
-import iconSearch from '../NewsPage/asset/iconSearch.svg';
+import iconSearch from "../NewsPage/asset/iconSearch.svg";
 import "../NewsPage/newsStyle.css";
 
 const NewsList = () => {

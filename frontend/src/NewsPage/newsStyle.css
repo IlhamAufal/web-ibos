@@ -124,24 +124,25 @@
 
 .search-box {
   -webkit-appearance: none;
-  -moz-appearance: none;   
-  appearance: none;        
+  -moz-appearance: none;
+  appearance: none;
   padding: 10px;
   line-height: 30px;
   margin: 30px auto;
-  width: 100%;              
-  max-width: 400px;         
-  border: 1px solid #ccc;  
-  border-radius: 4px;       
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 16px;       
-  color: #333;      
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+  font-size: 16px;
+  color: #333;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .search-box:focus {
-  border-color: red;   
-  box-shadow: 0 2px 8px rgb(255, 0, 0); 
+  border-color: red;
+  box-shadow: 0 2px 8px rgb(255, 0, 0);
   outline: red;
 }
-

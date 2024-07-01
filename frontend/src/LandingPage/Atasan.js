@@ -1,67 +1,13 @@
 import React from "react";
 import "./landingpage.css";
 import { Container, Row, Col } from "react-bootstrap";
+import pfp from "./asset/pfp.png";
 import pfp1 from "./asset/pfp1.png";
 import pfp2 from "./asset/pfp2.png";
 import pfp3 from "./asset/pfp3.png";
 import pfp4 from "./asset/pfp4.png";
 import pfp5 from "./asset/pfp5.png";
 import pfp6 from "./asset/pfp6.png";
-
-const Atasan = () => {
-  return (
-    <div
-      style={{
-        backgroundColor: "#600606",
-        padding: "90px 50px",
-        marginTop: "100px",
-        color: "white",
-      }}
-    >
-      <h2 className="text-center font-bold">Apa Kata Mereka?</h2>
-      <Container>
-      <div className="justify-content-center" style={{ marginTop: "70px" }}>
-        {Array.from({ length: 2 }, (_, rowIndex) => (
-          <Row
-            key={rowIndex}
-            className="text-center"
-            style={{ marginBottom: "50px" }}
-          >
-            {data
-              .slice(rowIndex * 3, rowIndex * 3 + 3)
-              .map((d, colIndex) => (
-                <Col
-                  key={colIndex}
-                  className="col-4 d-flex flex-column align-items-center"
-                >
-                  <img
-                    src={d.img}
-                    alt={d.name}
-                    style={{
-                      borderRadius: "50%",
-                      marginBottom: "20px",
-                      maxHeight: "200px",
-                      maxWidth: "200px",
-                      objectFit: "cover",
-                    }}
-                  />
-                  <h5 className="font-semibold">{d.name}</h5>
-                  <label>{d.position}</label>
-                </Col>
-              ))}
-          </Row>
-        ))}
-          <Row className="justify-content-center">
-            <div className="text-center text-white" style={{marginBlock:'20px', maxWidth:'50%'}}>"Komunitas Tenis Meja Telkomsel kembali menghadirkan kompetisi antar karyawan, Internal Telkomsel Table Tennis 2023. Kompetisi ini diselenggarakan pada 21-31 Agustus 2023 yang diikuti 54 peserta."
-            <p className="font-semibold italic mt-4">- Suhandi (Ketua Komunitas Tenis Meja)</p></div>
-            
-          </Row>
-  
-      </div>
-    </Container>
-    </div>
-  );
-};
 
 const data = [
   {
@@ -91,9 +37,89 @@ const data = [
   },
   {
     img: pfp6,
-    name: "Ketua Bidang Sosial",
-    position: "Andry Priyo Santoso",
+    name: "Andry Priyo Santoso",
+    position: "Ketua Bidang Sosial",
   },
 ];
+
+const Atasan = () => {
+  return (
+    <div
+      style={{
+        backgroundColor: "#600606",
+        padding: "90px 50px",
+        marginTop: "100px",
+        color: "white",
+      }}
+    >
+      <h2 className="text-center font-bold">Pengurus IBOS</h2>
+      <Container>
+        <div className="justify-content-center" style={{ marginTop: "70px" }}>
+          {Array.from({ length: 2 }, (_, rowIndex) => (
+            <Row
+              key={rowIndex}
+              className="text-center"
+              style={{ marginBottom: "50px" }}
+            >
+              {data.slice(rowIndex * 3, rowIndex * 3 + 3).map((d, colIndex) => (
+                <Col
+                  key={colIndex}
+                  className="col-4 d-flex flex-column align-items-center"
+                >
+                  <img
+                    src={d.img}
+                    alt={d.name}
+                    style={{
+                      borderRadius: "50%",
+                      marginBottom: "20px",
+                      maxHeight: "200px",
+                      maxWidth: "200px",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <h5 className="font-semibold">{d.name}</h5>
+                  <label>{d.position}</label>
+                </Col>
+              ))}
+            </Row>
+          ))}
+          <Row className="justify-content-center">
+            <Col className="col-auto text-center">
+              <div
+                style={{
+                  width: "150px",
+                  height: "200px",
+                  overflow: "hidden",
+                  margin: "20px 50px 20px 80px",
+                }}
+              >
+                <img
+                  src={pfp}
+                  alt=""
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+            </Col>
+            <Col className="d-flex flex-column justify-content-center">
+              <div>
+                “Tflyers Insan IBOS, dalam bekerja kita perlu mengelola waktu
+                dan energi untuk kehidupan pekerjaan dan pribadi (work-life
+                balance) dengan baik agar tetap sehat, bugar, dan bersemangat
+                sehingga dapat menjaga dan meningkatkan produktivitas kerja kita
+                secara berkelanjutan. IBOS memfasilitasi kita semua dalam
+                berbagai komunitas di bidang Iman, Budaya, Olahraga, dan Sosial.
+                Yuk gabung di IBOS. Ramein kegiatannya. Rapihkan juga organisasi
+                pengelolaannya.”
+                <p className="font-semibold italic mt-4">
+                  - Helmi Wahidi (Koordinator/Caretaker Presidium IBOS)
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 export default Atasan;

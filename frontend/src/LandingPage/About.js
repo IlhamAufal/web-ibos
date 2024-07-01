@@ -3,18 +3,14 @@ import Card from "react-bootstrap/Card";
 import logo1 from "./asset/logo1.png";
 import logo2 from "./asset/logo2.png";
 import logo3 from "./asset/logo3.png";
+import logoUtama from "./asset/logoUtama.svg";
 import { Container, Row, Col } from "react-bootstrap";
-import pfp from "./asset/pfp.png";
-import strategi from "./asset/strategyHouseIbos.png";
-import organisasi from "./asset/organisasiIbos.png";
-// import imgBasket from "../OlahragaPage/asset/imgBasket.png";
-import about0 from "./asset/about0.png"
-import about1 from "./asset/about1.png"
-import about2 from "./asset/about2.png"
-import about3 from "./asset/about3.png"
-import about4 from "./asset/about4.png"
+// import pfp from "./asset/pfp.png";
+// import strategi from "./asset/strategyHouseIbos.png";
+// import organisasi from "./asset/organisasiIbos.png";
+import about0 from "./asset/about0.png";
+import about1 from "./asset/about1.png";
 import "./landingpage.css";
-
 
 function About() {
   return (
@@ -36,7 +32,7 @@ function About() {
                 margin: "0 0 40px 30px",
               }}
             >
-              <img className="imgBasket1" alt="" src={about0}/>
+              <img className="imgBasket1" alt="" src={about0} />
             </div>
           </Col>
           <Col className="col-6">
@@ -117,185 +113,9 @@ function About() {
           </Col>
         </Row>
       </Container>
-      <Container
-        style={{
-          marginBlock: "80px",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Row className="d-flex justify-content-center">
-          <Col className="col-auto">
-            <div className="blue-square"></div>
-            <div
-              style={{
-                position: "relative",
-                zIndex: "2",
-                margin: "0 0 40px 30px",
-              }}
-            >
-              <img className="imgBasket1" alt="" src={about2} />
-            </div>
-          </Col>
-          <Col className="col-6">
-            <div
-              style={{
-                margin: "30px 0 0 10%",
-                textAlign: "justify",
-              }}
-            >
-              <div
-                style={{
-                  color: "red",
-                  fontSize: "45px",
-                  fontWeight: "bold",
-                }}
-              >
-                Visi & Misi IBOS
-              </div>
-              <div>
-                <b>Visi</b>
-                <p>
-                  “Menuju insan Telkomsel paripurna yang beriman dan bertaqwa,
-                  berakhlak mulia, sehat jasmani, dan peduli”.
-                </p>
-                <b>Misi</b>
-                <li>
-                  Menyelenggarakan kegiatan iman, budaya, olahraga, dan sosial
-                  (IBOS) secara sukarela dari, oleh, dan untuk Karyawan.
-                </li>
-                <li>
-                  Mengelola penyelenggaraan kegiatan IBOS dalam suatu wadah
-                  organisasi yang demokratis dan memiliki tata kelola yang baik.
-                </li>
-                <li>
-                  Mendukung pembangunan sumberdaya manusia Perseroan yang
-                  mencakup aspek roh, rasio, raga, dan rasa (4R) dalam bentuk
-                  kegiatan-kegiatan IBOS yang sejalan dengan visi, misi dan
-                  budaya perusahaan Perseroan.
-                </li>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <Container
-        style={{
-          marginBlock: "80px",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Row className="d-flex justify-content-center" style={{ gap: "100px" }}>
-          <Col className="col-6">
-            <div
-              style={{
-                margin: "30px 0 0 10%",
-                textAlign: "justify",
-              }}
-            >
-              <div
-                style={{
-                  color: "red",
-                  fontSize: "45px",
-                  fontWeight: "bold",
-                }}
-              >
-                Strategi & Tujuan IBOS
-              </div>
-              <b>Strategi</b>
-              <p>
-                Strategi tertuang dalam bentuk <i>Strategy House IBOS</i> yang
-                terdiri dari unsur pokok visi dan strategi{" "}
-                <i>Human Capital Management</i> (HCM), kebijakan, visi dan misi
-                IBOS, serta pilar kegiatan IBOS.
-              </p>
-              <img
-                  src={strategi}
-                  alt=""
-                  style={{
-                    maxHeight: "300px",
-                    width: "auto",
-                    marginBlock: "30px",
-                  }}
-                />
-              <b>Tujuan</b>
-              <li>
-                Terwujudnya tata kelola kegiatan yang baik berdasarkan
-                nilai-nilai dan standar yang berlaku dalam pelaksanaan kegiatan
-                di bidang iman, budaya, olahraga, dan sosial.
-              </li>
-              <li>
-                Sebagai sarana bagi Karyawan untuk mengekspresikan dan melatih
-                diri dalam bidang-bidang yang tidak terkait langsung dengan
-                bisnis Perseroan sehingga dapat meningkatkan kualitas hidup
-                Karyawan yang bersangkutan dan keseimbangan antara pola hidup
-                dan bekerja.
-              </li>
-            </div>
-          </Col>
-          <Col className="col-3">
-            <div className="red-circle"></div>
-            <div
-              style={{
-                position: "relative",
-                zIndex: "2",
-                margin: "30px 0 40px 30px",
-              }}
-            >
-              <img className="imgBasket" src={about3} alt="" />
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <Container
-        style={{ marginBlock: "80px", display: "flex", justifyContent: "left" }}
-      >
-        <Row className="d-flex justify-content-center">
-          <Col className="col-auto">
-            <div className="blue-square"></div>
-            <div
-              style={{
-                position: "relative",
-                zIndex: "2",
-                margin: "0 0 40px 30px",
-              }}
-            >
-              <img className="imgBasket1" alt="" src={about4} />
-            </div>
-          </Col>
-          <Col className="col-6">
-            <div
-              style={{
-                margin: "30px 0 0 10%",
-                textAlign: "justify",
-              }}
-            >
-              <div
-                style={{
-                  color: "red",
-                  fontSize: "45px",
-                  fontWeight: "bold",
-                }}
-              >
-                Struktur IBOS
-              </div>
-                <img
-                  src={organisasi}
-                  alt=""
-                  style={{
-                    maxHeight: "300px",
-                    maxWidth: "100%",
-                    marginTop: "20px",
-                  }}
-                />
-            </div>
-          </Col>
-        </Row>
-      </Container>
 
       {/* Ucapan Koordinator */}
-      <div className="myAbout-director">
+      {/* <div className="myAbout-director">
         <Col className="col-auto justify-center">
           <div
             style={{
@@ -339,7 +159,7 @@ function About() {
           di bidang Iman, Budaya, Olahraga, dan Sosial. Yuk gabung di IBOS.
           Ramein kegiatannya. Rapihkan juga organisasi pengelolaannya.”
         </p>
-      </div>
+      </div> */}
 
       {/* Logo IBOS */}
       <div>
@@ -348,6 +168,16 @@ function About() {
           style={{ marginTop: "60px", marginBottom: "30px" }}
         >
           <h5 style={{ margin: "auto" }}>Makna dan Arti Logo IBOS?</h5>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBlock: "50px",
+            maxHeight: "100px",
+          }}
+        >
+          <img src={logoUtama} alt="" />
         </div>
         <div
           style={{

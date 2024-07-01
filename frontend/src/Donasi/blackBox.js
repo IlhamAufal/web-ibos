@@ -37,11 +37,11 @@ const blackBox = () => {
             Berbagi bersama IBOS
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Enim ultricies massa elit
-            egestas sed. Tristique pretium bibendum ante condimentum sit sed
-            proin scelerisque aliquam. Tellus aliquam phasellus vitae et platea
-            morbi urna cursus adipiscing. In eu fringilla egestas ac. Et arcu
-            posuere at aliquet faucibus etiam sit viverra.{" "}
+            Berlandaskan budaya AKHLAK, Tflyers insan IBOS senantiasa peduli
+            kepada sesama khususnya di lingkungan terdekat seperti donasi kepada
+            karyawan yang meninggal atau tertimpa musibah (kebakaran, bencana
+            alam), kepada para OB, driver, security (donasi hari raya, sakit,
+            kematian, bea siswa pendidikan anak, dll).{" "}
           </p>
         </div>
       </div>

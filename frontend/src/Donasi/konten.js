@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./donasiStyle.css";
-import thumbnail from "./asset/percobaanNews.png";
-
+import donasiScroll from "../Donasi/asset/donasiScroll.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,7 +26,7 @@ const CarouselCards = () => {
         >
           {data.map((d, index) => (
             <Col key={index}>
-              <a href="*" style={{ textDecoration: "none" }}>
+              <a href="/donasi/case" style={{ textDecoration: "none" }}>
                 <div
                   className="bg-white text-black rounded-xl shadow-2xl"
                   style={{ maxHeight: "auto" }}
@@ -46,9 +45,7 @@ const CarouselCards = () => {
                     />
                   </div>
                   <div className="flex flex-col p-6">
-                    <p className="text-xl font-semibold">
-                      {d.name.toUpperCase()}
-                    </p>
+                    <p className="text-lg font-semibold">{d.name}</p>
                     <p className="text-justify text-sm">{d.review}</p>
                   </div>
                 </div>
@@ -99,34 +96,24 @@ const CustomNextArrow = (props) => {
 
 const data = [
   {
-    name: "john morgan",
-    img: thumbnail,
-    review:
-      "Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. ",
+    name: "THR Hari Raya",
+    img: donasiScroll,
+    review: "Donasi Hari Raya Idul Fitri untuk para OB, driver, dan security. ",
   },
   {
-    name: "john morgan",
-    img: thumbnail,
-    review:
-      "Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. ",
+    name: "THR Hari Raya",
+    img: donasiScroll,
+    review: "Donasi Hari Raya Idul Fitri untuk para OB, driver, dan security. ",
   },
   {
-    name: "john morgan",
-    img: thumbnail,
-    review:
-      "Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. ",
+    name: "THR Hari Raya",
+    img: donasiScroll,
+    review: "Donasi Hari Raya Idul Fitri untuk para OB, driver, dan security. ",
   },
   {
-    name: "john morgan",
-    img: thumbnail,
-    review:
-      "Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. ",
-  },
-  {
-    name: "john morgan",
-    img: thumbnail,
-    review:
-      "Lorem ipsum dolor sit amet consectetur. Lacus viverra in adipiscing enim eu habitasse morbi imperdiet. ",
+    name: "THR Hari Raya",
+    img: donasiScroll,
+    review: "Donasi Hari Raya Idul Fitri untuk para OB, driver, dan security. ",
   },
 ];
 

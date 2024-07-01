@@ -112,7 +112,11 @@ const Footer = () => {
                     <img
                       src={iconEmail}
                       alt="Icon"
-                      style={{ marginRight: "5px", height: "28px", filter: 'invert(100%)'}}
+                      style={{
+                        marginRight: "5px",
+                        height: "28px",
+                        filter: "invert(100%)",
+                      }}
                     />
                     <a href="@IBOS-l@telkomsel.co.id">
                       @IBOS-l@telkomsel.co.id

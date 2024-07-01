@@ -6,7 +6,17 @@ const categories = [
     title: "Program Bidang Iman",
     programs: ["MTT", "Persekutuan Doa", "Forum Hindu"],
   },
-  { title: "Program Bidang Budaya", programs: ["program1", "program2"] },
+  {
+    title: "Program Bidang Budaya",
+    programs: [
+      "Tari Tradisional",
+      "Paduan Suara",
+      "Band",
+      "Tari Modern",
+      "Sketsa",
+      "Toys Community",
+    ],
+  },
   {
     title: "Program Bidang Olahraga",
     programs: [
@@ -15,10 +25,21 @@ const categories = [
       "Futsal",
       "Panahan",
       "Tenis Lapangan",
-      "Badminton",
+      "Bulutangkis",
+      "Catur",
+      "Gym",
+      "Cardio-Poundfit",
+      "Karatedo",
+      "Muaythai",
+      "Tenis Meja",
+      "Yoga",
+      "Taekwondo",
+      "Aikido",
+      "Atletik-Lari",
+      "Voli",
     ],
   },
-  { title: "Program Bidang Sosial", programs: ["program1", "program2"] },
+  { title: "Program Bidang Sosial", programs: ["Donatur", "Relawan"] },
 ];
 
 const CheckInlineExample = () => (

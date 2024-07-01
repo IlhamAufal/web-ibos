@@ -47,8 +47,13 @@ const pendahuluan = () => {
           <div className="w-4/5 text-justify">
             <h3 className="font-bold mb-3">Deskripsi Bidang</h3>
             <p>
-            IBOS Bidang Sosial mendorong keterlibatan karyawan dalam kegiatan sosial baik melalui program CSR Perseroan (corporate social responsibility) maupun program ESR Karyawan (employee social responsibility).  Program kolaborasi  antara program sosial karyawan dengan Perusahaan (CSR) dalam wadah Telkomsel Employee  Volunteerism. Karyawan dapat berpartisipasi dalam berbagai program CSR seperti Internet Baik, Bakti Negeriku, Terra, Telkomsel Siaga.
-{" "}
+              IBOS Bidang Sosial mendorong keterlibatan karyawan dalam kegiatan
+              sosial baik melalui program CSR Perseroan (corporate social
+              responsibility) maupun program ESR Karyawan (employee social
+              responsibility). Program kolaborasi antara program sosial karyawan
+              dengan Perusahaan (CSR) dalam wadah Telkomsel Employee
+              Volunteerism. Karyawan dapat berpartisipasi dalam berbagai program
+              CSR seperti Internet Baik, Bakti Negeriku, Terra, Telkomsel Siaga.{" "}
             </p>
           </div>
         </Col>

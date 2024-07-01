@@ -10,6 +10,7 @@ import thumbnail6 from "./asset/thumbnail6.png";
 import thumbnail7 from "./asset/thumbnail7.png";
 import thumbnail8 from "./asset/thumbnail8.png";
 import thumbnail9 from "./asset/thumbnail9.png";
+import thumbnail10 from "./asset/thumbnail10.png";
 import "./newsStyle.css";
 
 const NewsCard = ({ query }) => {
@@ -67,12 +68,17 @@ const NewsCard = ({ query }) => {
       img: thumbnail9,
       description: "Mau tahu siapa yang menang pertandingan tenis lapangan?",
     },
+    {
+      title: "Tari Kolosal Harmoni Indonesia",
+      img: thumbnail10,
+      description: "Mau tahu hasil seleksi Hari Adhibayaksa?",
+    },
   ];
 
   const filteredData = data.filter(
     (item) =>
       item.title.toLowerCase().includes(query.toLowerCase()) ||
-      item.description.toLowerCase().includes(query.toLowerCase())
+      item.description.toLowerCase().includes(query.toLowerCase()),
   );
 
   return (

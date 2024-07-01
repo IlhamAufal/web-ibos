@@ -1,14 +1,39 @@
-import { React, setFile } from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import RincianKomunitas from "./RincianKomunitas";
-import UploadImage from "../UploadNews/uploadImage";
-
-const handleFileChange = (e) => {
-  const selectedFile = e.target.files[0];
-  setFile(selectedFile);
-};
+import axios from "axios";
 
 const PendaftaranAnggota = () => {
+  const [file, setFile] = useState(null);
+  const [nama, setNama] = useState("");
+  const [bidang, setBidang] = useState("");
+  const [alamat, setAlamat] = useState("");
+  const [jadwal, setJadwal] = useState("");
+
+  const handleFileChange = (e) => {
+    const selectedFile = e.target.files[0];
+    setFile(selectedFile);
+  };
+
+  const handleSubmit = async () => {
+    const formData = new FormData();
+    formData.append("nama", nama);
+    formData.append("bidang", bidang);
+    formData.append("alamat", alamat);
+    formData.append("file", file);
+    formData.append("jadwal", jadwal);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/upload/komunitas",
+        formData,
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <Container>
       <div style={{ margin: "20px 0 50px 0" }}>
@@ -45,7 +70,7 @@ const PendaftaranAnggota = () => {
             </div>
           </Col>
 
-          {/* Penguploadan FIle PDF */}
+          {/* Penguploadan File PDF */}
           <Col className="col-auto mt-4">
             <div
               style={{
@@ -60,13 +85,13 @@ const PendaftaranAnggota = () => {
                   className="form-group font-semibold"
                   style={{ marginBottom: "20px", width: "auto" }}
                 >
-                  <label htmlFor="uploadPDF" className="text-sm">
+                  <label htmlFor="uploadPDF1" className="text-sm">
                     Upload Aturan Organisasi
                   </label>
                   <input
                     type="file"
                     className="form-control form-control-lg"
-                    id="uploadPDF"
+                    id="uploadPDF1"
                     onChange={handleFileChange}
                   />
                 </div>
@@ -76,7 +101,7 @@ const PendaftaranAnggota = () => {
                   className="form-group font-semibold"
                   style={{ marginBottom: "20px", width: "auto" }}
                 >
-                  <label htmlFor="uploadPDF" className="text-sm">
+                  <label htmlFor="uploadPDF2" className="text-sm">
                     Upload Susunan Kepengurusan
                   </label>
                   <caption className="d-flex text-red-600 text-sm">
@@ -85,7 +110,7 @@ const PendaftaranAnggota = () => {
                   <input
                     type="file"
                     className="form-control form-control-lg"
-                    id="uploadPDF"
+                    id="uploadPDF2"
                     onChange={handleFileChange}
                   />
                 </div>
@@ -95,13 +120,13 @@ const PendaftaranAnggota = () => {
                   className="form-group font-semibold"
                   style={{ marginBottom: "20px", width: "auto" }}
                 >
-                  <label htmlFor="uploadPDF" className="text-sm">
+                  <label htmlFor="uploadPDF3" className="text-sm">
                     Upload Berita Acara Pendirian
                   </label>
                   <input
                     type="file"
                     className="form-control form-control-lg"
-                    id="uploadPDF"
+                    id="uploadPDF3"
                     onChange={handleFileChange}
                   />
                 </div>

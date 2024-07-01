@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import imgReligion from './asset/imgReligion.png'
+import imgReligion from "./asset/imgReligion.png";
 
 const pendahuluan = () => {
   return (

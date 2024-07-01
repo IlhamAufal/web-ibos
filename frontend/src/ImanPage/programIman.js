@@ -38,7 +38,11 @@ const programIman = () => {
               </h4>
             </div>
             <div className="w-3/4 ml-5">
-            Majelis Telekomuniasi Selular Takwa (MTT) adalah organisasi berbadan hukum perkumpulan yang menaungi seluruh kegiatan kerohanian Islam pada perusahaan dan karyawan PT Telekomunikasi Selular (Telkomsel) MTT mempunyai kegiatan di bidang keagamaan, sosial, dan kemanusian.
+              Majelis Telekomuniasi Selular Takwa (MTT) adalah organisasi
+              berbadan hukum perkumpulan yang menaungi seluruh kegiatan
+              kerohanian Islam pada perusahaan dan karyawan PT Telekomunikasi
+              Selular (Telkomsel) MTT mempunyai kegiatan di bidang keagamaan,
+              sosial, dan kemanusian.
             </div>
           </Col>
         </Row>
@@ -59,7 +63,11 @@ const programIman = () => {
               className="w-3/4 mr-5"
               style={{ textAlign: "justify", marginLeft: "230px" }}
             >
-              Persekutuan Doa Telkomsel adalah wadah bagi karyawan Kristiani Telkomsel yang dibentuk dengan tujuan sebagai pemersatu umat Kristiani Telkomsel dalam melaksanakan kegiatan kerohanian dan pelayanan dalam berbagai aspek kehidupan dengan selalu berpegang pada Firman Tuhan dan peraturan Perusahaan.
+              Persekutuan Doa Telkomsel adalah wadah bagi karyawan Kristiani
+              Telkomsel yang dibentuk dengan tujuan sebagai pemersatu umat
+              Kristiani Telkomsel dalam melaksanakan kegiatan kerohanian dan
+              pelayanan dalam berbagai aspek kehidupan dengan selalu berpegang
+              pada Firman Tuhan dan peraturan Perusahaan.
             </div>
           </Col>
           <Col className="col-3">
@@ -122,7 +130,10 @@ const programIman = () => {
               </h4>
             </div>
             <div className="w-3/4 ml-5">
-            Forum Hindu Telkomsel (FHT) Forum Hindu Telkomsel sebagai bagian dari kegiatan Iman, Budaya,Olahraga, dan Sosial (IBOS) dibentuk berdasarkan Keputusan Direksi No.026/2006 perihal Pelaksanaan Pembinaan Iman, Budaya Olahraga dan Kegiatan Sosial.
+              Forum Hindu Telkomsel (FHT) Forum Hindu Telkomsel sebagai bagian
+              dari kegiatan Iman, Budaya,Olahraga, dan Sosial (IBOS) dibentuk
+              berdasarkan Keputusan Direksi No.026/2006 perihal Pelaksanaan
+              Pembinaan Iman, Budaya Olahraga dan Kegiatan Sosial.
             </div>
           </Col>
         </Row>

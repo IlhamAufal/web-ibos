@@ -2,7 +2,7 @@ import React from "react";
 import BannerKomunitas from "../KomunitasPage/bannerKomunitas";
 import PendaftaranKomunitas from "../KomunitasPage/PendaftaranKomunitas";
 import atlet from "../KomunitasPage/asset/Photo atlet jamaah.svg";
-import { Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 
 const CommunityPage = () => {
   return (
@@ -69,6 +69,11 @@ const CommunityPage = () => {
         </Container>
       </div>
       <PendaftaranKomunitas />
+      <Row className="d-flex justify-content-center mb-8">
+        <button className="myButton mt-4" style={{ width: "120px" }}>
+          Submit
+        </button>
+      </Row>
       {/* <Documentation /> */}
     </div>
   );

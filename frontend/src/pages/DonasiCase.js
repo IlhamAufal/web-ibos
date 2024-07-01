@@ -2,37 +2,76 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import kasus from "../Donasi/asset/kasus.svg";
+import kasus from "../Donasi/asset/donasiCase.png";
 import LinkAja from "../Donasi/asset/LinkAja.png";
+import qris from "../Donasi/asset/qris.svg";
 import Konten from "../Donasi/konten";
 
 import "../Donasi/donasiStyle.css";
 
-function CheckExample() {
+function PilihanPembayaran() {
   return (
     <Form>
-      <div
-        key={`default-checkbox`}
-        className="mb-3"
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        <Form.Check
-          type={"checkbox"}
-          id={`default-checkbox`}
-          label={
-            <>
-              <div className="d-flex font-bold ">
-                <img
-                  src={LinkAja}
-                  alt="Link Aja"
-                  style={{ marginInline: "10px", maxHeight: "50px" }}
-                />
-                Link Aja!
-              </div>
-            </>
-          }
-        />
-      </div>
+      <Form.Group>
+        <Row className="mb-3" key={`radio-linkaja`}>
+          <Col className="col-auto">
+            <Form.Check
+              type="radio"
+              id="radio-linkaja"
+              name="paymentOption"
+              label={
+                <div className="d-flex font-bold">
+                  <img
+                    src={LinkAja}
+                    alt="Link Aja"
+                    style={{ marginInline: "10px", maxHeight: "50px" }}
+                  />
+                  Link Aja!
+                </div>
+              }
+            />
+          </Col>
+          <Col className="col-4">
+            <Form>
+              <Form.Group className="mb-3">
+                <Form.Label>Nominal Pembayaran</Form.Label>
+                <Form.Control type="int" placeholder="masukkan nominal" />
+                <div className="text-xs muted text-red-500">
+                  jumlahkan donasi dengan tambahan digit 11 di akhir
+                </div>
+              </Form.Group>
+            </Form>
+          </Col>
+          <Col style={{ marginLeft: "150px" }}>
+            <Row>
+              <img
+                src={qris}
+                alt=""
+                style={{ maxHeight: "200px", marginBottom: "30px" }}
+              />
+            </Row>
+            <Row>
+              <p>
+                Donasi melalui LinkAja mulai tanggal xxxxx sd xxxxxxxx,
+                transfer/emoney dikirim ke nomor 0811xxxxxx, jumlah donasi
+                dengan tambahan digit 11 di akhir, misal Rp250.011,-.
+              </p>
+            </Row>
+          </Col>
+        </Row>
+        {/* <Row className="mb-3" key={`radio-lainnya`}>
+            <Form.Check
+              type="radio"
+              id="radio-lainnya"
+              name="paymentOption"
+              label={
+                <div className="d-flex font-bold">
+                  Lainnya
+                </div>
+              }
+            />
+        </Row> */}
+      </Form.Group>
     </Form>
   );
 }
@@ -64,26 +103,19 @@ const DonasiCase = () => {
             />
           </Col>
           <Col>
-            <h1 className="font-bold">Lorem Ipsum Dolor</h1>
+            <h1 className="font-bold">Donasi Sepatu Pelajar Papua</h1>
             <p className="text-justify w-5/6">
-              Lorem ipsum dolor sit amet consectetur. Et amet mauris imperdiet
-              magna. Vestibulum consectetur et dignissim netus interdum. Tempor
-              quam massa lorem in. At hendrerit aenean diam sodales proin
-              tincidunt commodo sed. Tempor lectus aliquet ut risus consectetur
-              aliquam sed condimentum. Libero netus lorem fames at. Ac tristique
-              sodales nulla tincidunt integer lectus libero mauris malesuada. In
-              sed donec iaculis amet tempus tortor sociis euismod pellentesque.
-              Ut ultrices cursus ullamcorper semper diam sit. Risus eget et et
-              auctor dapibus lectus facilisis.
+              TFlyers, masih ingat dengan Program Donasi Sepatu Pelajar Papua?
+              Itu loh program yang mengajak para pelanggan untuk berdonasi
+              dengan menukarkan Telkomsel Poin-nya. Hasil donasinya akan
+              diberikan dalam bentuk sepatu sekolah dengan desain yang super
+              cakep dan nyaman kepada adik-adik pelajar di Papua. Nah, Ka Rusel
+              mau update tentang program ini! Program Donasi Sepatu Pelajar
+              Papua sudah berada dalam tahap produksi di pabrik Polos Made By
+              You! Yuk tonton selengkapnya behind the scene produksi sepatu
+              pelajar ini dengan donasi di sini. Jangan lupa untuk share ke
+              media sosialmu juga ya, TFlyers!.
             </p>
-            <div className="d-flex flex-nowrap gap-2 mb-4">
-              <div className="kategori" style={{ maxWidth: "120px" }}>
-                Sosial
-              </div>
-              <div className="kategori" style={{ maxWidth: "120px" }}>
-                Budaya
-              </div>
-            </div>
             <div className="font-bold text-lg">Donasi Terkumpul:</div>
             <ProgressBar striped now={60} variant="danger" className="mb-3" />
             (Rp 700.000 /Rp 1.000.000 )
@@ -93,7 +125,12 @@ const DonasiCase = () => {
           <div className="flex font-bold text-center kategori mb-4">
             Metode Pembayaran
           </div>
-          <CheckExample />
+          <PilihanPembayaran />
+          <div className="d-flex justify-center items-center mt-4">
+            <button className="myButton" style={{ width: "120px" }}>
+              Kirim
+            </button>
+          </div>
         </Row>
       </Container>
 

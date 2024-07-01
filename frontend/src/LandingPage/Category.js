@@ -14,9 +14,9 @@ function Category() {
     <Container className="container-category mb-4">
       <Row>
         <Col xs={3}>
-          <a href="/ibadah" className="flex">
+          <a href="/iman" className="flex">
             <div className="masked-image-overlay">
-              <div className="centered-text">IBADAH</div>{" "}
+              <div className="centered-text">IMAN</div>{" "}
             </div>
           </a>
           <img className="masked-image" src={imgIbadah} />
